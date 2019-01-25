@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-shared-incremental-1.1.pom</name>
+  <created>1547921517501</created>
+  <lastModified>1364990476000</lastModified>
+  <size>4742</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921517502</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>c607b2c64c027151c440f27b5ec86e062b9e9953</original>
+          <actual>c607b2c64c027151c440f27b5ec86e062b9e9953</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>89cadcb3b18dd42b9119ca2910e74e82</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f21d19eb49b4a66cd85354a9ee7335439ea92a368173760a202766008cc19924</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

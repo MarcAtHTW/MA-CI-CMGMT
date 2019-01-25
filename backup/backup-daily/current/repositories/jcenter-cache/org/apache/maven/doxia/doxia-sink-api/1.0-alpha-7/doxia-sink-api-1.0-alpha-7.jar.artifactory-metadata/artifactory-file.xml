@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>doxia-sink-api-1.0-alpha-7.jar</name>
+  <created>1547921515244</created>
+  <lastModified>1220183206000</lastModified>
+  <size>5936</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921515244</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>68464d54384c35119c70684d5d609b64635d1bbd</original>
+          <actual>68464d54384c35119c70684d5d609b64635d1bbd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9fc562ffc147b9f2228be67efdca1749</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>37e66f15f348df957538f81f7e10a3fdcf84e5fbd687b2001ee3d6ab4a25aafe</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

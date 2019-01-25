@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/commons/commons-email/1.1/commons-email-1.1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-email-1.1.jar</name>
+  <created>1547921508175</created>
+  <lastModified>1220183179000</lastModified>
+  <size>30651</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921508176</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a05c4de7bf2e0579ac0f21e16f3737ec6fa0ff98</original>
+          <actual>a05c4de7bf2e0579ac0f21e16f3737ec6fa0ff98</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>5d6576b5b572c6d644af2924da9a1952</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>78da962833d83a9df219d07b6c8c60115a0146a7314f8e44df3efdcf15792eaa</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

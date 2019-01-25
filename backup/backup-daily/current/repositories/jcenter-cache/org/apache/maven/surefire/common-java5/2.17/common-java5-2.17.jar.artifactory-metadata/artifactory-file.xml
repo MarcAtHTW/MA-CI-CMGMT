@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/common-java5/2.17/common-java5-2.17.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>common-java5-2.17.jar</name>
+  <created>1547921528239</created>
+  <lastModified>1394654280000</lastModified>
+  <size>37115</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921528239</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>858f9d1b5a9859dbfe4ded49715aa429c87e80a4</original>
+          <actual>858f9d1b5a9859dbfe4ded49715aa429c87e80a4</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>432f414aa5a0c42e2ce03a2d63493d68</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8ec8d4383e384a84bc9221b627531fe0e98f4af4a9041929c4c66089d601dbdc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>jsp-api-2.1.pom</name>
+  <created>1547921507434</created>
+  <lastModified>1220183137000</lastModified>
+  <size>157</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507434</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>181e738f12465e5d94bdb3a6072c45e4bcb92da7</original>
+          <actual>181e738f12465e5d94bdb3a6072c45e4bcb92da7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f6209ad1f1f0d343f6cb092403f0f3bd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>050c3864e0a76a0f2608fb2ade83d6d29ca40f7e0a2639c5d391e2365a7528cc</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

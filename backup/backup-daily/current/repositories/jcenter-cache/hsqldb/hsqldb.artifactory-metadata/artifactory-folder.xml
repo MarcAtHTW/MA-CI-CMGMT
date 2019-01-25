@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>hsqldb/hsqldb</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>hsqldb</name>
+  <created>1547923037298</created>
+  <lastModified>1547923037298</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923037298</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

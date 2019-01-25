@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/sonatype/forge</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>forge</name>
+  <created>1547921499651</created>
+  <lastModified>1547921499651</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921499651</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

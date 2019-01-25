@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/surefire-providers</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>surefire-providers</name>
+  <created>1547921527462</created>
+  <lastModified>1547921527462</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921527462</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

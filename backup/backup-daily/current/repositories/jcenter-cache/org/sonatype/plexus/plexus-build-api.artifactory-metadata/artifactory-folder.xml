@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/sonatype/plexus/plexus-build-api</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plexus-build-api</name>
+  <created>1547921514691</created>
+  <lastModified>1547921514691</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921514691</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

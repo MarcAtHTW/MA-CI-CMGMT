@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-io-2.0.2.pom</name>
+  <created>1547923028068</created>
+  <lastModified>1326552122000</lastModified>
+  <size>1733</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923028069</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>d0ad15a280e5bf6c32388cbef26fd7d428fa1623</original>
+          <actual>d0ad15a280e5bf6c32388cbef26fd7d428fa1623</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>77957314a087f28844371210d98d6b0e</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>67a1ce072ad9ff4ce37985a1c32827eaeda4660cabe7f69eff2ca1ebff2d23bd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

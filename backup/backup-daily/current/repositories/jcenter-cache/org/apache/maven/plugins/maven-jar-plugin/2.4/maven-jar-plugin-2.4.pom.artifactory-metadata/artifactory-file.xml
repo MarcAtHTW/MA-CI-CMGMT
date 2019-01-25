@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-jar-plugin-2.4.pom</name>
+  <created>1547921505313</created>
+  <lastModified>1327600974000</lastModified>
+  <size>5834</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921505313</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>ae9d54d974e163f260f89ecea8ff6d55e4b0963e</original>
+          <actual>ae9d54d974e163f260f89ecea8ff6d55e4b0963e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>28cd57cee4d3c337aff296353280947f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a98f60925af4a1729529a1e9c5aba78ffdd024c67a8f825ed974a0ab006d315a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

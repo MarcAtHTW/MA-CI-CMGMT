@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-project-2.2.1.jar</name>
+  <created>1547921499919</created>
+  <lastModified>1249586101000</lastModified>
+  <size>156283</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921499920</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>8239e98c16f641d55a4ad0e0bab0aee3aff8933f</original>
+          <actual>8239e98c16f641d55a4ad0e0bab0aee3aff8933f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8f9382d7c0c120e94c2aaf8bbe817b6f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>24ddb65b7a6c3befb6267ce5f739f237c84eba99389265c30df67c3dd8396a40</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

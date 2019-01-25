@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>surefire-booter-2.17.pom</name>
+  <created>1547921524574</created>
+  <lastModified>1394654220000</lastModified>
+  <size>2831</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921524574</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>4597f4129e4d8c561ef69718f0b02e55cabfe231</original>
+          <actual>4597f4129e4d8c561ef69718f0b02e55cabfe231</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4d1ba89dfa1575e5d59f60a23b9172b6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3475e43c000ec6ec8945d456e047bbfaf55407ffd12a813ce3593d66c3d6f51a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

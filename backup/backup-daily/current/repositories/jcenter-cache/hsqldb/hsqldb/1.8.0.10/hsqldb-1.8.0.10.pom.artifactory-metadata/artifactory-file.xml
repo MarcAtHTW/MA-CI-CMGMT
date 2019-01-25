@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>hsqldb-1.8.0.10.pom</name>
+  <created>1547923037299</created>
+  <lastModified>1242768027000</lastModified>
+  <size>600</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923037299</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>d8efc6e6f6e14ee9244136b0580ab6014ffeb4ea</original>
+          <actual>d8efc6e6f6e14ee9244136b0580ab6014ffeb4ea</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e5bc1fc19e1b273096394c791fc9422c</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d900d86b8bbfe3f6ee81ea9f2206f0779332bbca588e6a35fd18786a0a119331</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

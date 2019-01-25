@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xmlpull-1.1.3.1.pom</name>
+  <created>1547923041437</created>
+  <lastModified>1220183099000</lastModified>
+  <size>386</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923041437</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>02727a9a35d75a77344fea0e9866477aff7c19d6</original>
+          <actual>02727a9a35d75a77344fea0e9866477aff7c19d6</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>0d5fc83051da57ac318a5e928385fddd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>8f10ffd8df0d3e9819c8cc8402709c6b248bc53a954ef6e45470d9ae3a5735fb</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

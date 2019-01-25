@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/testng/testng/5.7/testng-5.7.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>testng-5.7.pom</name>
+  <created>1547921528163</created>
+  <lastModified>1355343927000</lastModified>
+  <size>11993</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921528164</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7620d2d32c641984835245ccf9f04aae35691a64</original>
+          <actual>7620d2d32c641984835245ccf9f04aae35691a64</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1e3c5457a58202f63c00b8b7ebe59ebd</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a71ddc5e2f69ae6462c256acb2bb74917f33f138a65a663a38ebdbbd61577e78</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

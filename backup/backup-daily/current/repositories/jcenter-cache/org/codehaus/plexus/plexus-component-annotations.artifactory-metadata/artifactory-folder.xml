@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-component-annotations</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>plexus-component-annotations</name>
+  <created>1547921518960</created>
+  <lastModified>1547921518960</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921518960</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

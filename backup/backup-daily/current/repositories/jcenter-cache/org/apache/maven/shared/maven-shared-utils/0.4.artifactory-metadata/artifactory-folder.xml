@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/shared/maven-shared-utils/0.4</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>0.4</name>
+  <created>1547921499019</created>
+  <lastModified>1547921499019</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921499019</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

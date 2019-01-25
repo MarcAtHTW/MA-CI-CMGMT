@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>Jenkins-snapshot</repoKey>
+    <path>org/jfrog</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>jfrog</name>
+  <created>1547923045303</created>
+  <lastModified>1547923045303</lastModified>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547923045303</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

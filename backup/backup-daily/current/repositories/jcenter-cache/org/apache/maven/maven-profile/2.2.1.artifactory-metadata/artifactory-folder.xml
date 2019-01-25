@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-profile/2.2.1</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.2.1</name>
+  <created>1547921498246</created>
+  <lastModified>1547921498246</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921498246</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

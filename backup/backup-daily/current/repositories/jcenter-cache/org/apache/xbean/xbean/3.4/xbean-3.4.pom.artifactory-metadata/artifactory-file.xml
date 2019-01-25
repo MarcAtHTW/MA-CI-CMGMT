@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/xbean/xbean/3.4/xbean-3.4.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xbean-3.4.pom</name>
+  <created>1547921519981</created>
+  <lastModified>1210722688000</lastModified>
+  <size>18532</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921519981</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>6b6d0d977f3fb41cfd097a350472baefd82713f5</original>
+          <actual>6b6d0d977f3fb41cfd097a350472baefd82713f5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>817b2b0a29ba21ebc8e5d5dda1fab37d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>56ab9c6c2d022a9b7079006ba500a996cd2c21411d53cac524933af20c5a4b99</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

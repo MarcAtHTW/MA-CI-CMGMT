@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/slf4j/slf4j-jdk14</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>slf4j-jdk14</name>
+  <created>1547921517690</created>
+  <lastModified>1547921517690</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921517690</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

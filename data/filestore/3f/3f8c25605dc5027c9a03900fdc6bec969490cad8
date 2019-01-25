@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.jfrog.test</groupId>
+  <artifactId>multi2</artifactId>
+  <version>3.7-SNAPSHOT</version>
+  <versioning>
+    <latest>3.7-SNAPSHOT</latest>
+    <versions>
+      <version>3.7-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190119192226</lastUpdated>
+  </versioning>
+</metadata>

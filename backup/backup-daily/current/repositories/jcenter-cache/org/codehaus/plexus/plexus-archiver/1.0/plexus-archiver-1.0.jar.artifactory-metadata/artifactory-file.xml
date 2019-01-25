@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-archiver-1.0.jar</name>
+  <created>1547923032285</created>
+  <lastModified>1272213699000</lastModified>
+  <size>177163</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923032286</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>b564a05aeecd4d81d6b81f57a1d495fc8c0f497f</original>
+          <actual>b564a05aeecd4d81d6b81f57a1d495fc8c0f497f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f21e092b51cf2c561b0e309229269dff</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>36e8d5c0ae7218a61bc95d41d62fa75c75304d4aaaa86aab5f741f0b40037ce5</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

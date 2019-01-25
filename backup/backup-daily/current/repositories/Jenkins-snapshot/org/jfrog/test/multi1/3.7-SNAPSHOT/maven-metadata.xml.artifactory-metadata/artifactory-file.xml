@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>Jenkins-snapshot</repoKey>
+    <path>org/jfrog/test/multi1/3.7-SNAPSHOT/maven-metadata.xml</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-metadata.xml</name>
+  <created>1547923045672</created>
+  <lastModified>1547925747048</lastModified>
+  <size>1186</size>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547925747051</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>c67b8da816a85a2e1c59643f55f54455dc3e1220</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>e9015f76fa937d894ee79cb79fd1d39b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3122865c046f50154f88c169dd914502311634fa9a2fdaf8078a319284118a38</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

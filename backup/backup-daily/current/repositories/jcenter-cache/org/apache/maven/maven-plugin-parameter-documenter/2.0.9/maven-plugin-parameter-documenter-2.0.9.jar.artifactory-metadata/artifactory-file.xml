@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-plugin-parameter-documenter-2.0.9.jar</name>
+  <created>1547921520380</created>
+  <lastModified>1220183227000</lastModified>
+  <size>20878</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921520382</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>f481e2677384f6a0ab96633567d736e70657e042</original>
+          <actual>f481e2677384f6a0ab96633567d736e70657e042</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>12bdfe4c6a1f42ea8c8062293fa18741</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3be9db19335747e8a22f768fab3539992a66d280ccff5f8cd487cada733aee98</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

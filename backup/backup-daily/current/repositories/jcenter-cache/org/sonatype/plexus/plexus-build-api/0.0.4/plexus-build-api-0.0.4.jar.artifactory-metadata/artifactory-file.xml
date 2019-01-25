@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-build-api-0.0.4.jar</name>
+  <created>1547921515419</created>
+  <lastModified>1234561436000</lastModified>
+  <size>6809</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921515419</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>8fdcf45c2fad3052a51385fdfc79753d9124a1a7</original>
+          <actual>8fdcf45c2fad3052a51385fdfc79753d9124a1a7</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>13d7fef2a986970e589f5ea1019dc05f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d2d415ba26078a84e97816fd444361def86dec65a23b4278d95cfb1c285f2649</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

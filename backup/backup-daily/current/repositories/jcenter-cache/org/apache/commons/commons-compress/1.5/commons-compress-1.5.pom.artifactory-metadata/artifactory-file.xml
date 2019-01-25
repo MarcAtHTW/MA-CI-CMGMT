@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/commons/commons-compress/1.5/commons-compress-1.5.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-compress-1.5.pom</name>
+  <created>1547923040973</created>
+  <lastModified>1362982628000</lastModified>
+  <size>10609</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923040974</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>5d130e1456f52d999c9c62cc9eb00a388ea34b99</original>
+          <actual>5d130e1456f52d999c9c62cc9eb00a388ea34b99</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>373d3096a69aef5bb641ae974a1ccdf5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a74468d51a888853d970d576eb67932a6ac31d902f4f54a91c374ee340cd2759</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

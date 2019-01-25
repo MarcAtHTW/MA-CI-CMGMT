@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/tukaani/xz/1.2/xz-1.2.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xz-1.2.jar</name>
+  <created>1547923041616</created>
+  <lastModified>1359469620000</lastModified>
+  <size>94816</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923041617</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>bfc66dda280a18ab341b5023248925265c00394c</original>
+          <actual>bfc66dda280a18ab341b5023248925265c00394c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>04bd31459826c30c2a3c304e3b225ad4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b29db8c05ec99b91b9ed46119d16b125981a39da823bc9c6db8e210be6b297b3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

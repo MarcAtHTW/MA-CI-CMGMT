@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/plugins/maven-compiler-plugin/3.2/maven-compiler-plugin-3.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-compiler-plugin-3.2.pom</name>
+  <created>1547921506060</created>
+  <lastModified>1412786580000</lastModified>
+  <size>11679</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921506060</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>4426738c4a4bf12cce3115d7a85101563167b82a</original>
+          <actual>4426738c4a4bf12cce3115d7a85101563167b82a</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1122affda91c135785779042cc084098</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>060f1eb0a2fd6d62a9ee8dcf228660de66d5da0521d4ef88b7d7bbb6fc0ac823</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

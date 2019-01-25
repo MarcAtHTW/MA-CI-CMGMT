@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>xbean-reflect-3.4.jar</name>
+  <created>1547921520678</created>
+  <lastModified>1427572481000</lastModified>
+  <size>133826</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921520679</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>26fd55dceb037f4789b399b22874d74f4d2db66f</original>
+          <actual>26fd55dceb037f4789b399b22874d74f4d2db66f</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e618633fb6eac298a9c13b98c59b10c7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>17e0efa187127034623197fb88c50c30d3baa62baa0f07d6ec693047ac92ec3b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

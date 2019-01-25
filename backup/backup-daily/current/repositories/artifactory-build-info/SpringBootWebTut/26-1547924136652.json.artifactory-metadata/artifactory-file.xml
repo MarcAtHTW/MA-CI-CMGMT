@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>artifactory-build-info</repoKey>
+    <path>SpringBootWebTut/26-1547924136652.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>26-1547924136652.json</name>
+  <created>1547924155977</created>
+  <lastModified>1547924155971</lastModified>
+  <size>657</size>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547924155977</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>cbc05525531beefe9bf5ed98ab4746c2975cd84e</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>c9900c969ee7528e5462785c3d607927</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7fb7c7b53c26afa2df0b75e563f0f57f766ce2d32f4d8d0913eeb38fa3e126de</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

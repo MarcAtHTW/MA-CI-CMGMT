@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>Jenkins-snapshot</repoKey>
+    <path>org/jfrog/test/multi</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>multi</name>
+  <created>1547923045695</created>
+  <lastModified>1547923045695</lastModified>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547923045695</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

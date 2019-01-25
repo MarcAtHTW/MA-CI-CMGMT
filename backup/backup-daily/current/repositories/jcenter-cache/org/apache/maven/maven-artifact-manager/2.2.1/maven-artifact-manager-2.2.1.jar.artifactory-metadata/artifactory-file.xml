@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-artifact-manager-2.2.1.jar</name>
+  <created>1547921500015</created>
+  <lastModified>1249585975000</lastModified>
+  <size>67574</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921500015</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>ec355b913c34d37080810f98e3f51abecbe1572b</original>
+          <actual>ec355b913c34d37080810f98e3f51abecbe1572b</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f3e76a8a83f422a900886543c48914f7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d1e247c4ed3952385fd704ac9db2a222247cfe7d20508b4f3c76b90f857952ed</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

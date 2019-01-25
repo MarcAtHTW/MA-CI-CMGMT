@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>commons-lang/commons-lang/2.1/commons-lang-2.1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-lang-2.1.jar</name>
+  <created>1547923030746</created>
+  <lastModified>1396369475000</lastModified>
+  <size>207723</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923030746</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>4763ecc9d78781c915c07eb03e90572c7ff04205</original>
+          <actual>4763ecc9d78781c915c07eb03e90572c7ff04205</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>51591549f1662a64543f08a1d4a0cf87</original>
+          <actual>51591549f1662a64543f08a1d4a0cf87</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2ded7343dc8e57decd5e6302337139be020fdd885a2935925e8d575975e480b9</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

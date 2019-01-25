@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>javax/activation/activation/1.1/activation-1.1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>activation-1.1.jar</name>
+  <created>1547921508261</created>
+  <lastModified>1220183138000</lastModified>
+  <size>62983</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921508261</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>e6cb541461c2834bdea3eb920f1884d1eb508b50</original>
+          <actual>e6cb541461c2834bdea3eb920f1884d1eb508b50</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>8ae38e87cd4f86059c0294a8fe3e0b18</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>2881c79c9d6ef01c58e62beea13e9d1ac8b8baa16f2fc198ad6e6776defdcdd3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

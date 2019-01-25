@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-classworlds-2.2.2.pom</name>
+  <created>1547921519855</created>
+  <lastModified>1257275119000</lastModified>
+  <size>4033</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921519855</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>df1dfb0099c8759b378fe0af3b4a564d2c16aa18</original>
+          <actual>df1dfb0099c8759b378fe0af3b4a564d2c16aa18</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9ec023da0531726307b7b293340dbbca</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>6aad43eb7fee989d50f1ecaf4a8030c708f9c9ea3eb72ee023d76746ff89570a</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

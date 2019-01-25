@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>com/google/collections/google-collections/1.0/google-collections-1.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>google-collections-1.0.jar</name>
+  <created>1547921523227</created>
+  <lastModified>1396409921000</lastModified>
+  <size>639592</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921523227</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>9ffe71ac6dcab6bc03ea13f5c2e7b2804e69b357</original>
+          <actual>9ffe71ac6dcab6bc03ea13f5c2e7b2804e69b357</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>7c882c8d734e50112000e4a88e06c535</original>
+          <actual>7c882c8d734e50112000e4a88e06c535</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>81b8d638af0083c4b877099d56aa0fee714485cd2ace1b6a09cab867cadb375d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

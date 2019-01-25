@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/springframework/spring-beans</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>spring-beans</name>
+  <created>1547921507945</created>
+  <lastModified>1547921507945</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507945</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

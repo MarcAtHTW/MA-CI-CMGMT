@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-compiler-javac/2.4/plexus-compiler-javac-2.4.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-compiler-javac-2.4.jar</name>
+  <created>1547921520636</created>
+  <lastModified>1412725440000</lastModified>
+  <size>19319</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921520636</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>b3984fb5af1d4fd8928a13522ce9458d3976ded8</original>
+          <actual>b3984fb5af1d4fd8928a13522ce9458d3976ded8</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>24b9012da605cb316ad238725c82737f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>c5cf460be6c19f9f99944480991ecf0c2fd855695bcdc2efd48e880642f0d59d</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

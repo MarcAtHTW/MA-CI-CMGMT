@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>Jenkins-integration</repoKey>
+    <path></path>
+    <folder>true</folder>
+  </repoPath>
+  <name></name>
+  <created>1547920436079</created>
+  <lastModified>1547920436079</lastModified>
+  <additionalInfo>
+    <lastUpdated>1547920436079</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

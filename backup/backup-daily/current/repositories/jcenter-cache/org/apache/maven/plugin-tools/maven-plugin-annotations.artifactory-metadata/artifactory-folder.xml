@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/plugin-tools/maven-plugin-annotations</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>maven-plugin-annotations</name>
+  <created>1547921524363</created>
+  <lastModified>1547921524363</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921524363</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

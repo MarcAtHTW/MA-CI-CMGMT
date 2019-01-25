@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>classworlds/classworlds/1.1-alpha-2</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>1.1-alpha-2</name>
+  <created>1547921498183</created>
+  <lastModified>1547921498183</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921498183</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

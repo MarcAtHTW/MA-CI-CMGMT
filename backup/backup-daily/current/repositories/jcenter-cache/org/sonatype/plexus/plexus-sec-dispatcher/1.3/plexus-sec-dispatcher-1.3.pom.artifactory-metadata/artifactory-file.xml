@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-sec-dispatcher-1.3.pom</name>
+  <created>1547921518640</created>
+  <lastModified>1241035528000</lastModified>
+  <size>2961</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921518640</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>b953c3a84a7d3f2a7f606e18c07ee38fb6766e3d</original>
+          <actual>b953c3a84a7d3f2a7f606e18c07ee38fb6766e3d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d476b10107f82c067cca77558065cb91</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d5e650c50ef6958c028ed024b59af04cf3d38e1453a77d542b6b484bc0f4ca0b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

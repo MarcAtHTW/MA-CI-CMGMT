@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/sonatype/forge/forge-parent/5/forge-parent-5.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>forge-parent-5.pom</name>
+  <created>1547923027995</created>
+  <lastModified>1236270324000</lastModified>
+  <size>8363</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923027996</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a557514263bbd4a6daef8f125ab80e78413292d3</original>
+          <actual>a557514263bbd4a6daef8f125ab80e78413292d3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>705596602c77f69b11b0b3a763e81ba4</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>e56188aa8ce51278006aa90bc7e0f304a81e2f1219f462e7d21f262535cd2795</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

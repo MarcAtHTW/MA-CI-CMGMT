@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus/3.3/plexus-3.3.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-3.3.pom</name>
+  <created>1547921519446</created>
+  <lastModified>1351695571000</lastModified>
+  <size>19900</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921519447</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>70ab8436286998acce80e63fe75067a70cfe3e43</original>
+          <actual>70ab8436286998acce80e63fe75067a70cfe3e43</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>3bd405b86af548d931911cfae1fa6c47</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>3d2ad3a8bfd49d95952443afe2c14183136811019435bf16eed40796b2210ad2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

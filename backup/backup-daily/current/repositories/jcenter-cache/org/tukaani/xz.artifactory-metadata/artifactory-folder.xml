@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/tukaani/xz</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>xz</name>
+  <created>1547923041130</created>
+  <lastModified>1547923041130</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923041130</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

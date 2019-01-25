@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-surefire-common-2.17.pom</name>
+  <created>1547921524292</created>
+  <lastModified>1394654460000</lastModified>
+  <size>6097</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921524292</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>80c2a9b0ff022fc61c270ca2f144fff2ac6f8f85</original>
+          <actual>80c2a9b0ff022fc61c270ca2f144fff2ac6f8f85</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9c477c191e811ec649d597ef049c7f3d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>609a71130d120e57007beb41e23abc5f56dd5ca52764e84daf463899634a25dd</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

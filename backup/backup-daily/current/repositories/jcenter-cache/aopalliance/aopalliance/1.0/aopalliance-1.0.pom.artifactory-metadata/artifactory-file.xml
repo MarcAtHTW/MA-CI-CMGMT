@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>aopalliance/aopalliance/1.0/aopalliance-1.0.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>aopalliance-1.0.pom</name>
+  <created>1547921507732</created>
+  <lastModified>1220183110000</lastModified>
+  <size>363</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507732</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>5128a2b0efbba460a1178d07773618e0986ea152</original>
+          <actual>5128a2b0efbba460a1178d07773618e0986ea152</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>9888dc04fe79d5afcf43e2697691fff9</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>26e82330157d6b844b67a8064945e206581e772977183e3e31fec6058aa9a59b</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

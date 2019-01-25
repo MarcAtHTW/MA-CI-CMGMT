@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-plugin-api</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>maven-plugin-api</name>
+  <created>1547921496852</created>
+  <lastModified>1547921496852</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921496852</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

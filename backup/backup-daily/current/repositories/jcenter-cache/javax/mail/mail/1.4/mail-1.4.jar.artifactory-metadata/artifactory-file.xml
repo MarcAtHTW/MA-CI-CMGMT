@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>javax/mail/mail/1.4/mail-1.4.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>mail-1.4.jar</name>
+  <created>1547921509938</created>
+  <lastModified>1396498157000</lastModified>
+  <size>388864</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921509938</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>1aa1579ae5ecd41920c4f355b0a9ef40b68315dd</original>
+          <actual>1aa1579ae5ecd41920c4f355b0a9ef40b68315dd</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>2e64a3805d543bdb86e6e5eeca5529f8</original>
+          <actual>2e64a3805d543bdb86e6e5eeca5529f8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>96868f82264ebd9b7d41f04d78cbe87ab75d68a7bbf8edfb82416aabe9b54b6c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

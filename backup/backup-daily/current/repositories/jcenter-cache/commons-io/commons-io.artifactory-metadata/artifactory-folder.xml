@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>commons-io/commons-io</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>commons-io</name>
+  <created>1547921507503</created>
+  <lastModified>1547921507503</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507503</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

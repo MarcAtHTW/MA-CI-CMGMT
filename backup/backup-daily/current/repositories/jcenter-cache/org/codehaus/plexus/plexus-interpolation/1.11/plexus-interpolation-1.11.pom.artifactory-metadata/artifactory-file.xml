@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-interpolation-1.11.pom</name>
+  <created>1547921497635</created>
+  <lastModified>1244224043000</lastModified>
+  <size>889</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921497635</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>f03da80999422b6cc4300735789be83e4498a3bc</original>
+          <actual>f03da80999422b6cc4300735789be83e4498a3bc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>56a80ed63c40350b009d04f44398e698</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b84d281f59b9da528139e0752a0e1cab0bd98d52c58442b00e45c9748e1d9eee</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

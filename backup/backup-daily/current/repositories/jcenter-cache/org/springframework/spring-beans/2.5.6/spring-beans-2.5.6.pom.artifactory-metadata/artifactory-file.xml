@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/springframework/spring-beans/2.5.6/spring-beans-2.5.6.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>spring-beans-2.5.6.pom</name>
+  <created>1547921507945</created>
+  <lastModified>1225590300000</lastModified>
+  <size>2176</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507946</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>24ffcedb04c6c114d841de2b3bc6e75f7bac19ec</original>
+          <actual>24ffcedb04c6c114d841de2b3bc6e75f7bac19ec</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>620200ef4f05709fa07c5a68acc226a8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>f6b6206471180281fb61f655a1c01e88e0c5090de5164b682dc4ba87e25efd70</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

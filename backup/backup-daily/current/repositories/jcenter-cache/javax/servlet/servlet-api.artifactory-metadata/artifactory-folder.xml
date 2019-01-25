@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>javax/servlet/servlet-api</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>servlet-api</name>
+  <created>1547923037375</created>
+  <lastModified>1547923037375</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923037375</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

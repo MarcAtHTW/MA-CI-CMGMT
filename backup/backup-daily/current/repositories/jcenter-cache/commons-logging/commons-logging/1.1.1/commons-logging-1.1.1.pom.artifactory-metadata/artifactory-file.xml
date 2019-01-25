@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-logging-1.1.1.pom</name>
+  <created>1547921507794</created>
+  <lastModified>1220183120000</lastModified>
+  <size>18365</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507794</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>76672afb562b9e903674ad3a544cdf2092f1faa3</original>
+          <actual>76672afb562b9e903674ad3a544cdf2092f1faa3</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>976d812430b8246deeaf2ea54610f263</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>d0f2e16d054e8bb97add9ca26525eb2346f692809fcd2a28787da8ceb3c35ee8</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

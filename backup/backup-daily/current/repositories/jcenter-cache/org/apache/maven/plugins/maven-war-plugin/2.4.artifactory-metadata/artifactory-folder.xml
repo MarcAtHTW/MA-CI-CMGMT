@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/plugins/maven-war-plugin/2.4</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.4</name>
+  <created>1547923037048</created>
+  <lastModified>1547923037048</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923037048</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-compiler-manager/2.4/plexus-compiler-manager-2.4.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-compiler-manager-2.4.pom</name>
+  <created>1547921519514</created>
+  <lastModified>1412725320000</lastModified>
+  <size>690</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921519514</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>1f323c9e0ac4c18e10685968dfdc56099c6863bc</original>
+          <actual>1f323c9e0ac4c18e10685968dfdc56099c6863bc</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>2dc9b431f3c6a248d597fbac93a8410f</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b44278bda12e133eb095eafb848b0811813016d990e3a266af9807ab19a348a3</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

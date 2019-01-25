@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-utils-2.0.5.jar</name>
+  <created>1547921515745</created>
+  <lastModified>1396622065000</lastModified>
+  <size>223171</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921515745</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>7841ba10ea46c9611ce702c3833ff9fccc8ae6eb</original>
+          <actual>7841ba10ea46c9611ce702c3833ff9fccc8ae6eb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>2cdd259db323d528c7c4ee7dfb1c6d4d</original>
+          <actual>2cdd259db323d528c7c4ee7dfb1c6d4d</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>b4c51a337078b934ad656ee78a2d3a805a507129dc034692c67db0f94b659d3e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-lang3-3.1.pom</name>
+  <created>1547921524871</created>
+  <lastModified>1321342025000</lastModified>
+  <size>16711</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921524871</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>49405dd14bd8d02991d6b9e327206500852f7bfb</original>
+          <actual>49405dd14bd8d02991d6b9e327206500852f7bfb</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a7cec2f3998d6b849bd672636d0e1de0</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>043ab78d83f630af65c0c0e4289d584d5a816c82533814f3f7fac4b5509fded2</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

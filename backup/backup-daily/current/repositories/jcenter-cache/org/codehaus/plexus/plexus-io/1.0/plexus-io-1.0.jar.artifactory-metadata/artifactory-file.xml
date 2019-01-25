@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-io-1.0.jar</name>
+  <created>1547923032265</created>
+  <lastModified>1272212544000</lastModified>
+  <size>50804</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923032266</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>bb1de3fa6a3eea8056bd1b165750d2b761514331</original>
+          <actual>bb1de3fa6a3eea8056bd1b165750d2b761514331</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>c0b77fb02c1037480645a7c086f777e6</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>087e12f65d893e8ba3bae2a6c14e316c00ce36a688395f1221bef30cadfd5d11</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

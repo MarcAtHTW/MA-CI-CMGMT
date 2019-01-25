@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>javax/mail/mail</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>mail</name>
+  <created>1547921507110</created>
+  <lastModified>1547921507110</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921507110</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

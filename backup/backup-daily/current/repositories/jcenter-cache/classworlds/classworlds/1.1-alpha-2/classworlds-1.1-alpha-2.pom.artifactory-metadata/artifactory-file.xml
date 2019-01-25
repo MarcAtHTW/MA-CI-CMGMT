@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>classworlds-1.1-alpha-2.pom</name>
+  <created>1547921498183</created>
+  <lastModified>1220183114000</lastModified>
+  <size>3128</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921498183</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>8c8ad6a96a8c1168f8b12ec8a227b8261b160b26</original>
+          <actual>8c8ad6a96a8c1168f8b12ec8a227b8261b160b26</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>1f250a804e7df71d9f9774211dc887cf</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>0cc647963b74ad1d7a37c9868e9e5a8f474e49297e1863582253a08a4c719cb1</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

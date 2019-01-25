@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>artifactory-build-info</repoKey>
+    <path>SpringBootWebTut</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>SpringBootWebTut</name>
+  <created>1547924155977</created>
+  <lastModified>1547924155977</lastModified>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547924155977</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

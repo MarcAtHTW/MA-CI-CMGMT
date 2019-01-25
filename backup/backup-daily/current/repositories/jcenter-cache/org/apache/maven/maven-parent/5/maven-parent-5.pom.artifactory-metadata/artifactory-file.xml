@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-parent/5/maven-parent-5.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-parent-5.pom</name>
+  <created>1547921512775</created>
+  <lastModified>1220183219000</lastModified>
+  <size>15237</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921512776</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>5c1ab38decaca1ccd08294aeab135047ebbae00d</original>
+          <actual>5c1ab38decaca1ccd08294aeab135047ebbae00d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>4da85635ce64dbec5b00232d5bb26453</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>5d7c2a229173155823c45380332f221bf0d27e52c9db76e9217940306765bd50</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>javax/servlet/servlet-api/2.5/servlet-api-2.5.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>servlet-api-2.5.pom</name>
+  <created>1547923037375</created>
+  <lastModified>1220183138000</lastModified>
+  <size>157</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547923037376</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a159fa05cce714c83deff647655dd53db064b21c</original>
+          <actual>a159fa05cce714c83deff647655dd53db064b21c</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>a8c169710744799fdf0a99389136c63b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>69771506f3cd8432252d6a6ca87087c669497febfca02afb9a72fcbd943faa1e</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

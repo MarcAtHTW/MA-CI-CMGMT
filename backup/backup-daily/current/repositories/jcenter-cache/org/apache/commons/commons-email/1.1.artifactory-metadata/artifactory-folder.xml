@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/commons/commons-email/1.1</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>1.1</name>
+  <created>1547921506474</created>
+  <lastModified>1547921506474</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921506474</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

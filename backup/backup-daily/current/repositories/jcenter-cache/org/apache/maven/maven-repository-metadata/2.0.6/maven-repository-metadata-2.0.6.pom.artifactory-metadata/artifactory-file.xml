@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-repository-metadata-2.0.6.pom</name>
+  <created>1547921513335</created>
+  <lastModified>1220183198000</lastModified>
+  <size>1850</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921513335</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>bdcd11054562df6124286aaf252ae8f256879e26</original>
+          <actual>bdcd11054562df6124286aaf252ae8f256879e26</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>71fdb700a28553d2ed59e3e19c2a1daa</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>df10657745e39010954fd009276b65b75198bdc40d0adb9916f9697c71fcd986</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

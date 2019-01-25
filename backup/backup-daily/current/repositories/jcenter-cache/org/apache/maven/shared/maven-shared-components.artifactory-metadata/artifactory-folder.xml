@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/shared/maven-shared-components</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>maven-shared-components</name>
+  <created>1547921499107</created>
+  <lastModified>1547921499107</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921499107</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

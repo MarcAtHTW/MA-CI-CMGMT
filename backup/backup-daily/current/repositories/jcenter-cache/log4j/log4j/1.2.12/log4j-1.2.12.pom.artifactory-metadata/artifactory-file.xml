@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>log4j/log4j/1.2.12/log4j-1.2.12.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>log4j-1.2.12.pom</name>
+  <created>1547921520050</created>
+  <lastModified>1220183102000</lastModified>
+  <size>145</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921520051</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>70545179454d298d1ff01335fbec3c2acfd381d5</original>
+          <actual>70545179454d298d1ff01335fbec3c2acfd381d5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d5bc9ffc5446189bd72385d4e89f23f5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>cb54dedc5d8c4510148dfa792701cbac1a84c383a84f48f5a32e6d7e460bbb72</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

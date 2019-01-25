@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>maven-plugin-annotations-3.2.pom</name>
+  <created>1547921524364</created>
+  <lastModified>1352299315000</lastModified>
+  <size>1624</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921524364</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>a0eea9feb9210bdc2fc4a5a5e406d2b85b08a716</original>
+          <actual>a0eea9feb9210bdc2fc4a5a5e406d2b85b08a716</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>e65b5435e7a56bff0e485c407f319805</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>06135bf3c35942587f145a0a112af999e0ff0f067ee53c9766f3bfb519b36b4c</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

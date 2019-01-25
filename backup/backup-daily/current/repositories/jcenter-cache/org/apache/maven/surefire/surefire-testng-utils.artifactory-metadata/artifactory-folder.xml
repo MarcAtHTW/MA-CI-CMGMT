@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/surefire-testng-utils</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>surefire-testng-utils</name>
+  <created>1547921530254</created>
+  <lastModified>1547921530254</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921530254</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

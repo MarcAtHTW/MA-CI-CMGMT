@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>log4j/log4j/1.2.12</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>1.2.12</name>
+  <created>1547921520050</created>
+  <lastModified>1547921520050</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921520050</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

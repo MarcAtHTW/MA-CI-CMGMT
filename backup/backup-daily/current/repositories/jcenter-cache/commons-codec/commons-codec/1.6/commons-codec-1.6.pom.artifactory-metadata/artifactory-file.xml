@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>commons-codec/commons-codec/1.6/commons-codec-1.6.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>commons-codec-1.6.pom</name>
+  <created>1547921498661</created>
+  <lastModified>1322879906000</lastModified>
+  <size>11157</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921498661</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>9499f0c87ab43a74c456b9847acbcb5e67fe9f32</original>
+          <actual>9499f0c87ab43a74c456b9847acbcb5e67fe9f32</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>ed3b827f716cbf865710bf48115f83ae</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>a06e35d3fff3a6b813d94894ebf3e498f9540c864c5b39ae783907e3a6c72889</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

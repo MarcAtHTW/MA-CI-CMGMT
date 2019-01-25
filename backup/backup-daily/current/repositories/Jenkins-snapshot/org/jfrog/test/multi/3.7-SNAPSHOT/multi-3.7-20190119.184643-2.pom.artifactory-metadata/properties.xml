@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<properties>
+  <vcs.revision>733e090ebe8adf2b70c63dcc3bc2670df0ba43aa</vcs.revision>
+  <build.timestamp>1547923603062</build.timestamp>
+  <build.name>maven-example</build.name>
+  <build.number>10</build.number>
+</properties>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>artifactory-build-info</repoKey>
+    <path>maven-example/11-1547925735517.json</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>11-1547925735517.json</name>
+  <created>1547925747262</created>
+  <lastModified>1547925747258</lastModified>
+  <size>20732</size>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547925747262</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>NO_ORIG</original>
+          <actual>17ee6c72ed177edc6888d4e9841e01efcd8cee15</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>NO_ORIG</original>
+          <actual>3ec341ad04330a4993f9077e2ea7faa5</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>75a06bc881d629757de7e1f61bf960e9b4bca7cc3bf7a1af019be422b0f2e135</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

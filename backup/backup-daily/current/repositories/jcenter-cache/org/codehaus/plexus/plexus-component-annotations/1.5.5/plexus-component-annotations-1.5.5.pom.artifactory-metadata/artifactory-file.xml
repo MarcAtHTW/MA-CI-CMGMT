@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-component-annotations-1.5.5.pom</name>
+  <created>1547921518961</created>
+  <lastModified>1285877698000</lastModified>
+  <size>815</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921518961</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>fd506865d5d083d8cef9fdbf525ad99fcc3416c1</original>
+          <actual>fd506865d5d083d8cef9fdbf525ad99fcc3416c1</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>f0bcb25d1f10fe87632ce632cc3b8eb7</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>815f3ec316b8c5fa701385fdf4009bfb51e07d780e8f6a6e2afe720c52d7e292</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

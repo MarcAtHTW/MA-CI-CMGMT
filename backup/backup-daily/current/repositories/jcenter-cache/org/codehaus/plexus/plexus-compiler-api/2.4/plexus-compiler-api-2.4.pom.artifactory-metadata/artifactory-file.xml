@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-compiler-api/2.4/plexus-compiler-api-2.4.pom</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-compiler-api-2.4.pom</name>
+  <created>1547921519159</created>
+  <lastModified>1412725260000</lastModified>
+  <size>865</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921519159</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>4d39c6b09b5bbc3a0f8c33ecae2d10f05c8e1f97</original>
+          <actual>4d39c6b09b5bbc3a0f8c33ecae2d10f05c8e1f97</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>fc2ed42a3853e3da1de5af5eab9a9850</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>143ce9db69a16b53ec59cf523be43fa594b9348474418fbc1ff9a772c7124748</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

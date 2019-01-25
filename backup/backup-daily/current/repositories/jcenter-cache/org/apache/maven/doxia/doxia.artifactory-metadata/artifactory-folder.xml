@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/doxia/doxia</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>doxia</name>
+  <created>1547921513848</created>
+  <lastModified>1547921513848</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921513848</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

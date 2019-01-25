@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>plexus-container-default-1.0-alpha-9-stable-1.jar</name>
+  <created>1547921499991</created>
+  <lastModified>1220183269000</lastModified>
+  <size>194185</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921499992</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>94aea3010e250a334d9dab7f591114cd6c767458</original>
+          <actual>94aea3010e250a334d9dab7f591114cd6c767458</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>99533a9d3e0fa3280cd0bd3426c5f99b</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>7c758612888782ccfe376823aee7cdcc7e0cdafb097f7ef50295a0b0c3a16edf</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

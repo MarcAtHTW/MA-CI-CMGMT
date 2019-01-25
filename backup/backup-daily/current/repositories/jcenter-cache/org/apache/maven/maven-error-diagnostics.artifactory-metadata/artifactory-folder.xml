@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/maven-error-diagnostics</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>maven-error-diagnostics</name>
+  <created>1547921513908</created>
+  <lastModified>1547921513908</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921513908</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

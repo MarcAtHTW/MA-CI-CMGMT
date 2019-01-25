@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/surefire-testng/2.17/surefire-testng-2.17.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>surefire-testng-2.17.jar</name>
+  <created>1547921528819</created>
+  <lastModified>1394654580000</lastModified>
+  <size>36351</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921528819</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>1a46e5ff97247f181e4db78c9057a0122f23e6ff</original>
+          <actual>1a46e5ff97247f181e4db78c9057a0122f23e6ff</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <actual>d25bbc152a4f1cb4081f60ff342707b8</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>04faee4077fae519049a69ab64e20108bf27d209ab4334186eaff087d5a67802</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

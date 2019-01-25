@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-folder>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/apache/maven/surefire/surefire-grouper/2.17</path>
+    <folder>true</folder>
+  </repoPath>
+  <name>2.17</name>
+  <created>1547921530326</created>
+  <lastModified>1547921530326</lastModified>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921530326</lastUpdated>
+  </additionalInfo>
+</artifactory-folder>

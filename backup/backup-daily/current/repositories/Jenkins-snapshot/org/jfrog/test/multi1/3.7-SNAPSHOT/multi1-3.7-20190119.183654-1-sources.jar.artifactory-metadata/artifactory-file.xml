@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>Jenkins-snapshot</repoKey>
+    <path>org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-20190119.183654-1-sources.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>multi1-3.7-20190119.183654-1-sources.jar</name>
+  <created>1547923045614</created>
+  <lastModified>1547923045608</lastModified>
+  <size>816</size>
+  <additionalInfo>
+    <createdBy>jenkins</createdBy>
+    <modifiedBy>jenkins</modifiedBy>
+    <lastUpdated>1547923045614</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>3782ca23b01d2ad2b441ab057b13a05ff3c7e2c5</original>
+          <actual>3782ca23b01d2ad2b441ab057b13a05ff3c7e2c5</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>a8175439c115214bdf83262e084c2665</original>
+          <actual>a8175439c115214bdf83262e084c2665</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>9d1409f0c3b48a9b2a22e5b5bcb74e5dcbb725f2da7e40ed1dcbe9bc2d3b1625</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>

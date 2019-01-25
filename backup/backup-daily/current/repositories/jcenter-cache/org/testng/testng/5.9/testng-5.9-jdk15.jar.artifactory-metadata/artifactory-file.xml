@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<artifactory-file>
+  <repoPath>
+    <repoKey>jcenter-cache</repoKey>
+    <path>org/testng/testng/5.9/testng-5.9-jdk15.jar</path>
+    <folder>false</folder>
+  </repoPath>
+  <name>testng-5.9-jdk15.jar</name>
+  <created>1547921512540</created>
+  <lastModified>1396807791000</lastModified>
+  <size>853236</size>
+  <additionalInfo>
+    <createdBy>anonymous</createdBy>
+    <modifiedBy>anonymous</modifiedBy>
+    <lastUpdated>1547921512541</lastUpdated>
+    <checksumsInfo>
+      <checksums>
+        <checksum>
+          <type>sha1</type>
+          <original>9b8614979f3d093683d8249f61a9b6a29bc61d3d</original>
+          <actual>9b8614979f3d093683d8249f61a9b6a29bc61d3d</actual>
+        </checksum>
+        <checksum>
+          <type>md5</type>
+          <original>52537a8a5231ca74518aec08434df7eb</original>
+          <actual>52537a8a5231ca74518aec08434df7eb</actual>
+        </checksum>
+        <checksum>
+          <type>sha256</type>
+          <original>NO_ORIG</original>
+          <actual>13e43a36008719957314bc9bfa2380e7a5881ccd364003687275b782ca4c62a6</actual>
+        </checksum>
+      </checksums>
+    </checksumsInfo>
+  </additionalInfo>
+</artifactory-file>
