@@ -1,1 +1,1 @@
-ToDo: Describe content of README.md
+ToDo: Subdirectories are in versioncontrol for using CMGMT with ansible.
