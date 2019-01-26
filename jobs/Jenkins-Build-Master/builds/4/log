@@ -1,0 +1,130 @@
+Started by user [8mha:////4PUnPlc52OzZfpAT0RAlYnewLU/HWrsK1mDWTAwvOWMWAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/Jenkins-Build-Master
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 893753088f3ec16d7d86ab5ef8740836489a7a1c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 893753088f3ec16d7d86ab5ef8740836489a7a1c
+Commit message: "Updated Dockerfile to use own base-image."
+ > git rev-list --no-walk 893753088f3ec16d7d86ab5ef8740836489a7a1c # timeout=10
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins7450945247511825044.sh
++ ls
+Dockerfile
+README.md
+maven-settings
++ docker info
+Containers: 4
+ Running: 1
+ Paused: 0
+ Stopped: 3
+Images: 6
+Server Version: 18.09.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 4
+Total Memory: 3.692GiB
+Name: swm2
+ID: HNO4:CRV7:L5BN:NF7Y:UADH:3JV3:25MN:HVDV:FA44:44XM:BFCS:VLRJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.4_2019-01-26 .
+Sending build context to Docker daemon  99.33kB
+Step 1/5 : FROM msahib/jenkins-build-master:v1
+ ---> 3b9c9666a66e
+Step 2/5 : USER root
+ ---> Using cache
+ ---> caa9153ea737
+Step 3/5 : RUN apt-get update && apt-get install -y maven
+ ---> Using cache
+ ---> 4a419429947d
+Step 4/5 : USER jenkins
+ ---> Using cache
+ ---> d8f421c0d8d8
+Step 5/5 : COPY --chown=jenkins:jenkins  maven-settings/settings.xml /var/jenkins_home/.m2/settings.xml
+ ---> Using cache
+ ---> a0ae5f8d4231
+Successfully built a0ae5f8d4231
+Successfully tagged msahib/jenkins-build-master:0.0.4_2019-01-26
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.4_2019-01-26
+The push refers to repository [docker.io/msahib/jenkins-build-master]
+bd162882f34c: Preparing
+61e7d3c80f9e: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+7dcd115d799b: Waiting
+c581f4ede92d: Waiting
+3d920cbc2719: Waiting
+b88313f31a01: Waiting
+denied: requested access to the resource is denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

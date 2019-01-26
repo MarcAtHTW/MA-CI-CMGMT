@@ -1,0 +1,29 @@
+Started by user [8mha:////4PUnPlc52OzZfpAT0RAlYnewLU/HWrsK1mDWTAwvOWMWAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/Jenkins-Build-Master
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 893753088f3ec16d7d86ab5ef8740836489a7a1c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 893753088f3ec16d7d86ab5ef8740836489a7a1c
+Commit message: "Updated Dockerfile to use own base-image."
+ > git rev-list --no-walk 893753088f3ec16d7d86ab5ef8740836489a7a1c # timeout=10
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins7424889421437387514.sh
++ ls
+Dockerfile
+README.md
+maven-settings
++ docker info
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.10_2019-01-26 .
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.10_2019-01-26
++ date +%Y-%m-%d
++ docker rmi msahib/jenkins-build-master:0.0.10_2019-01-26
++ docker images
+Finished: SUCCESS

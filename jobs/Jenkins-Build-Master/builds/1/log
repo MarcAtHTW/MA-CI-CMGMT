@@ -1,0 +1,29 @@
+Started by user [8mha:////4PUnPlc52OzZfpAT0RAlYnewLU/HWrsK1mDWTAwvOWMWAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/Jenkins-Build-Master
+Cloning the remote Git repository
+Cloning repository https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git init /var/jenkins_home/workspace/Jenkins-Build-Master # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 893753088f3ec16d7d86ab5ef8740836489a7a1c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 893753088f3ec16d7d86ab5ef8740836489a7a1c
+Commit message: "Updated Dockerfile to use own base-image."
+First time build. Skipping changelog.
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins8942730440290953128.sh
++ ls
+Dockerfile
+README.md
+maven-settings
++ docker info
+/tmp/jenkins8942730440290953128.sh: 3: /tmp/jenkins8942730440290953128.sh: docker: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
