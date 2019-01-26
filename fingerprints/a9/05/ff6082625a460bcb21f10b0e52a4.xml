@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.921 UTC</timestamp>
+  <md5sum>a905ff6082625a460bcb21f10b0e52a4</md5sum>
+  <fileName>org.apache.tomcat.embed:tomcat-embed-el-8.5.6.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.761 UTC</timestamp>
+  <md5sum>3fd4f26581a703c6a8a698356d14216a</md5sum>
+  <fileName>org.thymeleaf:thymeleaf-spring4-2.1.5.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

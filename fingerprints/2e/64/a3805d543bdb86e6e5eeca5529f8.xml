@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:12:11.7 UTC</timestamp>
+  <md5sum>2e64a3805d543bdb86e6e5eeca5529f8</md5sum>
+  <fileName>javax.mail:mail-1.4.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.870 UTC</timestamp>
+  <md5sum>a89dd7907d76e061ec2c07e762a74256</md5sum>
+  <fileName>org.javassist:javassist-3.20.0-GA.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

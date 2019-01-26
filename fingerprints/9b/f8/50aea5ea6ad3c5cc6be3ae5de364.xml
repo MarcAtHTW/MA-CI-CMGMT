@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.352 UTC</timestamp>
+  <md5sum>9bf850aea5ea6ad3c5cc6be3ae5de364</md5sum>
+  <fileName>com.fasterxml.jackson.core:jackson-core-2.8.4.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

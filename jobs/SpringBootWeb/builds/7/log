@@ -1,0 +1,88 @@
+Started by user [8mha:////4BQswPOumestw6svOxmZUMGN4NrS2nNo9YhdJaQ99WPVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/SpringBootWeb
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/SpringBootWeb.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/SpringBootWeb.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/SpringBootWeb.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0962d919cf57b1650dd08a6c6d9f1d8d237558b2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0962d919cf57b1650dd08a6c6d9f1d8d237558b2
+Commit message: "Create README.md"
+ > git rev-list --no-walk 0962d919cf57b1650dd08a6c6d9f1d8d237558b2 # timeout=10
+Jenkins Artifactory Plugin version: 3.1.0
+[SpringBootWeb] $ /usr/share/maven/bin/mvn -f pom.xml clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spring Boot Web Example 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-boot-web-thymeleaf ---
+[INFO] Deleting /var/jenkins_home/workspace/SpringBootWeb/target
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-boot-web-thymeleaf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-boot-web-thymeleaf ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /var/jenkins_home/workspace/SpringBootWeb/target/classes
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-boot-web-thymeleaf ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/SpringBootWeb/src/test/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-boot-web-thymeleaf ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ spring-boot-web-thymeleaf ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ spring-boot-web-thymeleaf ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [spring-boot-web-thymeleaf] in [/var/jenkins_home/workspace/SpringBootWeb/target/spring-boot-web-thymeleaf-1.0]
+[INFO] Processing war project
+[INFO] Webapp assembled in [190 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/SpringBootWeb/target/spring-boot-web-thymeleaf-1.0.war
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:1.4.2.RELEASE:repackage (default) @ spring-boot-web-thymeleaf ---
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-boot-web-thymeleaf ---
+[INFO] Installing /var/jenkins_home/workspace/SpringBootWeb/target/spring-boot-web-thymeleaf-1.0.war to /var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-web-thymeleaf/1.0/spring-boot-web-thymeleaf-1.0.war
+[INFO] Installing /var/jenkins_home/workspace/SpringBootWeb/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-web-thymeleaf/1.0/spring-boot-web-thymeleaf-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.781 s
+[INFO] Finished at: 2019-01-19T16:14:15+00:00
+[INFO] Final Memory: 25M/172M
+[INFO] ------------------------------------------------------------------------
+Deploying build info to: http://swm.dev.init:8081/artifactory/api/build
+ERROR: Could not publish build-info: Failed to send build descriptor. 403 Response message: {
+  "errors" : [ {
+    "status" : 403,
+    "message" : "User jenkins-deploy is not permitted to deploy 'SpringBootWeb/7-1547914440295.json' into 'artifactory-build-info:SpringBootWeb/7-1547914440295.json'."
+  } ]
+}
+java.io.IOException: Could not publish build-info: Failed to send build descriptor. 403 Response message: {
+  "errors" : [ {
+    "status" : 403,
+    "message" : "User jenkins-deploy is not permitted to deploy 'SpringBootWeb/7-1547914440295.json' into 'artifactory-build-info:SpringBootWeb/7-1547914440295.json'."
+  } ]
+}
+	at org.jfrog.build.extractor.clientConfiguration.client.ArtifactoryBuildInfoClient.sendBuildInfo(ArtifactoryBuildInfoClient.java:261)
+	at org.jfrog.build.extractor.retention.Utils.sendBuildAndBuildRetention(Utils.java:63)
+	at org.jfrog.hudson.generic.GenericBuildInfoDeployer.deploy(GenericBuildInfoDeployer.java:62)
+	at org.jfrog.hudson.generic.ArtifactoryGenericConfigurator$1.tearDown(ArtifactoryGenericConfigurator.java:360)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:174)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

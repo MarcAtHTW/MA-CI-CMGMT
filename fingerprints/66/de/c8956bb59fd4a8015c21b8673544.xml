@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.378 UTC</timestamp>
+  <md5sum>66dec8956bb59fd4a8015c21b8673544</md5sum>
+  <fileName>org.webjars:jquery-1.11.1.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

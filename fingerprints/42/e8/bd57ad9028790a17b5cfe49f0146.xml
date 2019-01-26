@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.771 UTC</timestamp>
+  <md5sum>42e8bd57ad9028790a17b5cfe49f0146</md5sum>
+  <fileName>org.springframework.boot:spring-boot-devtools-1.4.2.RELEASE.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:12:10.999 UTC</timestamp>
+  <md5sum>52537a8a5231ca74518aec08434df7eb</md5sum>
+  <fileName>org.testng:testng-5.9-jdk15.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven-example</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

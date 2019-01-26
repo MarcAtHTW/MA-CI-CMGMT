@@ -1,0 +1,189 @@
+Started by user [8mha:////4BQswPOumestw6svOxmZUMGN4NrS2nNo9YhdJaQ99WPVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/SpringBootWebTut
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/MarcAtHTW/SpringBootWebTut.git
+ > git init /var/jenkins_home/workspace/SpringBootWebTut # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/SpringBootWebTut.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/SpringBootWebTut.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/MarcAtHTW/SpringBootWebTut.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/MarcAtHTW/SpringBootWebTut.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/SpringBootWebTut.git
+ > git fetch --tags --progress https://github.com/MarcAtHTW/SpringBootWebTut.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8cfa0663c5eb7b97e3b37facb8f4d351f6ba55c1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8cfa0663c5eb7b97e3b37facb8f4d351f6ba55c1
+Commit message: "Updated pom.xml - changed packaging to .war"
+ > git rev-list --no-walk 8441d5d49f4b76a951b745205c90b5c7a9f992ed # timeout=10
+[SpringBootWebTut] $ /usr/share/maven/bin/mvn -f complete/pom.xml clean install
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gs-spring-boot 0.1.0
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.1.0/maven-war-plugin-3.1.0.pom
+3/10 KB   6/10 KB   9/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.1.0/maven-war-plugin-3.1.0.pom (10 KB at 11.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.1.0/maven-war-plugin-3.1.0.jar
+3/90 KB    6/90 KB   9/90 KB   11/90 KB   14/90 KB   16/90 KB   19/90 KB   22/90 KB   25/90 KB   27/90 KB   30/90 KB   32/90 KB   36/90 KB   40/90 KB   44/90 KB   48/90 KB   52/90 KB   56/90 KB   60/90 KB   64/90 KB   68/90 KB   72/90 KB   76/90 KB   80/90 KB   84/90 KB   88/90 KB   90/90 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.1.0/maven-war-plugin-3.1.0.jar (90 KB at 1187.5 KB/sec)
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ gs-spring-boot ---
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ gs-spring-boot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/SpringBootWebTut/complete/src/main/resources
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/SpringBootWebTut/complete/src/main/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ gs-spring-boot ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /var/jenkins_home/workspace/SpringBootWebTut/complete/target/classes
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ gs-spring-boot ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/SpringBootWebTut/complete/src/test/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ gs-spring-boot ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /var/jenkins_home/workspace/SpringBootWebTut/complete/target/test-classes
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.21.0:test (default-test) @ gs-spring-boot ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[8mha:////4PdF+sn7LGHNZdCREAxeU7ObIYnD+q92CypC9qY93VKAAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] There are test failures.
+
+Please refer to /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+Command was /bin/sh -c cd /var/jenkins_home/workspace/SpringBootWebTut/complete && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire/surefirebooter7472981451493802340.jar /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire 2019-01-16T21-46-07_842-jvmRun1 surefire2472090039903145363tmp surefire_0473989542064975354tmp
+Error occurred in starting fork, check output in log
+Process Exit Code: 1
+org.apache.maven.surefire.booter.SurefireBooterForkException: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+Command was /bin/sh -c cd /var/jenkins_home/workspace/SpringBootWebTut/complete && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire/surefirebooter7472981451493802340.jar /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire 2019-01-16T21-46-07_842-jvmRun1 surefire2472090039903145363tmp surefire_0473989542064975354tmp
+Error occurred in starting fork, check output in log
+Process Exit Code: 1
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:671)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:533)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:278)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:244)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1149)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:3.1.0:war (default-war) @ gs-spring-boot ---
+Downloading: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.pom
+3/14 KB    6/14 KB   9/14 KB   11/14 KB   14/14 KB   14/14 KB              Downloaded: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.pom (14 KB at 276.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom
+3/34 KB    6/34 KB   9/34 KB   11/34 KB   14/34 KB   16/34 KB   19/34 KB   22/34 KB   25/34 KB   27/34 KB   30/34 KB   32/34 KB   34/34 KB              Downloaded: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.9/xstream-parent-1.4.9.pom (34 KB at 740.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.pom
+3/5 KB     5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.pom (5 KB at 106.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/22/maven-shared-components-22.pom
+3/5 KB   5/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/22/maven-shared-components-22.pom (5 KB at 128.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar
+3/537 KB   5/537 KB   8/537 KB   11/537 KB   13/537 KB   16/537 KB   19/537 KB   21/537 KB   24/537 KB   27/537 KB   29/537 KB   32/537 KB   36/537 KB   40/537 KB   44/537 KB   48/537 KB   52/537 KB   56/537 KB   60/537 KB   64/537 KB   68/537 KB   72/537 KB   76/537 KB   80/537 KB   84/537 KB   88/537 KB   92/537 KB   96/537 KB   100/537 KB   104/537 KB   108/537 KB   112/537 KB   116/537 KB   120/537 KB   124/537 KB   128/537 KB   132/537 KB   136/537 KB   140/537 KB   144/537 KB   148/537 KB   152/537 KB   156/537 KB   160/537 KB   164/537 KB   168/537 KB   172/537 KB   176/537 KB   180/537 KB   184/537 KB   188/537 KB   192/537 KB   196/537 KB   200/537 KB   204/537 KB   208/537 KB   212/537 KB   216/537 KB   220/537 KB   224/537 KB   228/537 KB   232/537 KB   236/537 KB   240/537 KB   244/537 KB   248/537 KB   252/537 KB   256/537 KB   260/537 KB   264/537 KB   268/537 KB   272/537 KB   276/537 KB   280/537 KB   284/537 KB   288/537 KB   292/537 KB   296/537 KB   300/537 KB   304/537 KB   308/537 KB   312/537 KB   316/537 KB   320/537 KB   324/537 KB   328/537 KB   332/537 KB   336/537 KB   340/537 KB   344/537 KB   348/537 KB   352/537 KB   356/537 KB   360/537 KB   364/537 KB   368/537 KB   368/537 KB   3/11 KB   372/537 KB   3/11 KB   376/537 KB   6/11 KB   372/537 KB   6/11 KB   380/537 KB   6/11 KB   384/537 KB   6/11 KB   384/537 KB   9/11 KB   388/537 KB   9/11 KB   392/537 KB   9/11 KB   396/537 KB   9/11 KB   400/537 KB   9/11 KB   404/537 KB   9/11 KB   408/537 KB   9/11 KB   412/537 KB   9/11 KB   416/537 KB   9/11 KB   420/537 KB   9/11 KB   424/537 KB   9/11 KB   428/537 KB   9/11 KB   432/537 KB   9/11 KB   436/537 KB   9/11 KB   440/537 KB   9/11 KB   444/537 KB   9/11 KB   448/537 KB   9/11 KB   452/537 KB   9/11 KB   456/537 KB   9/11 KB   460/537 KB   9/11 KB   464/537 KB   9/11 KB   468/537 KB   9/11 KB   472/537 KB   9/11 KB   476/537 KB   9/11 KB   480/537 KB   9/11 KB   484/537 KB   9/11 KB   488/537 KB   9/11 KB   492/537 KB   9/11 KB   496/537 KB   9/11 KB   500/537 KB   9/11 KB   504/537 KB   9/11 KB   508/537 KB   9/11 KB   512/537 KB   9/11 KB   516/537 KB   9/11 KB   520/537 KB   9/11 KB   524/537 KB   9/11 KB   528/537 KB   9/11 KB   532/537 KB   9/11 KB   536/537 KB   9/11 KB   537/537 KB   9/11 KB   537/537 KB   11/11 KB                           Downloaded: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.9/xstream-1.4.9.jar (537 KB at 5958.5 KB/sec)
+                        Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar (11 KB at 110.3 KB/sec)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [gs-spring-boot] in [/var/jenkins_home/workspace/SpringBootWebTut/complete/target/gs-spring-boot-0.1.0]
+[INFO] Processing war project
+[INFO] Webapp assembled in [141 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/SpringBootWebTut/complete/target/gs-spring-boot-0.1.0.war
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- spring-boot-maven-plugin:2.0.5.RELEASE:repackage (default) @ gs-spring-boot ---
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-failsafe-plugin:2.21.0:integration-test (default) @ gs-spring-boot ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-failsafe-plugin:2.21.0:verify (default) @ gs-spring-boot ---
+[8mha:////4PdF+sn7LGHNZdCREAxeU7ObIYnD+q92CypC9qY93VKAAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] There are test failures.
+
+Please refer to /var/jenkins_home/workspace/SpringBootWebTut/complete/target/failsafe-reports for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+org.apache.maven.surefire.booter.SurefireBooterForkException: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+Command was /bin/sh -c cd /var/jenkins_home/workspace/SpringBootWebTut/complete && /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire/surefirebooter7049487221340443289.jar /var/jenkins_home/workspace/SpringBootWebTut/complete/target/surefire 2019-01-16T21-46-11_545-jvmRun1 surefire8145768738561271696tmp surefire_06661410545131112668tmp
+Error occurred in starting fork, check output in log
+Process Exit Code: 1
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:671)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:533)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:278)
+	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:244)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1149)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ gs-spring-boot ---
+[INFO] Installing /var/jenkins_home/workspace/SpringBootWebTut/complete/target/gs-spring-boot-0.1.0.war to /var/jenkins_home/.m2/repository/org/springframework/gs-spring-boot/0.1.0/gs-spring-boot-0.1.0.war
+[INFO] Installing /var/jenkins_home/workspace/SpringBootWebTut/complete/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/gs-spring-boot/0.1.0/gs-spring-boot-0.1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.570 s
+[INFO] Finished at: 2019-01-16T21:46:12+00:00
+[INFO] Final Memory: 41M/432M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

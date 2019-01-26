@@ -1,0 +1,54 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<maven2 plugin="maven-plugin@3.2">
+  <actions/>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <reporters/>
+  <displayName>Simple Multi Modules Build</displayName>
+  <version>3.7-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <relativePath>maven-example</relativePath>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>2.4</version>
+      <plugin>true</plugin>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>2.4</version>
+      <plugin>true</plugin>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <plugin>false</plugin>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+  <children>
+    <hudson.maven.ModuleName>
+      <groupId>org.jfrog.test</groupId>
+      <artifactId>multi1</artifactId>
+    </hudson.maven.ModuleName>
+    <hudson.maven.ModuleName>
+      <groupId>org.jfrog.test</groupId>
+      <artifactId>multi2</artifactId>
+    </hudson.maven.ModuleName>
+    <hudson.maven.ModuleName>
+      <groupId>org.jfrog.test</groupId>
+      <artifactId>multi3</artifactId>
+    </hudson.maven.ModuleName>
+  </children>
+</maven2>

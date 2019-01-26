@@ -1,0 +1,56 @@
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Multi 1 3.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-example/maven-example/multi1/src/main/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ multi1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/classes
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ multi1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-example/maven-example/multi1/src/test/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ multi1 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ multi1 ---
+[INFO] Surefire report directory: /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running artifactory.test.AppTest
+Configuring TestNG with: TestNGMapConfigurator
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 sec - in artifactory.test.AppTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[8mha:////4Go8RKGG7nZrXtc5TdlgJPbHCJ4uKHvfKiUY6ygr5lXAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.SurefireArchiver$2; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[8mha:////4Go8RKGG7nZrXtc5TdlgJPbHCJ4uKHvfKiUY6ygr5lXAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Attempt to (de-)serialize anonymous class hudson.maven.reporters.BuildInfoRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ multi1 ---
+[INFO] Building jar: /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/multi1-3.7-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.1.2:jar (attach-sources) > generate-sources @ multi1 >>>
+[8mha:////4Go8RKGG7nZrXtc5TdlgJPbHCJ4uKHvfKiUY6ygr5lXAAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Failed to getClass for org.apache.maven.plugin.source.SourceJarMojo
+[INFO] 
+[INFO] <<< maven-source-plugin:2.1.2:jar (attach-sources) < generate-sources @ multi1 <<<
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-source-plugin:2.1.2:jar (attach-sources) @ multi1 ---
+[INFO] Building jar: /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/multi1-3.7-SNAPSHOT-sources.jar
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:test-jar (default) @ multi1 ---
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ multi1 ---
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/multi1-3.7-SNAPSHOT.jar to /var/jenkins_home/.m2/repository/org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi1/pom.xml to /var/jenkins_home/.m2/repository/org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT.pom
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/multi1-3.7-SNAPSHOT-sources.jar to /var/jenkins_home/.m2/repository/org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT-sources.jar
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi1/target/multi1-3.7-SNAPSHOT-tests.jar to /var/jenkins_home/.m2/repository/org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT-tests.jar

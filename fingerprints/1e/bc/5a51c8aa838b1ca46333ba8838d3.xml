@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:37:24.725 UTC</timestamp>
+  <original>
+    <name>maven-example/org.jfrog.test:multi3</name>
+    <number>9</number>
+  </original>
+  <md5sum>1ebc5a51c8aa838b1ca46333ba8838d3</md5sum>
+  <fileName>org.jfrog.test:multi3:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

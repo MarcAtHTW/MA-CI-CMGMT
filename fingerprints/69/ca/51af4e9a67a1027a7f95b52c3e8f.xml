@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:37:24.802 UTC</timestamp>
+  <md5sum>69ca51af4e9a67a1027a7f95b52c3e8f</md5sum>
+  <fileName>javax.servlet:servlet-api-2.5.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

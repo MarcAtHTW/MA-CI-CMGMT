@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 19:22:25.783 UTC</timestamp>
+  <original>
+    <name>maven-example/org.jfrog.test:multi3</name>
+    <number>11</number>
+  </original>
+  <md5sum>7927ac0af26c6c31aa84f9e30c0e0d01</md5sum>
+  <fileName>org.jfrog.test:multi3-3.7-SNAPSHOT.war</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:37:24.770 UTC</timestamp>
+  <md5sum>7df83e09e41d742cc5fb20d16b80729c</md5sum>
+  <fileName>hsqldb:hsqldb-1.8.0.10.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,25 @@
+Started by user [8mha:////4BQswPOumestw6svOxmZUMGN4NrS2nNo9YhdJaQ99WPVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/maven-example
+Cloning the remote Git repository
+Cloning repository https://github.com/jfrog/project-examples.git
+ > git init /var/jenkins_home/workspace/maven-example # timeout=10
+Fetching upstream changes from https://github.com/jfrog/project-examples.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jfrog/project-examples.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jfrog/project-examples.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jfrog/project-examples.git # timeout=10
+Fetching upstream changes from https://github.com/jfrog/project-examples.git
+ > git fetch --tags --progress https://github.com/jfrog/project-examples.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 733e090ebe8adf2b70c63dcc3bc2670df0ba43aa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 733e090ebe8adf2b70c63dcc3bc2670df0ba43aa
+Commit message: "Jenkins pipeline examples readme chages."
+First time build. Skipping changelog.
+Jenkins Artifactory Plugin version: 3.1.0
+Parsing POMs
+ERROR: No such file /var/jenkins_home/workspace/maven-example/pom.xml
+Perhaps you need to specify the correct POM file path in the project configuration?
+Finished: FAILURE

@@ -1,0 +1,11 @@
+commit 8441d5d49f4b76a951b745205c90b5c7a9f992ed
+tree 6a4b3608cc1120c229395e4bb71f1901e357b051
+parent 3b9e27e282535cf550b04949dde572c1e48ba8e1
+author root <root@swm.dev.init> 2019-01-16 21:38:34 +0100
+committer root <root@swm.dev.init> 2019-01-16 21:38:34 +0100
+
+    Updated pom.xml - added surefire-plugin
+
+
+
+:100644 100644 861a22492f4a88cc79cb5e4701c649b2bc53053c 9a34c1d11f3468028548cd59dd0e6b4cc798046f M	complete/pom.xml

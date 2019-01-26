@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.443 UTC</timestamp>
+  <md5sum>527fe0ab66e77d28a9134c213dd7e8a1</md5sum>
+  <fileName>org.codehaus.groovy:groovy-2.4.7.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

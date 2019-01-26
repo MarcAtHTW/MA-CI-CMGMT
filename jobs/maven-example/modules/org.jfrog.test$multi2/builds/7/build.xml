@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.2">
+  <queueId>-1</queueId>
+  <timestamp>1547922280885</timestamp>
+  <startTime>0</startTime>
+  <duration>0</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/maven-example/maven-example/multi2</workspace>
+</hudson.maven.MavenBuild>

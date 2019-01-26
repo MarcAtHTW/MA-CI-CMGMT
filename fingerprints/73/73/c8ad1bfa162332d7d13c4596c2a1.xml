@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.805 UTC</timestamp>
+  <md5sum>7373c8ad1bfa162332d7d13c4596c2a1</md5sum>
+  <fileName>ch.qos.logback:logback-classic-1.1.7.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.429 UTC</timestamp>
+  <md5sum>4c257f52462860b62ab3cdab45f53082</md5sum>
+  <fileName>javax.validation:validation-api-1.1.0.Final.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

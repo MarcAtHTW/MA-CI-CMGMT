@@ -1,0 +1,39 @@
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Multi 2 3.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-example/maven-example/multi2/src/main/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ multi2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ multi2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-example/maven-example/multi2/src/test/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ multi2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ multi2 ---
+[INFO] Surefire report directory: /var/jenkins_home/workspace/maven-example/maven-example/multi2/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running artifactory.test.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in artifactory.test.AppTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ multi2 ---
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ multi2 ---
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi2/target/multi2-3.7-SNAPSHOT.jar to /var/jenkins_home/.m2/repository/org/jfrog/test/multi2/3.7-SNAPSHOT/multi2-3.7-SNAPSHOT.jar
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi2/pom.xml to /var/jenkins_home/.m2/repository/org/jfrog/test/multi2/3.7-SNAPSHOT/multi2-3.7-SNAPSHOT.pom

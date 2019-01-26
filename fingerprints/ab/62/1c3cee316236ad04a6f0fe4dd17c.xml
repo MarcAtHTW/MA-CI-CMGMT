@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.796 UTC</timestamp>
+  <md5sum>ab621c3cee316236ad04a6f0fe4dd17c</md5sum>
+  <fileName>org.yaml:snakeyaml-1.17.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

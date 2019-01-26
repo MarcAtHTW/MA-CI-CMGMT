@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 18:08:30.508 UTC</timestamp>
+  <original>
+    <name>SpringBootWeb/org.springframework.boot:spring-boot-web-thymeleaf</name>
+    <number>1</number>
+  </original>
+  <md5sum>b234b5c9bcea225139dba34396e75f14</md5sum>
+  <fileName>org.springframework.boot:spring-boot-web-thymeleaf-1.0.war</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

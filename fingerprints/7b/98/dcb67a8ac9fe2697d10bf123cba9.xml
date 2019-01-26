@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.481 UTC</timestamp>
+  <md5sum>7b98dcb67a8ac9fe2697d10bf123cba9</md5sum>
+  <fileName>org.hibernate:hibernate-validator-5.2.4.Final.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

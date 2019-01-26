@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:12:10.987 UTC</timestamp>
+  <md5sum>25c0752852205167af8f31a1eb019975</md5sum>
+  <fileName>org.springframework:spring-beans-2.5.6.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

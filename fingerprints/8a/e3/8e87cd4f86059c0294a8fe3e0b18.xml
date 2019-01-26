@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-19 18:12:11.44 UTC</timestamp>
+  <md5sum>8ae38e87cd4f86059c0294a8fe3e0b18</md5sum>
+  <fileName>javax.activation:activation-1.1.jar</fileName>
+  <usages>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi3</string>
+      <ranges>9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>3-6,9-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

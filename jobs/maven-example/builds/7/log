@@ -1,0 +1,23 @@
+Started by user [8mha:////4BQswPOumestw6svOxmZUMGN4NrS2nNo9YhdJaQ99WPVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/maven-example
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jfrog/project-examples.git # timeout=10
+Fetching upstream changes from https://github.com/jfrog/project-examples.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jfrog/project-examples.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 733e090ebe8adf2b70c63dcc3bc2670df0ba43aa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 733e090ebe8adf2b70c63dcc3bc2670df0ba43aa
+Commit message: "Jenkins pipeline examples readme chages."
+ > git rev-list --no-walk 733e090ebe8adf2b70c63dcc3bc2670df0ba43aa # timeout=10
+Jenkins Artifactory Plugin version: 3.1.0
+Parsing POMs
+Established TCP socket on 39170
+[maven-example] $ java Djdk.net.URLClassPath.disableClassPathURLCheck=true -cp /var/jenkins_home/plugins/maven-plugin/WEB-INF/lib/maven33-agent-1.12.jar:/usr/share/maven/boot/plexus-classworlds-2.x.jar:/usr/share/maven/conf/logging jenkins.maven3.agent.Maven33Main /usr/share/maven/ /var/jenkins_home/war/WEB-INF/lib/remoting-3.27.jar /var/jenkins_home/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.12.jar /var/jenkins_home/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.12.jar 39170
+Error: Could not find or load main class Djdk.net.URLClassPath.disableClassPathURLCheck=true
+ERROR: Failed to launch Maven. Exit code = 1
+Archiving artifacts
+Finished: FAILURE

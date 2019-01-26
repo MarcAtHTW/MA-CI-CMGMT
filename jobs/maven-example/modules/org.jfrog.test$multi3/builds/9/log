@@ -1,0 +1,109 @@
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Multi 3 3.7-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/maven/plugins/maven-war-plugin/2.4/maven-war-plugin-2.4.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/maven/plugins/maven-war-plugin/2.4/maven-war-plugin-2.4.pom (10 KB at 121.8 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/maven/plugins/maven-war-plugin/2.4/maven-war-plugin-2.4.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/maven/plugins/maven-war-plugin/2.4/maven-war-plugin-2.4.jar (85 KB at 1036.5 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.pom (600 B at 7.9 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom (157 B at 2.4 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar (103 KB at 1299.3 KB/sec)
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar (691 KB at 303.1 KB/sec)
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ multi3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-example/maven-example/multi3/src/main/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ multi3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/maven-example/maven-example/multi3/target/classes
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ multi3 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/maven-example/maven-example/multi3/src/test/resources
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ multi3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/maven-example/maven-example/multi3/target/test-classes
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ multi3 ---
+[INFO] Surefire report directory: /var/jenkins_home/workspace/maven-example/maven-example/multi3/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running artifactory.test.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in artifactory.test.AppTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.4:war (default-war) @ multi3 ---
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-io/2.0.7/plexus-io-2.0.7.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-io/2.0.7/plexus-io-2.0.7.pom (3 KB at 33.8 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-components/1.2/plexus-components-1.2.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-components/1.2/plexus-components-1.2.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/commons-io/commons-io/2.2/commons-io-2.2.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/commons-io/commons-io/2.2/commons-io-2.2.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-parent/24/commons-parent-24.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-parent/24/commons-parent-24.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-archiver/2.4.1/plexus-archiver-2.4.1.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-archiver/2.4.1/plexus-archiver-2.4.1.pom (4 KB at 41.5 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-compress/1.5/commons-compress-1.5.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-compress/1.5/commons-compress-1.5.pom (11 KB at 164.5 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-parent/28/commons-parent-28.pom (49 KB at 636.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/tukaani/xz/1.2/xz-1.2.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/tukaani/xz/1.2/xz-1.2.pom (2 KB at 26.6 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/com/thoughtworks/xstream/xstream/1.4.2/xstream-1.4.2.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/com/thoughtworks/xstream/xstream/1.4.2/xstream-1.4.2.pom (9 KB at 131.6 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/com/thoughtworks/xstream/xstream-parent/1.4.2/xstream-parent-1.4.2.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/com/thoughtworks/xstream/xstream-parent/1.4.2/xstream-parent-1.4.2.pom (19 KB at 277.7 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-io/2.0.7/plexus-io-2.0.7.jar
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/commons-io/commons-io/2.2/commons-io-2.2.jar
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-archiver/2.4.1/plexus-archiver-2.4.1.jar
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-compress/1.5/commons-compress-1.5.jar
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/tukaani/xz/1.2/xz-1.2.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-io/2.0.7/plexus-io-2.0.7.jar (58 KB at 604.6 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/com/thoughtworks/xstream/xstream/1.4.2/xstream-1.4.2.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/commons-io/commons-io/2.2/commons-io-2.2.jar (0 B at 0.0 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/tukaani/xz/1.2/xz-1.2.jar (93 KB at 857.3 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-archiver/2.4.1/plexus-archiver-2.4.1.jar (161 KB at 1143.9 KB/sec)
+[INFO] Downloading: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.jar
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar (0 B at 0.0 KB/sec)
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar (0 B at 0.0 KB/sec)
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/apache/commons/commons-compress/1.5/commons-compress-1.5.jar (251 KB at 753.7 KB/sec)
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.jar (226 KB at 127.3 KB/sec)
+[INFO] Downloaded: http://swm.dev.init:8081/artifactory/libs-release/com/thoughtworks/xstream/xstream/1.4.2/xstream-1.4.2.jar (471 KB at 223.9 KB/sec)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [multi3] in [/var/jenkins_home/workspace/maven-example/maven-example/multi3/target/multi3-3.7-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/workspace/maven-example/maven-example/multi3/src/main/webapp]
+[INFO] Webapp assembled in [77 msecs]
+[INFO] Building war: /var/jenkins_home/workspace/maven-example/maven-example/multi3/target/multi3-3.7-SNAPSHOT.war
+[INFO] 
+[8mha:////4JY0yFLa1sNeAG33byLUXYrcqum9hx8wS+21YC4p6LCFAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ multi3 ---
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi3/target/multi3-3.7-SNAPSHOT.war to /var/jenkins_home/.m2/repository/org/jfrog/test/multi3/3.7-SNAPSHOT/multi3-3.7-SNAPSHOT.war
+[INFO] Installing /var/jenkins_home/workspace/maven-example/maven-example/multi3/pom.xml to /var/jenkins_home/.m2/repository/org/jfrog/test/multi3/3.7-SNAPSHOT/multi3-3.7-SNAPSHOT.pom

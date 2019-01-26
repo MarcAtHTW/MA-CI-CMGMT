@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2019-01-14 11:22:26.885 UTC</timestamp>
+  <md5sum>b5e6cd0bce36e1dc2c112a44d95789eb</md5sum>
+  <fileName>org.slf4j:log4j-over-slf4j-1.7.21.jar</fileName>
+  <usages>
+    <entry>
+      <string>SpringBootWeb</string>
+      <ranges>1-7</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

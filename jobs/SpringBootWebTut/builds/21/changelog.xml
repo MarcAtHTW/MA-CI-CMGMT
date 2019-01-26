@@ -1,0 +1,11 @@
+commit 8cfa0663c5eb7b97e3b37facb8f4d351f6ba55c1
+tree 20304821263da9c568631323c4d7ce3ab76d7f0c
+parent 8441d5d49f4b76a951b745205c90b5c7a9f992ed
+author root <root@swm.dev.init> 2019-01-16 22:40:28 +0100
+committer root <root@swm.dev.init> 2019-01-16 22:40:28 +0100
+
+    Updated pom.xml - changed packaging to .war
+
+
+
+:100644 100644 9a34c1d11f3468028548cd59dd0e6b4cc798046f 38ea3b4ac254497ccd134ff30abfa80f6cd3bae6 M	complete/pom.xml
