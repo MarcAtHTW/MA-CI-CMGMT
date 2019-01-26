@@ -177,3 +177,17 @@
 2019-01-25 23:52:00,621 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
 2019-01-25 23:52:02,018 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
 2019-01-25 23:52:05,492 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 15.447 seconds (JVM running for 17.209)
+2019-01-26 00:30:12,246 [localhost-startStop-1] [INFO ] (o.j.a.c.JFrogApplicationContextInitializer:74) - Using JFrog Access home at '/opt/jfrog/artifactory/access'
+2019-01-26 00:30:12,253 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:48) - Starting AccessApplication v4.1.41 on b6a6953e5c9b with PID 186 (/opt/jfrog/artifactory/tomcat/webapps/access/WEB-INF/lib/access-application-4.1.41.jar started by artifactory in /)
+2019-01-26 00:30:12,254 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:597) - The following profiles are active: production,grpc
+2019-01-26 00:30:17,280 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:136) - Database: Apache Derby 10.14.2.0 - (1828579). Driver: Apache Derby Embedded JDBC Driver 10.14.2.0 - (1828579)
+2019-01-26 00:30:17,281 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelperImpl:139) - Connection URL: jdbc:derby:/opt/jfrog/artifactory/data/derby
+2019-01-26 00:30:18,460 [localhost-startStop-1] [INFO ] (o.j.c.s.InternalConfigurationServiceBase:154) - Loading configuration from db finished successfully
+2019-01-26 00:30:19,207 [localhost-startStop-1] [INFO ] (o.j.s.m.MasterKeyBootstrapper:52) - Found master.key file at /opt/jfrog/artifactory/etc/security/master.key, using it as master.key
+2019-01-26 00:30:19,512 [localhost-startStop-1] [INFO ] (o.j.a.s.s.t.TokenServiceImpl:98) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2019-01-26 00:30:19,581 [localhost-startStop-1] [INFO ] (o.j.a.s.r.c.RpcServiceInvoker:78) - Added service: sync
+2019-01-26 00:30:20,176 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:103) - [ACCESS BOOTSTRAP] Starting JFrog Access bootstrap...
+2019-01-26 00:30:20,827 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:156) - [ACCESS BOOTSTRAP] Updating server 'fd273597-e568-4dcb-8d1e-da33bdbb6398' private key finger print to: 37f3e2b473d3a3af41c6d19e74c4b0a2dd3de3aa25cd1842f36e038c6b05a7b9
+2019-01-26 00:30:21,044 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrapImpl:118) - [ACCESS BOOTSTRAP] JFrog Access bootstrap finished.
+2019-01-26 00:30:23,020 [localhost-startStop-1] [INFO ] (o.j.a.c.RefreshableScheduledJob:52) - Scheduling heartbeat task to run every 5 seconds
+2019-01-26 00:30:26,003 [localhost-startStop-1] [INFO ] (o.j.a.AccessApplication:57) - Started AccessApplication in 15.24 seconds (JVM running for 16.948)

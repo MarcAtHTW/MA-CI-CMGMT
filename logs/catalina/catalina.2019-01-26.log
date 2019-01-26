@@ -1,0 +1,17 @@
+26-Jan-2019 00:30:09.591 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+26-Jan-2019 00:30:09.609 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Jan-2019 00:30:09.616 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8040"]
+26-Jan-2019 00:30:09.617 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Jan-2019 00:30:09.618 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8019"]
+26-Jan-2019 00:30:09.620 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+26-Jan-2019 00:30:09.628 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Jan-2019 00:30:09.629 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+26-Jan-2019 00:30:09.646 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+26-Jan-2019 00:30:09.646 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+26-Jan-2019 00:30:13.097 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [3,450] ms
+26-Jan-2019 00:30:26.017 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [/opt/jfrog/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [16,371] ms
+26-Jan-2019 00:30:26.019 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/tomcat/webapps/ROOT]
+26-Jan-2019 00:30:26.041 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/tomcat/webapps/ROOT] has finished in [22] ms
+26-Jan-2019 00:30:26.050 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+26-Jan-2019 00:30:26.065 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8040"]
+26-Jan-2019 00:30:26.077 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8019"]
