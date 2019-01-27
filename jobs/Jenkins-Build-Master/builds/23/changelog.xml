@@ -1,0 +1,22 @@
+commit d0c1bb72a2a9dd11b75d67c8cf6b3e995f6dd98a
+tree 3f44efa6a38ca5a31a3705941f593b75f2c55068
+parent 4f4d286ed6f1d6e478f4b52b7590c3e2dc826fa0
+author Marc <s0547375@htw-berlin.de> 2019-01-27 20:07:16 +0100
+committer GitHub <noreply@github.com> 2019-01-27 20:07:16 +0100
+
+    Update Jenkinsfile
+
+
+
+:100644 100644 9e14e61643e98ef45038623627b77021e8c0aafb 3f7dc91914561538e5661af18ec913580716f965 M	Jenkinsfile
+commit 4f4d286ed6f1d6e478f4b52b7590c3e2dc826fa0
+tree 7ffbc6a627483362c2c022d894737b736c13c42a
+parent 30bdc7a7d4ca2b54aef1775cfe878c99a8175d7e
+author Marc <s0547375@htw-berlin.de> 2019-01-27 20:06:17 +0100
+committer GitHub <noreply@github.com> 2019-01-27 20:06:17 +0100
+
+    Update Jenkinsfile
+
+
+
+:100644 100644 123fe68e62663e25f73c4f052895837cee111f3f 9e14e61643e98ef45038623627b77021e8c0aafb M	Jenkinsfile
