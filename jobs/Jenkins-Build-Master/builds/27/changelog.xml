@@ -1,0 +1,11 @@
+commit f51608a9306ef1869e6fc097472761de2dbd03f4
+tree 627721c5784a97c27fef6130c974f8e19ba6c4ce
+parent d0c1bb72a2a9dd11b75d67c8cf6b3e995f6dd98a
+author Marc <s0547375@htw-berlin.de> 2019-01-28 23:41:46 +0100
+committer GitHub <noreply@github.com> 2019-01-28 23:41:46 +0100
+
+    Updated Dockerfile
+
+    Removed Mercurial from Jenkins-Build-Master-Image
+
+:100644 100644 cfc8a6e44ba5feab8605accb99a8af2b8df01e43 d9e7370c2962583dd7e269c16526a1d311fdcc5b M	Dockerfile
