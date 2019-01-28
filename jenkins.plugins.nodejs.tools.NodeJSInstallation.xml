@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.nodejs.tools.NodeJSInstallation_-DescriptorImpl plugin="nodejs@1.2.7">
+  <installations class="jenkins.plugins.nodejs.tools.NodeJSInstallation-array">
+    <jenkins.plugins.nodejs.tools.NodeJSInstallation>
+      <name>NodeJS 6.14.3</name>
+      <home>/usr/bin/</home>
+      <properties/>
+    </jenkins.plugins.nodejs.tools.NodeJSInstallation>
+  </installations>
+</jenkins.plugins.nodejs.tools.NodeJSInstallation_-DescriptorImpl>

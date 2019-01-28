@@ -1908,6 +1908,12 @@ exports.init = function(handler) {
 					plugins.names.push(pluginName);
 					if (plugin.suggested) {
 						plugins.recommendedPlugins.push(pluginName);
+					} else if (pluginCategory.category === "Languages") {
+						var language = window.navigator.userLanguage || window.navigator.language;
+						var code = language.toLocaleLowerCase();
+						if (pluginName === ("localization-" + code)) {
+							plugins.recommendedPlugins.push(pluginName);
+						}
 					}
 				}
 			}
@@ -3475,7 +3481,9 @@ var HandlebarsCompiler = require('jenkins-handlebars-rt/runtimes/handlebars3_rt'
 module.exports = HandlebarsCompiler.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression;
 
-  return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">Error</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"container error-container\" id=\"error-message\">\n		<h1>"
+  return "<div class=\"modal-header\">\n	<h4 class=\"modal-title\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_error_title : stack1), depth0))
+    + "</h4>\n</div>\n<div class=\"modal-body\">\n	<div class=\"container error-container\" id=\"error-message\">\n		<h1>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.translations : depth0)) != null ? stack1.installWizard_error_header : stack1), depth0))
     + "</h1>\n		<div class=\"alert alert-danger fade in\">\n			"
     + alias2(((helper = (helper = helpers.errorMessage || (depth0 != null ? depth0.errorMessage : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0,{"name":"errorMessage","hash":{},"data":data}) : helper)))
