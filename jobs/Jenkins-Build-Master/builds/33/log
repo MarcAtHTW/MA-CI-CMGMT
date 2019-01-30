@@ -1,0 +1,155 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/jenkins_home/workspace/Jenkins-Build-Master
+Cloning the remote Git repository
+Cloning repository https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git init /var/jenkins_home/workspace/Jenkins-Build-Master # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c7d96b3fce246169bbe601632d52c07c124fddec (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c7d96b3fce246169bbe601632d52c07c124fddec
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 11dcdb94e43ef458913a901cf19634b24b35faca # timeout=10
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins2143454373303657863.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+maven-settings
++ docker info
+Containers: 2
+ Running: 1
+ Paused: 0
+ Stopped: 1
+Images: 4
+Server Version: 18.09.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 4
+Total Memory: 3.692GiB
+Name: swm3
+ID: OBZW:PNGD:55SE:IBIV:3JXS:VSOT:NOR3:HHKN:HHPZ:YNI3:SS6F:DQ2I
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.33_2019-01-30 .
+Sending build context to Docker daemon    170kB
+Step 1/4 : FROM msahib/jenkins-build-master:v1
+v1: Pulling from msahib/jenkins-build-master
+cd8eada9c7bb: Already exists
+c2677faec825: Already exists
+fcce419a96b1: Already exists
+045b51e26e75: Already exists
+88e50f3a5916: Already exists
+a7c546cdc7ce: Already exists
+73b0460146c0: Already exists
+428095c4a908: Already exists
+cc5684680ef3: Already exists
+9350ffa784e6: Already exists
+9e37662b8ec6: Already exists
+7e1a5f5ffe25: Already exists
+e402da9ada5c: Already exists
+b2aa6e6d8c08: Already exists
+12d8fc5f7748: Already exists
+8de71cd815da: Already exists
+1bcaf2c915b7: Already exists
+5f0bf8c77560: Already exists
+283cd3aba869: Already exists
+b0ce8ab5a5a7: Already exists
+Digest: sha256:7bc836a2fbcb44c6f6da03f4893b956595675a6ce9a87360e5dba78a2d30e901
+Status: Downloaded newer image for msahib/jenkins-build-master:v1
+ ---> 3b9c9666a66e
+Step 2/4 : USER root
+ ---> Running in cbd6b1b52c5f
+Removing intermediate container cbd6b1b52c5f
+ ---> da71d95345a1
+Step 3/4 : USER jenkins
+ ---> Running in 1ce2f2364b90
+Removing intermediate container 1ce2f2364b90
+ ---> 47b53921bd76
+Step 4/4 : COPY --chown=jenkins:jenkins  maven-settings/settings.xml /var/jenkins_home/.m2/settings.xml
+ ---> 6d95bd20e2a1
+Successfully built 6d95bd20e2a1
+Successfully tagged msahib/jenkins-build-master:0.0.33_2019-01-30
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.33_2019-01-30
+The push refers to repository [docker.io/msahib/jenkins-build-master]
+b0cb0599cbf5: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+e8fec055e629: Waiting
+8abacd22f0b4: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+7dcd115d799b: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+denied: requested access to the resource is denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
