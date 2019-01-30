@@ -1,0 +1,22 @@
+commit a4bb6fa22f72b4e8c94f60957f1bb17e75e99a77
+tree b3f390add670b920564ef9cb60d06b1adc4c4c6f
+parent 180ff19d1d72c8ed0a0e4ad7b6ddea40a8865178
+author Marc <s0547375@htw-berlin.de> 2019-01-30 20:30:11 +0100
+committer GitHub <noreply@github.com> 2019-01-30 20:30:11 +0100
+
+    Build with maven and apt-transport-https
+
+
+
+:100644 100644 7966b0e662115496a5de13c7ce639c741a8c20f6 e509e0d6ec5e7660d4e66546cbf3b7f916bd5e4d M	Dockerfile
+commit 180ff19d1d72c8ed0a0e4ad7b6ddea40a8865178
+tree 063c9e997ad0ff3414381828e9a39aa305e599e6
+parent c0712de96e709ea69a42e816eb605e5465cc8c39
+author Marc <s0547375@htw-berlin.de> 2019-01-30 19:07:26 +0100
+committer GitHub <noreply@github.com> 2019-01-30 19:07:26 +0100
+
+    Build Jenkins without maven
+
+
+
+:100644 100644 bce84703f85f749cc76d19d8e0ba67629bf33efd 7966b0e662115496a5de13c7ce639c741a8c20f6 M	Dockerfile

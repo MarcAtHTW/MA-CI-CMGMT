@@ -1,0 +1,11 @@
+commit c0712de96e709ea69a42e816eb605e5465cc8c39
+tree c7383f78db36de9769e252c126e088c40e60253e
+parent f51608a9306ef1869e6fc097472761de2dbd03f4
+author Marc <s0547375@htw-berlin.de> 2019-01-29 00:09:45 +0100
+committer GitHub <noreply@github.com> 2019-01-29 00:09:45 +0100
+
+    Updated Dockerfile
+
+    Purged Mercurial
+
+:100644 100644 d9e7370c2962583dd7e269c16526a1d311fdcc5b bce84703f85f749cc76d19d8e0ba67629bf33efd M	Dockerfile
