@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@3.2">
+  <actions>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>org.jfrog.test</groupId>
+        <artifactId>multi2</artifactId>
+        <version>3.7-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>multi2-3.7-SNAPSHOT.pom</canonicalName>
+        <md5sum>35f626d44fd38f8c221aa3d78af64aa9</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+    </hudson.maven.reporters.MavenArtifactRecord>
+    <org.jfrog.hudson.MavenDependenciesRecord plugin="artifactory@3.1.0">
+      <build reference="../../.."/>
+      <dependencies/>
+    </org.jfrog.hudson.MavenDependenciesRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.jfrog.test:multi:multi-3.7-SNAPSHOT.pom</string>
+          <string>2782421973262088a7759cac8c6d0691</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1548898318484</timestamp>
+  <startTime>1548898327510</startTime>
+  <result>NOT_BUILT</result>
+  <duration>2</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/maven-example/maven-example/multi2</workspace>
+</hudson.maven.MavenBuild>

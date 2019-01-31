@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jan 31 01:15:03 UTC 2019
+maven-install-plugin-2.5.2.jar>artifactory-release=
+maven-install-plugin-2.5.2.pom>artifactory-release=
+maven-install-plugin-2.5.2.pom>central=

@@ -14,11 +14,11 @@
     </entry>
     <entry>
       <string>maven-example</string>
-      <ranges>3-6,9-11</ranges>
+      <ranges>3-6,9-13</ranges>
     </entry>
     <entry>
       <string>maven-example/org.jfrog.test:multi1</string>
-      <ranges>3-6,9-11</ranges>
+      <ranges>3-6,9-13</ranges>
     </entry>
   </usages>
   <facets/>
