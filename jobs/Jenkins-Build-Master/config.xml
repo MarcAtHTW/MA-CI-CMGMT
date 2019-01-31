@@ -24,8 +24,7 @@ It is a Freestyle-Project.</description>
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>Docker</assignedNode>
-  <canRoam>false</canRoam>
+  <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
@@ -38,6 +37,9 @@ docker info
 docker build -t msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;) .
 # docker login https://index.docker.io
 docker push msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
+#docker tag msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;) harbor1.dev.init/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
+#docker push harbor1.dev.init/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
+#docker rmi harbor1.dev.init/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
 docker rmi msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
 docker images</command>
     </hudson.tasks.Shell>

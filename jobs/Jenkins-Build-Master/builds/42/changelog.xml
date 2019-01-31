@@ -1,0 +1,22 @@
+commit cc95f30dc639b763b619cb37f75da96e914cf156
+tree a518e48f7344036f9784df2b0b101b4781b28312
+parent 9a487fdc41d418ac390a83f9d1b17912237b9457
+author Marc <s0547375@htw-berlin.de> 2019-01-31 01:30:19 +0100
+committer GitHub <noreply@github.com> 2019-01-31 01:30:19 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 f050c6ae7b89259f6786b72cd85d8b5834b509f9 88dd1261cdf65989c6437bd7d34e1e9e1ba43de0 M	Dockerfile
+commit 9a487fdc41d418ac390a83f9d1b17912237b9457
+tree 338a749431bc1cb1f725eca1e8c156ec5cecc03b
+parent c7d96b3fce246169bbe601632d52c07c124fddec
+author Marc <s0547375@htw-berlin.de> 2019-01-31 01:29:26 +0100
+committer GitHub <noreply@github.com> 2019-01-31 01:29:26 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 d5c913fd467d8b6188601793c8cab9bca2d647b4 f050c6ae7b89259f6786b72cd85d8b5834b509f9 M	Dockerfile
