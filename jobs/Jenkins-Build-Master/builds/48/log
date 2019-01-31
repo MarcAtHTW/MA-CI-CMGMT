@@ -1,0 +1,35 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/jenkins_home/workspace/Jenkins-Build-Master
+Cloning the remote Git repository
+Cloning repository https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git init /var/jenkins_home/workspace/Jenkins-Build-Master # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 352c7db14820aedce4d9244e75b57226af1e83c7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 352c7db14820aedce4d9244e75b57226af1e83c7
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 352c7db14820aedce4d9244e75b57226af1e83c7 # timeout=10
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins7120507489953929950.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+maven-settings
++ docker info
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.48_2019-01-31 .
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.48_2019-01-31
++ date +%Y-%m-%d
++ docker rmi msahib/jenkins-build-master:0.0.48_2019-01-31
++ docker images
+Finished: SUCCESS
