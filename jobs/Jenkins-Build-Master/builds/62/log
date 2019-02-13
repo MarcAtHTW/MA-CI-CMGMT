@@ -1,0 +1,51 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+FATAL: java.nio.channels.ClosedChannelException
+java.nio.channels.ClosedChannelException
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from 10.1.3.249/10.1.3.249:42182
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1743)
+		at hudson.remoting.Request.call(Request.java:202)
+		at hudson.remoting.Channel.call(Channel.java:956)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.execute(RemoteGitImpl.java:146)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler.invoke(RemoteGitImpl.java:132)
+		at com.sun.proxy.$Proxy77.execute(Unknown Source)
+		at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:886)
+		at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1155)
+		at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1186)
+		at hudson.scm.SCM.checkout(SCM.java:504)
+		at hudson.model.AbstractProject.checkout(AbstractProject.java:1208)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:574)
+		at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:499)
+		at hudson.model.Run.execute(Run.java:1810)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+		at hudson.model.ResourceController.execute(ResourceController.java:97)
+		at hudson.model.Executor.run(Executor.java:429)
+Caused: hudson.remoting.RequestAbortedException
+	at hudson.remoting.Request.abort(Request.java:340)
+	at hudson.remoting.Channel.terminate(Channel.java:1040)
+	at org.jenkinsci.remoting.protocol.impl.ChannelApplicationLayer.onReadClosed(ChannelApplicationLayer.java:209)
+	at org.jenkinsci.remoting.protocol.ApplicationLayer.onRecvClosed(ApplicationLayer.java:222)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.FilterLayer.onRecvClosed(FilterLayer.java:287)
+	at org.jenkinsci.remoting.protocol.impl.SSLEngineFilterLayer.onRecvClosed(SSLEngineFilterLayer.java:172)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:142)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Finished: FAILURE

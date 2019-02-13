@@ -36,11 +36,10 @@ It is a Freestyle-Project.</description>
       <command>ls
 docker info
 docker build -t msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;) .
-# docker login https://index.docker.io
 docker push msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
-#docker tag msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;) harbor1.dev.init/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
-#docker push harbor1.dev.init/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
-#docker rmi harbor1.dev.init/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
+docker tag msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;) 10.1.7.250/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
+docker push 10.1.7.250/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
+docker rmi 10.1.7.250/library/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
 docker rmi msahib/jenkins-build-master:0.0.${BUILD_NUMBER}_$(date +&apos;%Y-%m-%d&apos;)
 docker images</command>
     </hudson.tasks.Shell>

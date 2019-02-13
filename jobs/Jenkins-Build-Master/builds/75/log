@@ -1,0 +1,88 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 03aeb8d8f55ac2979c1d7e0b26259daeee9123b1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 03aeb8d8f55ac2979c1d7e0b26259daeee9123b1
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 03aeb8d8f55ac2979c1d7e0b26259daeee9123b1 # timeout=10
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins5305324323587407932.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+maven-settings
++ docker info
+Containers: 3
+ Running: 1
+ Paused: 0
+ Stopped: 2
+Images: 2
+Server Version: 18.09.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.75_2019-02-13 .
+Sending build context to Docker daemon  219.1kB
+Step 1/4 : FROM msahib/jenkins-build-master:v1
+ ---> 3b9c9666a66e
+Step 2/4 : USER root
+ ---> Running in e24eb1374da5
+Removing intermediate container e24eb1374da5
+ ---> 70c6eca10809
+Step 3/4 : RUN apt-get update && apt-get install -y maven vim
+ ---> Running in f0330e412481
+Ign:1 http://deb.debian.org/debian stretch InRelease
+Get:2 http://security.debian.org/debian-security stretch/updates InRelease [94.3 kB]
+Get:3 http://deb.debian.org/debian stretch-updates InRelease [91.0 kB]
+Terminated
+Build was aborted
+Aborted by [8mha:////4NHcuGs8xabZ2yWPD2yoOS/cJeUva/d8tfk6Yrysl3MnAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL90rzsvPzyPAATbMabwgAAAA==[0munknown
+Finished: ABORTED

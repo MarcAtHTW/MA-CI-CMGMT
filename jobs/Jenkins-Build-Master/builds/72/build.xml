@@ -1,0 +1,27 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>87</queueId>
+  <timestamp>1549906274848</timestamp>
+  <startTime>1549906274858</startTime>
+  <result>FAILURE</result>
+  <duration>180756</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Jenkins-Docker-Slave</builtOn>
+  <workspace>/home/jenkins/agent/workspace/Jenkins-Build-Master</workspace>
+  <hudsonVersion>2.161</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>noreply</string>
+  </culprits>
+</build>

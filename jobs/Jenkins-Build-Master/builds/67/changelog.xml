@@ -1,0 +1,66 @@
+commit 03aeb8d8f55ac2979c1d7e0b26259daeee9123b1
+tree 6f46ebeb6ed99d200e637064d2ea7afbc331efa8
+parent ce12729154bd470ed2b0c9d323bbb6f619a0550a
+author Marc <s0547375@htw-berlin.de> 2019-01-31 21:20:08 +0100
+committer GitHub <noreply@github.com> 2019-01-31 21:20:08 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 cde164ecd9b2be33c4fed0e1013b8aafc422b71f a6d84d080a07f5f7badfdedc3074232310b33b9e M	Dockerfile
+commit ce12729154bd470ed2b0c9d323bbb6f619a0550a
+tree 81dca79227fd536ee8fccd78a1f8eb202c964662
+parent b97f484aeffc9adfe43d45dbd9ac9601fcbb4bc2
+author Marc <s0547375@htw-berlin.de> 2019-01-31 21:18:17 +0100
+committer GitHub <noreply@github.com> 2019-01-31 21:18:17 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 a6d84d080a07f5f7badfdedc3074232310b33b9e cde164ecd9b2be33c4fed0e1013b8aafc422b71f M	Dockerfile
+commit b97f484aeffc9adfe43d45dbd9ac9601fcbb4bc2
+tree 6f46ebeb6ed99d200e637064d2ea7afbc331efa8
+parent 3cd3431562cc87020de2e34f83f0d509bbb60189
+author Marc <s0547375@htw-berlin.de> 2019-01-31 21:16:24 +0100
+committer GitHub <noreply@github.com> 2019-01-31 21:16:24 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 edd5df3561eb7e2fc4ba3d775fc4b64be9bee923 a6d84d080a07f5f7badfdedc3074232310b33b9e M	Dockerfile
+commit 3cd3431562cc87020de2e34f83f0d509bbb60189
+tree c25cd778ddf53dbd8bbff30b2d91537f1380d8a2
+parent cf3911a82929ae5e8a1fdedcf3322d3826736110
+author Marc <s0547375@htw-berlin.de> 2019-01-31 17:08:37 +0100
+committer GitHub <noreply@github.com> 2019-01-31 17:08:37 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 cf77c4b01bfdb966e3fe4aeed51b31e8d3afde3b edd5df3561eb7e2fc4ba3d775fc4b64be9bee923 M	Dockerfile
+commit cf3911a82929ae5e8a1fdedcf3322d3826736110
+tree dee5b501b06fa7d5b34a72830ed70376de435b04
+parent 17844d31a20448edb1626c33f24510cfb1df7a10
+author Marc <s0547375@htw-berlin.de> 2019-01-31 17:07:18 +0100
+committer GitHub <noreply@github.com> 2019-01-31 17:07:18 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 edd5df3561eb7e2fc4ba3d775fc4b64be9bee923 cf77c4b01bfdb966e3fe4aeed51b31e8d3afde3b M	Dockerfile
+commit 17844d31a20448edb1626c33f24510cfb1df7a10
+tree c25cd778ddf53dbd8bbff30b2d91537f1380d8a2
+parent 352c7db14820aedce4d9244e75b57226af1e83c7
+author Marc <s0547375@htw-berlin.de> 2019-01-31 13:32:40 +0100
+committer GitHub <noreply@github.com> 2019-01-31 13:32:40 +0100
+
+    Update Dockerfile
+
+
+
+:100644 100644 cf77c4b01bfdb966e3fe4aeed51b31e8d3afde3b edd5df3561eb7e2fc4ba3d775fc4b64be9bee923 M	Dockerfile

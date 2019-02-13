@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+Cloning the remote Git repository
+Cloning repository https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git init /home/jenkins/agent/workspace/Jenkins-Build-Master # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+Build was aborted
+Aborted by [8mha:////4NHcuGs8xabZ2yWPD2yoOS/cJeUva/d8tfk6Yrysl3MnAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL90rzsvPzyPAATbMabwgAAAA==[0munknown
+Finished: ABORTED

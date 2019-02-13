@@ -1,0 +1,25 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/Jenkins-Build-Master.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/Jenkins-Build-Master.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/MarcAtHTW/Jenkins-Build-Master.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 03aeb8d8f55ac2979c1d7e0b26259daeee9123b1 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 03aeb8d8f55ac2979c1d7e0b26259daeee9123b1
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 352c7db14820aedce4d9244e75b57226af1e83c7 # timeout=10
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins4115268112148316462.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+maven-settings
++ docker info
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/info: dial unix /var/run/docker.sock: connect: permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
