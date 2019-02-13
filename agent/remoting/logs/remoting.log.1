@@ -1,0 +1,59 @@
+Feb 13, 2019 5:29:31 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://10.1.2.249:8080, http://swm2.dev.init:8080]
+Feb 13, 2019 5:29:31 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Feb 13, 2019 5:29:31 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: 10.1.2.249
+  Agent port:    50000
+  Identity:      48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
+Feb 13, 2019 5:29:31 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Feb 13, 2019 5:29:31 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to 10.1.2.249:50000
+Feb 13, 2019 5:29:31 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
+Feb 13, 2019 5:29:32 PM org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer onRecv
+INFO: [JNLP4-connect connection to 10.1.2.249/10.1.2.249:50000] Local headers refused by remote: Jenkins-Docker-Slave is already connected to this master. Rejecting this connection.
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Protocol JNLP4-connect encountered an unexpected exception
+java.util.concurrent.ExecutionException: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Jenkins-Docker-Slave is already connected to this master. Rejecting this connection.
+	at org.jenkinsci.remoting.util.SettableFuture.get(SettableFuture.java:223)
+	at hudson.remoting.Engine.innerRun(Engine.java:614)
+	at hudson.remoting.Engine.run(Engine.java:474)
+Caused by: org.jenkinsci.remoting.protocol.impl.ConnectionRefusalException: Jenkins-Docker-Slave is already connected to this master. Rejecting this connection.
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.newAbortCause(ConnectionHeadersFilterLayer.java:378)
+	at org.jenkinsci.remoting.protocol.impl.ConnectionHeadersFilterLayer.onRecvClosed(ConnectionHeadersFilterLayer.java:433)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.FilterLayer.onRecvClosed(FilterLayer.java:287)
+	at org.jenkinsci.remoting.protocol.impl.SSLEngineFilterLayer.onRecvClosed(SSLEngineFilterLayer.java:172)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:816)
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer.access$1500(BIONetworkLayer.java:48)
+	at org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader.run(BIONetworkLayer.java:247)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+	Suppressed: java.nio.channels.ClosedChannelException
+		... 7 more
+
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to 10.1.2.249:50000
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Server reports protocol JNLP4-plaintext not supported, skipping
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Protocol JNLP3-connect is not enabled, skipping
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Server reports protocol JNLP2-connect not supported, skipping
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Server reports protocol JNLP-connect not supported, skipping
+Feb 13, 2019 5:29:32 PM hudson.remoting.jnlp.Main$CuiListener error
+SEVERE: The server rejected the connection: None of the protocols were accepted
+java.lang.Exception: The server rejected the connection: None of the protocols were accepted
+	at hudson.remoting.Engine.onConnectionRejected(Engine.java:675)
+	at hudson.remoting.Engine.innerRun(Engine.java:639)
+	at hudson.remoting.Engine.run(Engine.java:474)
+
