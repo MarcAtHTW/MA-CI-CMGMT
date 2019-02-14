@@ -1,0 +1,208 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins6837664380497699950.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+maven-settings
++ docker info
+Containers: 2
+ Running: 1
+ Paused: 0
+ Stopped: 1
+Images: 5
+Server Version: 18.09.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 10.1.7.250
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.131_2019-02-13 .
+Sending build context to Docker daemon   7.68kB
+Step 1/3 : FROM msahib/jenkins-build-master:v1
+ ---> 3b9c9666a66e
+Step 2/3 : USER root
+ ---> Using cache
+ ---> fa5e2e346d9c
+Step 3/3 : USER jenkins
+ ---> Using cache
+ ---> f329ca88ef1f
+Successfully built f329ca88ef1f
+Successfully tagged msahib/jenkins-build-master:0.0.131_2019-02-13
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.131_2019-02-13
+The push refers to repository [docker.io/msahib/jenkins-build-master]
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+b0f30a2d33ef: Layer already exists
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+6ed8afd8a8ca: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+8abacd22f0b4: Layer already exists
+55e659db8c71: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+08b1513fa90e: Layer already exists
+3d920cbc2719: Layer already exists
+50c47c5a165d: Layer already exists
+38af37073821: Layer already exists
+a7702ebc484e: Layer already exists
+d2518892581f: Layer already exists
+7b1186903462: Layer already exists
+b53b57a50746: Layer already exists
+d2217ead3a1c: Layer already exists
+c581f4ede92d: Layer already exists
+0.0.131_2019-02-13: digest: sha256:9461097aca714bd945848b64a655e1fe850a38f908a5d3f38b3bcef2d9d011c9 size: 4499
++ date +%Y-%m-%d
++ date +%Y-%m-%d
++ docker tag msahib/jenkins-build-master:0.0.131_2019-02-13 10.1.7.250/library/jenkins-build-master:0.0.131_2019-02-13
++ date +%Y-%m-%d
++ docker push 10.1.7.250/library/jenkins-build-master:0.0.131_2019-02-13
+The push refers to repository [10.1.7.250/library/jenkins-build-master]
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+6ed8afd8a8ca: Layer already exists
+b0f30a2d33ef: Layer already exists
+461ceb88bd16: Layer already exists
+e8fec055e629: Layer already exists
+2a22f8361923: Layer already exists
+cf43ed0cb510: Layer already exists
+8abacd22f0b4: Layer already exists
+55e659db8c71: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+3d920cbc2719: Layer already exists
+50c47c5a165d: Layer already exists
+a7702ebc484e: Layer already exists
+38af37073821: Layer already exists
+7b1186903462: Layer already exists
+08b1513fa90e: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+c581f4ede92d: Layer already exists
+0.0.131_2019-02-13: digest: sha256:9461097aca714bd945848b64a655e1fe850a38f908a5d3f38b3bcef2d9d011c9 size: 4499
++ date +%Y-%m-%d
++ docker rmi 10.1.7.250/library/jenkins-build-master:0.0.131_2019-02-13
+Untagged: 10.1.7.250/library/jenkins-build-master:0.0.131_2019-02-13
++ date +%Y-%m-%d
++ docker rmi msahib/jenkins-build-master:0.0.131_2019-02-13
+Untagged: msahib/jenkins-build-master:0.0.131_2019-02-13
++ docker images
+REPOSITORY                                TAG                  IMAGE ID            CREATED             SIZE
+jenkins-docker-slave                      v3                   96d15a47838e        About an hour ago   669MB
+msahib/jenkins-docker-slave               v3                   96d15a47838e        About an hour ago   669MB
+10.1.7.250/library/jenkins-build-master   0.0.80_2019-02-13    f329ca88ef1f        2 hours ago         701MB
+msahib/jenkins-build-master               0.0.114_2019-02-13   f329ca88ef1f        2 hours ago         701MB
+msahib/jenkins-build-master               0.0.80_2019-02-13    f329ca88ef1f        2 hours ago         701MB
+msahib/jenkins-docker-slave               v1                   096baf01504c        2 weeks ago         630MB
+msahib/jenkins-build-master               v1                   3b9c9666a66e        3 weeks ago         701MB
+Finished: SUCCESS
