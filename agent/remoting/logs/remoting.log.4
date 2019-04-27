@@ -1,28 +1,19 @@
-Feb 13, 2019 4:20:04 PM hudson.remoting.jnlp.Main$CuiListener status
+Feb 14, 2019 11:29:30 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Locating server among [http://10.1.2.249:8080, http://swm2.dev.init:8080]
-Feb 13, 2019 4:20:07 PM hudson.remoting.jnlp.Main$CuiListener error
-SEVERE: http://10.1.2.249:8080/tcpSlaveAgentListener/ is invalid: 503 Service Unavailable
-java.io.IOException: http://10.1.2.249:8080/tcpSlaveAgentListener/ is invalid: 503 Service Unavailable
-	at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.resolve(JnlpAgentEndpointResolver.java:201)
-	at hudson.remoting.Engine.innerRun(Engine.java:523)
-	at hudson.remoting.Engine.run(Engine.java:474)
-	Suppressed: java.io.IOException: Failed to connect to http://swm2.dev.init:8080/tcpSlaveAgentListener/: swm2.dev.init
-		at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.resolve(JnlpAgentEndpointResolver.java:196)
-		... 2 more
-	Caused by: java.net.UnknownHostException: swm2.dev.init
-		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
-		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-		at java.net.Socket.connect(Socket.java:589)
-		at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-		at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-		at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-		at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-		at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-		at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-		at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
-		at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
-		at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
-		at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
-		at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.resolve(JnlpAgentEndpointResolver.java:193)
-		... 2 more
-
+Feb 14, 2019 11:29:30 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Feb 14, 2019 11:29:30 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: 10.1.2.249
+  Agent port:    50000
+  Identity:      48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
+Feb 14, 2019 11:29:30 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Feb 14, 2019 11:29:30 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to 10.1.2.249:50000
+Feb 14, 2019 11:29:31 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Feb 14, 2019 11:29:31 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
+Feb 14, 2019 11:29:32 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected

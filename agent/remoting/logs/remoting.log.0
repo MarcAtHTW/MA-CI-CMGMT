@@ -1,23 +1,19 @@
-Feb 13, 2019 5:34:05 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Locating server among [http://10.1.2.249:8080, http://swm2.dev.init:8080]
-Feb 13, 2019 5:34:05 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+Apr 25, 2019 11:04:19 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
 INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
-Feb 13, 2019 5:34:05 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Agent discovery successful
   Agent address: 10.1.2.249
   Agent port:    50000
   Identity:      48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
-Feb 13, 2019 5:34:05 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Handshaking
-Feb 13, 2019 5:34:05 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Connecting to 10.1.2.249:50000
-Feb 13, 2019 5:34:05 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Trying protocol: JNLP4-connect
-Feb 13, 2019 5:34:05 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Remote identity confirmed: 48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
-Feb 13, 2019 5:34:06 PM hudson.remoting.jnlp.Main$CuiListener status
+Apr 25, 2019 11:04:21 AM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Connected
-Feb 13, 2019 5:34:11 PM org.jenkinsci.remoting.util.AnonymousClassWarnings warn
-WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.Git$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
-Feb 13, 2019 5:34:14 PM org.jenkinsci.remoting.util.AnonymousClassWarnings warn
-WARNING: Attempt to (de-)serialize anonymous class org.jenkinsci.plugins.gitclient.RemoteGitImpl$CommandInvocationHandler$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
