@@ -1,0 +1,349 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins3499839274038905505.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+glibc-source_2.24-11+deb9u4_all.deb
+maven-settings
+sources.list
++ docker info
+Containers: 11
+ Running: 1
+ Paused: 0
+ Stopped: 10
+Images: 13
+Server Version: 18.09.2
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 10.1.7.250
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.179_2019-04-21 .
+Sending build context to Docker daemon  15.47MB
+Step 1/7 : FROM msahib/jenkins-build-master:0.0.169_2019-04-21
+ ---> f96ee4c6b285
+Step 2/7 : USER root
+ ---> Using cache
+ ---> 556e836646be
+Step 3/7 : COPY sources.list /etc/apt/sources.list
+ ---> Using cache
+ ---> 969345d5353e
+Step 4/7 : RUN apt-get update && apt-get upgrade -y && apt-get install -y maven apt-transport-https vim libtiff-tools
+ ---> Running in ea1b4b77df32
+Hit:1 http://deb.debian.org/debian testing InRelease
+Hit:2 http://deb.debian.org/debian testing-updates InRelease
+Hit:3 http://deb.debian.org/debian-security testing/updates InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs git git-man
+  gnupg gnupg-agent iproute2 libaprutil1 libcomerr2 libcups2 libcurl3-gnutls
+  libdconf1 libdrm2 libegl1-mesa libgbm1 libgcc1 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-glx libglapi-mesa libgpg-error0
+  libgssapi-krb5-2 libgtk-3-0 libk5crypto3 libkrb5-3 libkrb5support0
+  libpango-1.0-0 libpangoft2-1.0-0 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libserf-1-1 libss2 libstdc++6 libsvn1 libtiff5
+  libwayland-egl1-mesa libxml2 login mount openssh-client perl perl-base
+  pinentry-curses procps python python-minimal python2.7 python2.7-minimal
+  subversion util-linux wget x11-utils
+The following packages will be upgraded:
+  glibc-source
+1 upgraded, 0 newly installed, 0 to remove and 56 not upgraded.
+Need to get 18.3 MB of archives.
+After this operation, 762 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 glibc-source all 2.28-8 [18.3 MB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 18.3 MB in 1s (17.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25739 files and directories currently installed.)
+Preparing to unpack .../glibc-source_2.28-8_all.deb ...
+Unpacking glibc-source (2.28-8) over (2.24-11+deb9u4) ...
+Setting up glibc-source (2.28-8) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apt-transport-https is already the newest version (1.8.0).
+maven is already the newest version (3.6.0-1).
+vim is already the newest version (2:8.1.0875-2).
+Suggested packages:
+  libtiff-opengl
+The following NEW packages will be installed:
+  libtiff-tools
+0 upgraded, 1 newly installed, 0 to remove and 56 not upgraded.
+Need to get 294 kB of archives.
+After this operation, 754 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libtiff-tools amd64 4.0.10-4 [294 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 294 kB in 0s (2418 kB/s)
+Selecting previously unselected package libtiff-tools.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25695 files and directories currently installed.)
+Preparing to unpack .../libtiff-tools_4.0.10-4_amd64.deb ...
+Unpacking libtiff-tools (4.0.10-4) ...
+Setting up libtiff-tools (4.0.10-4) ...
+Removing intermediate container ea1b4b77df32
+ ---> cdc14673145d
+Step 5/7 : RUN apt-get upgrade -y systemd libc6 curl libtiff5 util-linux
+ ---> Running in c4321a40b1f4
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libc6 is already the newest version (2.28-8).
+systemd is already the newest version (241-3).
+Calculating upgrade...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+The following NEW packages will be installed:
+  curl fdisk libcom-err2 libcurl4 libncursesw6 libwebp6
+The following packages have been kept back:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs git git-man
+  gnupg gnupg-agent iproute2 libaprutil1 libdconf1 libdrm2 libegl1-mesa
+  libgbm1 libgcc1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-glx
+  libglapi-mesa libgpg-error0 libgtk-3-0 libpango-1.0-0 libpangoft2-1.0-0
+  libpython-stdlib libstdc++6 libsvn1 libwayland-egl1-mesa libxml2 perl
+  perl-base procps python python-minimal subversion wget x11-utils
+The following packages will be upgraded:
+  libcomerr2 libcups2 libcurl3-gnutls libgssapi-krb5-2 libk5crypto3 libkrb5-3
+  libkrb5support0 libpython2.7-minimal libpython2.7-stdlib libserf-1-1 libss2
+  libtiff5 login mount openssh-client pinentry-curses python2.7
+  python2.7-minimal util-linux
+19 upgraded, 6 newly installed, 0 to remove and 37 not upgraded.
+Need to get 9861 kB of archives.
+After this operation, 3402 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libncursesw6 amd64 6.1+20181013-2 [132 kB]
+Get:2 http://deb.debian.org/debian testing/main amd64 fdisk amd64 2.33.1-0.1 [179 kB]
+Get:3 http://deb.debian.org/debian testing/main amd64 login amd64 1:4.5-1.1 [751 kB]
+Get:4 http://deb.debian.org/debian testing/main amd64 util-linux amd64 2.33.1-0.1 [1062 kB]
+Get:5 http://deb.debian.org/debian testing/main amd64 mount amd64 2.33.1-0.1 [174 kB]
+Get:6 http://deb.debian.org/debian testing/main amd64 python2.7 amd64 2.7.16-2 [305 kB]
+Get:7 http://deb.debian.org/debian testing/main amd64 libpython2.7-stdlib amd64 2.7.16-2 [1910 kB]
+Get:8 http://deb.debian.org/debian testing/main amd64 python2.7-minimal amd64 2.7.16-2 [1367 kB]
+Get:9 http://deb.debian.org/debian testing/main amd64 libpython2.7-minimal amd64 2.7.16-2 [395 kB]
+Get:10 http://deb.debian.org/debian testing/main amd64 libcom-err2 amd64 1.44.5-1 [68.3 kB]
+Get:11 http://deb.debian.org/debian testing/main amd64 libcomerr2 amd64 1.44.5-1 [64.1 kB]
+Get:12 http://deb.debian.org/debian testing/main amd64 libss2 amd64 1.44.5-1 [72.7 kB]
+Get:13 http://deb.debian.org/debian testing/main amd64 libgssapi-krb5-2 amd64 1.17-2 [158 kB]
+Get:14 http://deb.debian.org/debian testing/main amd64 libkrb5-3 amd64 1.17-2 [368 kB]
+Get:15 http://deb.debian.org/debian testing/main amd64 libk5crypto3 amd64 1.17-2 [121 kB]
+Get:16 http://deb.debian.org/debian testing/main amd64 libkrb5support0 amd64 1.17-2 [65.6 kB]
+Get:17 http://deb.debian.org/debian testing/main amd64 openssh-client amd64 1:7.9p1-10 [782 kB]
+Get:18 http://deb.debian.org/debian testing/main amd64 libcurl4 amd64 7.64.0-2 [331 kB]
+Get:19 http://deb.debian.org/debian testing/main amd64 curl amd64 7.64.0-2 [264 kB]
+Get:20 http://deb.debian.org/debian testing/main amd64 libcups2 amd64 2.2.10-5 [324 kB]
+Get:21 http://deb.debian.org/debian testing/main amd64 libcurl3-gnutls amd64 7.64.0-2 [330 kB]
+Get:22 http://deb.debian.org/debian testing/main amd64 libserf-1-1 amd64 1.3.9-7+b10 [53.6 kB]
+Get:23 http://deb.debian.org/debian testing/main amd64 libwebp6 amd64 0.6.1-2 [263 kB]
+Get:24 http://deb.debian.org/debian testing/main amd64 libtiff5 amd64 4.0.10-4 [257 kB]
+Get:25 http://deb.debian.org/debian testing/main amd64 pinentry-curses amd64 1.1.0-2 [64.5 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 9861 kB in 1s (18.1 MB/s)
+Selecting previously unselected package libncursesw6:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25736 files and directories currently installed.)
+Preparing to unpack .../libncursesw6_6.1+20181013-2_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.1+20181013-2) ...
+Setting up libncursesw6:amd64 (6.1+20181013-2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25745 files and directories currently installed.)
+Preparing to unpack .../mount_2.33.1-0.1_amd64.deb ...
+Unpacking mount (2.33.1-0.1) over (2.29.2-1+deb9u1) ...
+Preparing to unpack .../util-linux_2.33.1-0.1_amd64.deb ...
+Unpacking util-linux (2.33.1-0.1) over (2.29.2-1+deb9u1) ...
+Replacing files in old package login (1:4.4-4.1) ...
+Selecting previously unselected package fdisk.
+Preparing to unpack .../fdisk_2.33.1-0.1_amd64.deb ...
+Unpacking fdisk (2.33.1-0.1) ...
+Setting up fdisk (2.33.1-0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25762 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.5-1.1_amd64.deb ...
+Unpacking login (1:4.5-1.1) over (1:4.4-4.1) ...
+Setting up login (1:4.5-1.1) ...
+Installing new version of config file /etc/securetty ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25750 files and directories currently installed.)
+Preparing to unpack .../0-python2.7_2.7.16-2_amd64.deb ...
+Unpacking python2.7 (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../1-libpython2.7-stdlib_2.7.16-2_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../2-python2.7-minimal_2.7.16-2_amd64.deb ...
+Unpacking python2.7-minimal (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../3-libpython2.7-minimal_2.7.16-2_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../4-libcomerr2_1.44.5-1_amd64.deb ...
+Unpacking libcomerr2:amd64 (1.44.5-1) over (1.43.4-2) ...
+Selecting previously unselected package libcom-err2:amd64.
+Preparing to unpack .../5-libcom-err2_1.44.5-1_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.44.5-1) ...
+Setting up libcom-err2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25756 files and directories currently installed.)
+Preparing to unpack .../libss2_1.44.5-1_amd64.deb ...
+Unpacking libss2:amd64 (1.44.5-1) over (1.43.4-2) ...
+Setting up libss2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25756 files and directories currently installed.)
+Preparing to unpack .../00-libgssapi-krb5-2_1.17-2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../01-libkrb5-3_1.17-2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../02-libk5crypto3_1.17-2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../03-libkrb5support0_1.17-2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../04-openssh-client_1%3a7.9p1-10_amd64.deb ...
+Unpacking openssh-client (1:7.9p1-10) over (1:7.4p1-10+deb9u4) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../05-libcurl4_7.64.0-2_amd64.deb ...
+Unpacking libcurl4:amd64 (7.64.0-2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../06-curl_7.64.0-2_amd64.deb ...
+Unpacking curl (7.64.0-2) ...
+Preparing to unpack .../07-libcups2_2.2.10-5_amd64.deb ...
+Unpacking libcups2:amd64 (2.2.10-5) over (2.2.1-8+deb9u2) ...
+Preparing to unpack .../08-libcurl3-gnutls_7.64.0-2_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.64.0-2) over (7.52.1-5+deb9u8) ...
+Preparing to unpack .../09-libserf-1-1_1.3.9-7+b10_amd64.deb ...
+Unpacking libserf-1-1:amd64 (1.3.9-7+b10) over (1.3.9-3+deb9u1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../10-libwebp6_0.6.1-2_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2) ...
+Preparing to unpack .../11-libtiff5_4.0.10-4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.10-4) over (4.0.8-2+deb9u4) ...
+Preparing to unpack .../12-pinentry-curses_1.1.0-2_amd64.deb ...
+Unpacking pinentry-curses (1.1.0-2) over (1.0.0-2) ...
+Setting up pinentry-curses (1.1.0-2) ...
+Setting up libkrb5support0:amd64 (1.17-2) ...
+Setting up libpython2.7-minimal:amd64 (2.7.16-2) ...
+Setting up python2.7-minimal (2.7.16-2) ...
+Setting up libwebp6:amd64 (0.6.1-2) ...
+Setting up util-linux (2.33.1-0.1) ...
+update-alternatives: warning: alternative /usr/bin/pg (part of link group pager) doesn't exist; removing from list of alternatives
+Setting up libk5crypto3:amd64 (1.17-2) ...
+Setting up mount (2.33.1-0.1) ...
+Setting up libcomerr2:amd64 (1.44.5-1) ...
+Setting up libkrb5-3:amd64 (1.17-2) ...
+Setting up libtiff5:amd64 (4.0.10-4) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.16-2) ...
+Setting up libgssapi-krb5-2:amd64 (1.17-2) ...
+Setting up libcups2:amd64 (2.2.10-5) ...
+Setting up libcurl4:amd64 (7.64.0-2) ...
+Setting up curl (7.64.0-2) ...
+Setting up python2.7 (2.7.16-2) ...
+Setting up openssh-client (1:7.9p1-10) ...
+Installing new version of config file /etc/ssh/ssh_config ...
+Removing obsolete conffile /etc/ssh/moduli ...
+Setting up libserf-1-1:amd64 (1.3.9-7+b10) ...
+Setting up libcurl3-gnutls:amd64 (7.64.0-2) ...
+Processing triggers for mime-support (3.62) ...
+Processing triggers for libc-bin (2.28-8) ...
+Processing triggers for systemd (241-3) ...
+Removing intermediate container c4321a40b1f4
+ ---> 908d266cef28
+Step 6/7 : RUN apt-get purge -y && apt-get autoremove -y mercurial libc6
+ ---> Running in c1380704e9ee
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 37 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'mercurial' is not installed, so not removed
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ ca-certificates-java : Depends: ca-certificates (>= 20121114) but it is not going to be installed
+                        Depends: default-jre-headless but it is not going to be installed or
+                                 java8-runtime-headless
+ libasound2 : Depends: libc6 (>= 2.16) but it is not going to be installed
+ libcups2 : Depends: libavahi-client3 (>= 0.6.16) but it is not going to be installed
+            Depends: libavahi-common3 (>= 0.6.16) but it is not going to be installed
+            Depends: libc6 (>= 2.17) but it is not going to be installed
+            Depends: libgnutls30 (>= 3.6.6) but it is not going to be installed
+            Depends: libgssapi-krb5-2 (>= 1.17) but it is not going to be installed
+ libfontconfig1 : Depends: libc6 (>= 2.14) but it is not going to be installed
+                  Depends: libexpat1 (>= 2.0.1) but it is not going to be installed
+                  Depends: libuuid1 (>= 2.16) but it is not going to be installed
+                  Depends: fontconfig-config (>= 2.13.1-2) but it is not going to be installed
+ libfreetype6 : Depends: libc6 (>= 2.14) but it is not going to be installed
+                Depends: libpng16-16 (>= 1.6.2-1) but it is not going to be installed
+ libgcc1 : Depends: libc6 (>= 2.14) but it is not going to be installed
+ libjpeg62-turbo : Depends: libc6 (>= 2.14) but it is not going to be installed
+ liblcms2-2 : Depends: libc6 (>= 2.14) but it is not going to be installed
+ libnss3 : Depends: libc6 (>= 2.14) but it is not going to be installed
+           Depends: libnspr4 (>= 2:4.12) but it is not going to be installed
+           Depends: libsqlite3-0 (>= 3.5.9) but it is not going to be installed
+ libpcsclite1 : Depends: libc6 (>= 2.15) but it is not going to be installed
+ libstdc++6 : Depends: libc6 (>= 2.18) but it is not going to be installed
+ libx11-6 : Depends: libc6 (>= 2.15) but it is not going to be installed
+            Depends: libxcb1 (>= 1.11.1) but it is not going to be installed
+ libxext6 : Depends: libc6 (>= 2.14) but it is not going to be installed
+ libxi6 : Depends: libc6 (>= 2.14) but it is not going to be installed
+ libxrender1 : Depends: libc6 (>= 2.14) but it is not going to be installed
+ libxtst6 : Depends: libc6 (>= 2.4) but it is not going to be installed
+ maven : Depends: default-jre-headless (>= 2:1.7) but it is not going to be installed or
+                  java7-runtime-headless
+ util-linux : PreDepends: libaudit1 (>= 1:2.2.1) but it is not going to be installed
+              PreDepends: libblkid1 (>= 2.31.1) but it is not going to be installed
+              PreDepends: libc6 (>= 2.25) but it is not going to be installed
+              PreDepends: libcap-ng0 (>= 0.7.9) but it is not going to be installed
+              PreDepends: libmount1 (>= 2.25) but it is not going to be installed
+              PreDepends: libpam0g (>= 0.99.7.1) but it is not going to be installed
+              PreDepends: libselinux1 (>= 2.6-3~) but it is not going to be installed
+              PreDepends: libsmartcols1 (>= 2.33) but it is not going to be installed
+              PreDepends: libsystemd0 but it is not going to be installed
+              PreDepends: libtinfo6 (>= 6) but it is not going to be installed
+              PreDepends: libudev1 (>= 183) but it is not going to be installed
+              PreDepends: libuuid1 (>= 2.16) but it is not going to be installed
+              Depends: fdisk but it is not going to be installed
+              Depends: login (>= 1:4.5-1.1~) but it is not going to be installed
+ zlib1g : Depends: libc6 (>= 2.14) but it is not going to be installed
+[91mE: Error, pkgProblemResolver::Resolve generated breaks, this may be caused by held packages.
+[0mThe command '/bin/sh -c apt-get purge -y && apt-get autoremove -y mercurial libc6' returned a non-zero code: 100
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,469 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins4577655091306043490.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+glibc-source_2.24-11+deb9u4_all.deb
+maven-settings
+sources.list
++ docker info
+Containers: 11
+ Running: 1
+ Paused: 0
+ Stopped: 10
+Images: 13
+Server Version: 18.09.2
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 10.1.7.250
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.177_2019-04-21 .
+Sending build context to Docker daemon  15.47MB
+Step 1/7 : FROM msahib/jenkins-build-master:0.0.169_2019-04-21
+ ---> f96ee4c6b285
+Step 2/7 : USER root
+ ---> Using cache
+ ---> 556e836646be
+Step 3/7 : COPY sources.list /etc/apt/sources.list
+ ---> Using cache
+ ---> 969345d5353e
+Step 4/7 : RUN apt-get update && apt-get upgrade -y && apt-get install -y maven apt-transport-https vim libtiff-tools
+ ---> Running in f99c7ce18243
+Hit:1 http://deb.debian.org/debian testing InRelease
+Hit:2 http://deb.debian.org/debian testing-updates InRelease
+Hit:3 http://deb.debian.org/debian-security testing/updates InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs git git-man
+  gnupg gnupg-agent iproute2 libaprutil1 libcomerr2 libcups2 libcurl3-gnutls
+  libdconf1 libdrm2 libegl1-mesa libgbm1 libgcc1 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-glx libglapi-mesa libgpg-error0
+  libgssapi-krb5-2 libgtk-3-0 libk5crypto3 libkrb5-3 libkrb5support0
+  libpango-1.0-0 libpangoft2-1.0-0 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libserf-1-1 libss2 libstdc++6 libsvn1 libtiff5
+  libwayland-egl1-mesa libxml2 login mount openssh-client perl perl-base
+  pinentry-curses procps python python-minimal python2.7 python2.7-minimal
+  subversion util-linux wget x11-utils
+The following packages will be upgraded:
+  glibc-source
+1 upgraded, 0 newly installed, 0 to remove and 56 not upgraded.
+Need to get 18.3 MB of archives.
+After this operation, 762 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 glibc-source all 2.28-8 [18.3 MB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 18.3 MB in 1s (24.0 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25739 files and directories currently installed.)
+Preparing to unpack .../glibc-source_2.28-8_all.deb ...
+Unpacking glibc-source (2.28-8) over (2.24-11+deb9u4) ...
+Setting up glibc-source (2.28-8) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apt-transport-https is already the newest version (1.8.0).
+maven is already the newest version (3.6.0-1).
+vim is already the newest version (2:8.1.0875-2).
+Suggested packages:
+  libtiff-opengl
+The following NEW packages will be installed:
+  libtiff-tools
+0 upgraded, 1 newly installed, 0 to remove and 56 not upgraded.
+Need to get 294 kB of archives.
+After this operation, 754 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libtiff-tools amd64 4.0.10-4 [294 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 294 kB in 0s (2412 kB/s)
+Selecting previously unselected package libtiff-tools.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25695 files and directories currently installed.)
+Preparing to unpack .../libtiff-tools_4.0.10-4_amd64.deb ...
+Unpacking libtiff-tools (4.0.10-4) ...
+Setting up libtiff-tools (4.0.10-4) ...
+Removing intermediate container f99c7ce18243
+ ---> 49fb7c3d4d32
+Step 5/7 : RUN apt-get upgrade -y systemd libc6 curl libtiff5
+ ---> Running in c2018de7030e
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libc6 is already the newest version (2.28-8).
+systemd is already the newest version (241-3).
+Calculating upgrade...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+The following NEW packages will be installed:
+  curl libcom-err2 libcurl4 libwebp6
+The following packages have been kept back:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs git git-man
+  gnupg gnupg-agent iproute2 libaprutil1 libdconf1 libdrm2 libegl1-mesa
+  libgbm1 libgcc1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-glx
+  libglapi-mesa libgpg-error0 libgtk-3-0 libpango-1.0-0 libpangoft2-1.0-0
+  libpython-stdlib libpython2.7-minimal libpython2.7-stdlib libstdc++6 libsvn1
+  libwayland-egl1-mesa libxml2 login mount perl perl-base pinentry-curses
+  procps python python-minimal python2.7 python2.7-minimal subversion
+  util-linux wget x11-utils
+The following packages will be upgraded:
+  libcomerr2 libcups2 libcurl3-gnutls libgssapi-krb5-2 libk5crypto3 libkrb5-3
+  libkrb5support0 libserf-1-1 libss2 libtiff5 openssh-client
+11 upgraded, 4 newly installed, 0 to remove and 45 not upgraded.
+Need to get 3523 kB of archives.
+After this operation, 1445 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libcom-err2 amd64 1.44.5-1 [68.3 kB]
+Get:2 http://deb.debian.org/debian testing/main amd64 libcomerr2 amd64 1.44.5-1 [64.1 kB]
+Get:3 http://deb.debian.org/debian testing/main amd64 libss2 amd64 1.44.5-1 [72.7 kB]
+Get:4 http://deb.debian.org/debian testing/main amd64 libgssapi-krb5-2 amd64 1.17-2 [158 kB]
+Get:5 http://deb.debian.org/debian testing/main amd64 libkrb5-3 amd64 1.17-2 [368 kB]
+Get:6 http://deb.debian.org/debian testing/main amd64 libk5crypto3 amd64 1.17-2 [121 kB]
+Get:7 http://deb.debian.org/debian testing/main amd64 libkrb5support0 amd64 1.17-2 [65.6 kB]
+Get:8 http://deb.debian.org/debian testing/main amd64 openssh-client amd64 1:7.9p1-10 [782 kB]
+Get:9 http://deb.debian.org/debian testing/main amd64 libcurl4 amd64 7.64.0-2 [331 kB]
+Get:10 http://deb.debian.org/debian testing/main amd64 curl amd64 7.64.0-2 [264 kB]
+Get:11 http://deb.debian.org/debian testing/main amd64 libcups2 amd64 2.2.10-5 [324 kB]
+Get:12 http://deb.debian.org/debian testing/main amd64 libcurl3-gnutls amd64 7.64.0-2 [330 kB]
+Get:13 http://deb.debian.org/debian testing/main amd64 libserf-1-1 amd64 1.3.9-7+b10 [53.6 kB]
+Get:14 http://deb.debian.org/debian testing/main amd64 libwebp6 amd64 0.6.1-2 [263 kB]
+Get:15 http://deb.debian.org/debian testing/main amd64 libtiff5 amd64 4.0.10-4 [257 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 3523 kB in 0s (13.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25736 files and directories currently installed.)
+Preparing to unpack .../libcomerr2_1.44.5-1_amd64.deb ...
+Unpacking libcomerr2:amd64 (1.44.5-1) over (1.43.4-2) ...
+Selecting previously unselected package libcom-err2:amd64.
+Preparing to unpack .../libcom-err2_1.44.5-1_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.44.5-1) ...
+Setting up libcom-err2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25739 files and directories currently installed.)
+Preparing to unpack .../libss2_1.44.5-1_amd64.deb ...
+Unpacking libss2:amd64 (1.44.5-1) over (1.43.4-2) ...
+Setting up libss2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25739 files and directories currently installed.)
+Preparing to unpack .../00-libgssapi-krb5-2_1.17-2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../01-libkrb5-3_1.17-2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../02-libk5crypto3_1.17-2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../03-libkrb5support0_1.17-2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../04-openssh-client_1%3a7.9p1-10_amd64.deb ...
+Unpacking openssh-client (1:7.9p1-10) over (1:7.4p1-10+deb9u4) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../05-libcurl4_7.64.0-2_amd64.deb ...
+Unpacking libcurl4:amd64 (7.64.0-2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../06-curl_7.64.0-2_amd64.deb ...
+Unpacking curl (7.64.0-2) ...
+Preparing to unpack .../07-libcups2_2.2.10-5_amd64.deb ...
+Unpacking libcups2:amd64 (2.2.10-5) over (2.2.1-8+deb9u2) ...
+Preparing to unpack .../08-libcurl3-gnutls_7.64.0-2_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.64.0-2) over (7.52.1-5+deb9u8) ...
+Preparing to unpack .../09-libserf-1-1_1.3.9-7+b10_amd64.deb ...
+Unpacking libserf-1-1:amd64 (1.3.9-7+b10) over (1.3.9-3+deb9u1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../10-libwebp6_0.6.1-2_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2) ...
+Preparing to unpack .../11-libtiff5_4.0.10-4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.10-4) over (4.0.8-2+deb9u4) ...
+Setting up libkrb5support0:amd64 (1.17-2) ...
+Setting up libwebp6:amd64 (0.6.1-2) ...
+Setting up libk5crypto3:amd64 (1.17-2) ...
+Setting up libcomerr2:amd64 (1.44.5-1) ...
+Setting up libkrb5-3:amd64 (1.17-2) ...
+Setting up libtiff5:amd64 (4.0.10-4) ...
+Setting up libgssapi-krb5-2:amd64 (1.17-2) ...
+Setting up libcups2:amd64 (2.2.10-5) ...
+Setting up libcurl4:amd64 (7.64.0-2) ...
+Setting up curl (7.64.0-2) ...
+Setting up openssh-client (1:7.9p1-10) ...
+Installing new version of config file /etc/ssh/ssh_config ...
+Removing obsolete conffile /etc/ssh/moduli ...
+Setting up libserf-1-1:amd64 (1.3.9-7+b10) ...
+Setting up libcurl3-gnutls:amd64 (7.64.0-2) ...
+Processing triggers for libc-bin (2.28-8) ...
+Removing intermediate container c2018de7030e
+ ---> c6d4e193dc22
+Step 6/7 : RUN apt-get purge -y && apt-get autoremove -y mercurial
+ ---> Running in d855b6e3ce39
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 45 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'mercurial' is not installed, so not removed
+The following packages will be REMOVED:
+  libssl1.0.2
+0 upgraded, 0 newly installed, 1 to remove and 45 not upgraded.
+After this operation, 3642 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25755 files and directories currently installed.)
+Removing libssl1.0.2:amd64 (1.0.2q-1~deb9u1) ...
+Processing triggers for libc-bin (2.28-8) ...
+Removing intermediate container d855b6e3ce39
+ ---> 0b66463e5e39
+Step 7/7 : USER jenkins
+ ---> Running in 1738bf3fb826
+Removing intermediate container 1738bf3fb826
+ ---> 87c0ca0c3940
+Successfully built 87c0ca0c3940
+Successfully tagged msahib/jenkins-build-master:0.0.177_2019-04-21
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.177_2019-04-21
+The push refers to repository [docker.io/msahib/jenkins-build-master]
+7da844baeac2: Preparing
+740b829081df: Preparing
+a8e8b45ba8ac: Preparing
+7212aa791530: Preparing
+0ec9429ae0e3: Preparing
+2f22906229c5: Preparing
+ccc58c514174: Preparing
+9a041b271004: Preparing
+46996bca756d: Preparing
+5e10f9baeb9c: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+2f22906229c5: Waiting
+ccc58c514174: Waiting
+9a041b271004: Waiting
+46996bca756d: Waiting
+5e10f9baeb9c: Waiting
+6ed8afd8a8ca: Waiting
+461ceb88bd16: Waiting
+2a22f8361923: Waiting
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+0ec9429ae0e3: Layer already exists
+7212aa791530: Layer already exists
+2f22906229c5: Layer already exists
+ccc58c514174: Layer already exists
+9a041b271004: Layer already exists
+46996bca756d: Layer already exists
+5e10f9baeb9c: Layer already exists
+6ed8afd8a8ca: Layer already exists
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+b0f30a2d33ef: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+55e659db8c71: Layer already exists
+8abacd22f0b4: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+3d920cbc2719: Layer already exists
+50c47c5a165d: Layer already exists
+08b1513fa90e: Layer already exists
+7da844baeac2: Pushed
+38af37073821: Layer already exists
+a7702ebc484e: Layer already exists
+7b1186903462: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+c581f4ede92d: Layer already exists
+740b829081df: Pushed
+a8e8b45ba8ac: Pushed
+0.0.177_2019-04-21: digest: sha256:911877818fd509bb42cba39734d483a13e97eb8c0466c006ec5e866176b55225 size: 6605
++ date +%Y-%m-%d
++ date +%Y-%m-%d
++ docker tag msahib/jenkins-build-master:0.0.177_2019-04-21 10.1.7.250/library/jenkins-build-master:0.0.177_2019-04-21
++ date +%Y-%m-%d
++ docker push 10.1.7.250/library/jenkins-build-master:0.0.177_2019-04-21
+The push refers to repository [10.1.7.250/library/jenkins-build-master]
+7da844baeac2: Preparing
+740b829081df: Preparing
+a8e8b45ba8ac: Preparing
+7212aa791530: Preparing
+0ec9429ae0e3: Preparing
+2f22906229c5: Preparing
+ccc58c514174: Preparing
+9a041b271004: Preparing
+46996bca756d: Preparing
+5e10f9baeb9c: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+2f22906229c5: Waiting
+ccc58c514174: Waiting
+9a041b271004: Waiting
+46996bca756d: Waiting
+5e10f9baeb9c: Waiting
+6ed8afd8a8ca: Waiting
+461ceb88bd16: Waiting
+2a22f8361923: Waiting
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+7212aa791530: Layer already exists
+0ec9429ae0e3: Layer already exists
+2f22906229c5: Layer already exists
+ccc58c514174: Layer already exists
+9a041b271004: Layer already exists
+46996bca756d: Layer already exists
+6ed8afd8a8ca: Layer already exists
+5e10f9baeb9c: Layer already exists
+7da844baeac2: Pushed
+740b829081df: Pushed
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+b0f30a2d33ef: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+55e659db8c71: Layer already exists
+a8e8b45ba8ac: Pushed
+8abacd22f0b4: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+3d920cbc2719: Layer already exists
+50c47c5a165d: Layer already exists
+08b1513fa90e: Layer already exists
+38af37073821: Layer already exists
+a7702ebc484e: Layer already exists
+7b1186903462: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+c581f4ede92d: Layer already exists
+0.0.177_2019-04-21: digest: sha256:911877818fd509bb42cba39734d483a13e97eb8c0466c006ec5e866176b55225 size: 6605
++ date +%Y-%m-%d
++ docker rmi 10.1.7.250/library/jenkins-build-master:0.0.177_2019-04-21
+Untagged: 10.1.7.250/library/jenkins-build-master:0.0.177_2019-04-21
+Untagged: 10.1.7.250/library/jenkins-build-master@sha256:911877818fd509bb42cba39734d483a13e97eb8c0466c006ec5e866176b55225
++ date +%Y-%m-%d
++ docker rmi msahib/jenkins-build-master:0.0.177_2019-04-21
+Untagged: msahib/jenkins-build-master:0.0.177_2019-04-21
+Untagged: msahib/jenkins-build-master@sha256:911877818fd509bb42cba39734d483a13e97eb8c0466c006ec5e866176b55225
+Deleted: sha256:87c0ca0c394066bda7e87a50005146f33d342e45c79c71161e4e4a8495a8ae16
+Deleted: sha256:0b66463e5e390f21ad0091a4abd3f0c61aed74c369aaef9fd353f33ae9150159
+Deleted: sha256:54179f8057d34542b3a9aac3119cc8ec7a712bc031c1ee6d93e49b23de3758e0
+Deleted: sha256:c6d4e193dc22769ded659015ad5e3387af4c9fcc0aa33158589e3f7db8b480bc
+Deleted: sha256:48a61d3fbd7c822f1bbfcf2eae65ebfaa5cb49ca84f33f725e3f01064f0de789
+Deleted: sha256:49fb7c3d4d32c08f85dc0a28fa0f3fa6f8f9f6a4b211fdf9ad11da66e19ccbd6
+Deleted: sha256:3deb10909199fd1a7981efbec25c9748e47fa6f7a70e989ead11c7341b2ed58c
++ docker images
+REPOSITORY                                       TAG                  IMAGE ID            CREATED             SIZE
+<none>                                           <none>               648819d8a818        17 minutes ago      1.16GB
+msahib/jenkins-build-master                      0.0.169_2019-04-21   f96ee4c6b285        About an hour ago   1.12GB
+<none>                                           <none>               ef9c5961ba31        3 hours ago         787MB
+10.1.7.250/library/jenkins-build-master          0.0.149_2019-04-17   8cc51742a3a7        4 days ago          789MB
+msahib/jenkins-build-master                      0.0.149_2019-04-17   8cc51742a3a7        4 days ago          789MB
+10.1.7.250/library/jenkins-build-master          0.0.140_2019-04-11   8879157075a0        10 days ago         701MB
+10.1.7.250/library/jenkins-build-master          0.0.141_2019-04-11   8879157075a0        10 days ago         701MB
+msahib/jenkins-build-master                      0.0.140_2019-04-11   8879157075a0        10 days ago         701MB
+msahib/jenkins-build-master                      0.0.141_2019-04-11   8879157075a0        10 days ago         701MB
+msahib/jenkins-docker-slave                      v2-4                 354c97fee366        2 months ago        1.02GB
+10.1.7.250/library/jenkins-docker-slave          v2-4                 354c97fee366        2 months ago        1.02GB
+10.1.7.250/library/msahib/jenkins-docker-slave   v2-4                 354c97fee366        2 months ago        1.02GB
+msahib/jenkins-build-master                      v1                   3b9c9666a66e        3 months ago        701MB
+Finished: SUCCESS

@@ -1,0 +1,335 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins7331077218543714397.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+glibc-source_2.24-11+deb9u4_all.deb
+maven-settings
+sources.list
++ docker info
+Containers: 14
+ Running: 1
+ Paused: 0
+ Stopped: 13
+Images: 16
+Server Version: 18.09.2
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 10.1.7.250
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.188_2019-04-23 .
+Sending build context to Docker daemon  15.47MB
+Step 1/8 : FROM msahib/jenkins-build-master:0.0.169_2019-04-21
+ ---> f96ee4c6b285
+Step 2/8 : USER root
+ ---> Using cache
+ ---> 556e836646be
+Step 3/8 : COPY sources.list /etc/apt/sources.list
+ ---> Using cache
+ ---> 969345d5353e
+Step 4/8 : RUN apt-get update && apt-get upgrade -y && apt-get install -y maven apt-transport-https vim libtiff-tools
+ ---> Using cache
+ ---> cdc14673145d
+Step 5/8 : RUN apt-get upgrade -y systemd libc6 curl libtiff5 util-linux python
+ ---> Using cache
+ ---> 1e25d0857fc5
+Step 6/8 : RUN apt-get purge -y && apt-get autoremove -y mercurial
+ ---> Running in e7415962788d
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 34 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'mercurial' is not installed, so not removed
+The following packages will be REMOVED:
+  libssl1.0.2
+0 upgraded, 0 newly installed, 1 to remove and 34 not upgraded.
+After this operation, 3642 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25766 files and directories currently installed.)
+Removing libssl1.0.2:amd64 (1.0.2q-1~deb9u1) ...
+Processing triggers for libc-bin (2.28-8) ...
+Removing intermediate container e7415962788d
+ ---> 1178eb0800c9
+Step 7/8 : RUN dpkg --purge libssl1.0.2:amd64
+ ---> Running in 15bfc4e2d365
+(Reading database ... 25745 files and directories currently installed.)
+Purging configuration files for libssl1.0.2:amd64 (1.0.2q-1~deb9u1) ...
+[91mdebconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+[0m[91mdebconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+[0mRemoving intermediate container 15bfc4e2d365
+ ---> 16589c93e05a
+Step 8/8 : USER jenkins
+ ---> Running in 3b2ce68c7af6
+Removing intermediate container 3b2ce68c7af6
+ ---> 55e0706e161f
+Successfully built 55e0706e161f
+Successfully tagged msahib/jenkins-build-master:0.0.188_2019-04-23
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.188_2019-04-23
+The push refers to repository [docker.io/msahib/jenkins-build-master]
+7d1f9fe704c0: Preparing
+ba3cdcfcfd48: Preparing
+86283fbe5d5c: Preparing
+74b633f4c82d: Preparing
+7212aa791530: Preparing
+0ec9429ae0e3: Preparing
+2f22906229c5: Preparing
+ccc58c514174: Preparing
+9a041b271004: Preparing
+46996bca756d: Preparing
+5e10f9baeb9c: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+0ec9429ae0e3: Waiting
+2f22906229c5: Waiting
+ccc58c514174: Waiting
+9a041b271004: Waiting
+46996bca756d: Waiting
+5e10f9baeb9c: Waiting
+6ed8afd8a8ca: Waiting
+461ceb88bd16: Waiting
+2a22f8361923: Waiting
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+74b633f4c82d: Layer already exists
+7212aa791530: Layer already exists
+0ec9429ae0e3: Layer already exists
+2f22906229c5: Layer already exists
+9a041b271004: Layer already exists
+ccc58c514174: Layer already exists
+46996bca756d: Layer already exists
+5e10f9baeb9c: Layer already exists
+6ed8afd8a8ca: Layer already exists
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+b0f30a2d33ef: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+55e659db8c71: Layer already exists
+8abacd22f0b4: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+ba3cdcfcfd48: Pushed
+3d920cbc2719: Layer already exists
+7d1f9fe704c0: Pushed
+50c47c5a165d: Layer already exists
+08b1513fa90e: Layer already exists
+a7702ebc484e: Layer already exists
+38af37073821: Layer already exists
+7b1186903462: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+c581f4ede92d: Layer already exists
+d2518892581f: Layer already exists
+86283fbe5d5c: Pushed
+0.0.188_2019-04-23: digest: sha256:364075d1013610c0dc8730a2351d0eb9873fb9dc5d1086f133dc64a92df417f4 size: 6816
++ date +%Y-%m-%d
++ date +%Y-%m-%d
++ docker tag msahib/jenkins-build-master:0.0.188_2019-04-23 10.1.7.250/library/jenkins-build-master:0.0.188_2019-04-23
++ date +%Y-%m-%d
++ docker push 10.1.7.250/library/jenkins-build-master:0.0.188_2019-04-23
+The push refers to repository [10.1.7.250/library/jenkins-build-master]
+7d1f9fe704c0: Preparing
+ba3cdcfcfd48: Preparing
+86283fbe5d5c: Preparing
+74b633f4c82d: Preparing
+7212aa791530: Preparing
+0ec9429ae0e3: Preparing
+2f22906229c5: Preparing
+ccc58c514174: Preparing
+9a041b271004: Preparing
+46996bca756d: Preparing
+5e10f9baeb9c: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+0ec9429ae0e3: Waiting
+2f22906229c5: Waiting
+ccc58c514174: Waiting
+9a041b271004: Waiting
+46996bca756d: Waiting
+5e10f9baeb9c: Waiting
+6ed8afd8a8ca: Waiting
+461ceb88bd16: Waiting
+2a22f8361923: Waiting
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+74b633f4c82d: Layer already exists
+7212aa791530: Layer already exists
+0ec9429ae0e3: Layer already exists
+2f22906229c5: Layer already exists
+ccc58c514174: Layer already exists
+9a041b271004: Layer already exists
+46996bca756d: Layer already exists
+5e10f9baeb9c: Layer already exists
+7d1f9fe704c0: Pushed
+ba3cdcfcfd48: Pushed
+6ed8afd8a8ca: Layer already exists
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+b0f30a2d33ef: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+55e659db8c71: Layer already exists
+8abacd22f0b4: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+3d920cbc2719: Layer already exists
+86283fbe5d5c: Pushed
+50c47c5a165d: Layer already exists
+08b1513fa90e: Layer already exists
+38af37073821: Layer already exists
+a7702ebc484e: Layer already exists
+7b1186903462: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+c581f4ede92d: Layer already exists
+0.0.188_2019-04-23: digest: sha256:364075d1013610c0dc8730a2351d0eb9873fb9dc5d1086f133dc64a92df417f4 size: 6816
++ date +%Y-%m-%d
++ docker rmi 10.1.7.250/library/jenkins-build-master:0.0.188_2019-04-23
+Untagged: 10.1.7.250/library/jenkins-build-master:0.0.188_2019-04-23
+Untagged: 10.1.7.250/library/jenkins-build-master@sha256:364075d1013610c0dc8730a2351d0eb9873fb9dc5d1086f133dc64a92df417f4
++ date +%Y-%m-%d
++ docker rmi msahib/jenkins-build-master:0.0.188_2019-04-23
+Untagged: msahib/jenkins-build-master:0.0.188_2019-04-23
+Untagged: msahib/jenkins-build-master@sha256:364075d1013610c0dc8730a2351d0eb9873fb9dc5d1086f133dc64a92df417f4
+Deleted: sha256:55e0706e161fe2fb8e60246eb399a5d4231fd4633fd02ab4aaa006d80e771253
+Deleted: sha256:16589c93e05af1b5227e040289b845bbc63d0121994e0659d834505de7205869
+Deleted: sha256:feaf2ac6bf6487333d1cb317ecffb0d1c9b523be464c711ae945fd9144648ef5
+Deleted: sha256:1178eb0800c932d56697f14d55df90d1b0195a1612c1c5a8071b80db63ae6aed
+Deleted: sha256:a27ade9b6ce2d1fc4aee3b3c43a934570798b2aba8b745d53b959f6162203900
++ docker images
+REPOSITORY                                       TAG                  IMAGE ID            CREATED              SIZE
+<none>                                           <none>               1e25d0857fc5        About a minute ago   1.19GB
+<none>                                           <none>               908d266cef28        40 hours ago         1.19GB
+<none>                                           <none>               648819d8a818        41 hours ago         1.16GB
+msahib/jenkins-build-master                      0.0.169_2019-04-21   f96ee4c6b285        42 hours ago         1.12GB
+<none>                                           <none>               ef9c5961ba31        43 hours ago         787MB
+10.1.7.250/library/jenkins-build-master          0.0.149_2019-04-17   8cc51742a3a7        5 days ago           789MB
+msahib/jenkins-build-master                      0.0.149_2019-04-17   8cc51742a3a7        5 days ago           789MB
+10.1.7.250/library/jenkins-build-master          0.0.140_2019-04-11   8879157075a0        12 days ago          701MB
+10.1.7.250/library/jenkins-build-master          0.0.141_2019-04-11   8879157075a0        12 days ago          701MB
+msahib/jenkins-build-master                      0.0.140_2019-04-11   8879157075a0        12 days ago          701MB
+msahib/jenkins-build-master                      0.0.141_2019-04-11   8879157075a0        12 days ago          701MB
+10.1.7.250/library/jenkins-docker-slave          v2-4                 354c97fee366        2 months ago         1.02GB
+10.1.7.250/library/msahib/jenkins-docker-slave   v2-4                 354c97fee366        2 months ago         1.02GB
+msahib/jenkins-docker-slave                      v2-4                 354c97fee366        2 months ago         1.02GB
+msahib/jenkins-build-master                      v1                   3b9c9666a66e        3 months ago         701MB
+Finished: SUCCESS
