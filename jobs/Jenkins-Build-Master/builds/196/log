@@ -1,0 +1,1035 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins809271203145789215.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+glibc-source_2.24-11+deb9u4_all.deb
+maven-settings
+sources.list
++ docker info
+Containers: 3
+ Running: 1
+ Paused: 0
+ Stopped: 2
+Images: 5
+Server Version: 18.09.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 10.1.7.250
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.196_2019-04-28 .
+Sending build context to Docker daemon  15.47MB
+Step 1/9 : FROM msahib/jenkins-build-master:0.0.169_2019-04-21
+ ---> f96ee4c6b285
+Step 2/9 : USER root
+ ---> Using cache
+ ---> 4144b10bdb91
+Step 3/9 : COPY sources.list /etc/apt/sources.list
+ ---> 439baf288ca7
+Step 4/9 : RUN apt-get update && apt-get upgrade -y && apt-get install -y maven apt-transport-https vim libtiff-tools
+ ---> Running in 9b31556519c6
+Get:1 http://deb.debian.org/debian testing InRelease [163 kB]
+Get:2 http://deb.debian.org/debian testing-updates InRelease [46.8 kB]
+Get:3 http://deb.debian.org/debian testing/main Sources.diff/Index [27.9 kB]
+Get:4 http://deb.debian.org/debian testing/non-free Sources.diff/Index [27.8 kB]
+Get:5 http://deb.debian.org/debian testing/main amd64 Packages.diff/Index [27.9 kB]
+Get:6 http://deb.debian.org/debian testing/non-free amd64 Packages.diff/Index [27.8 kB]
+Get:7 http://deb.debian.org/debian testing/main Sources 2019-04-21-2012.09.pdiff [46 B]
+Get:8 http://deb.debian.org/debian testing/main Sources 2019-04-22-0218.28.pdiff [2268 B]
+Get:9 http://deb.debian.org/debian testing/main Sources 2019-04-22-1411.12.pdiff [47 B]
+Get:10 http://deb.debian.org/debian testing/main Sources 2019-04-22-2011.04.pdiff [33 B]
+Get:11 http://deb.debian.org/debian testing/main Sources 2019-04-23-0210.26.pdiff [1920 B]
+Get:12 http://deb.debian.org/debian testing/main Sources 2019-04-23-0811.36.pdiff [230 B]
+Get:13 http://deb.debian.org/debian testing/main Sources 2019-04-23-1410.58.pdiff [2201 B]
+Get:14 http://deb.debian.org/debian testing/main Sources 2019-04-23-2009.32.pdiff [622 B]
+Get:15 http://deb.debian.org/debian testing/main Sources 2019-04-24-0209.10.pdiff [2076 B]
+Get:16 http://deb.debian.org/debian testing/main Sources 2019-04-24-1411.08.pdiff [1974 B]
+Get:17 http://deb.debian.org/debian testing/main Sources 2019-04-25-0211.29.pdiff [3490 B]
+Get:18 http://deb.debian.org/debian testing/main Sources 2019-04-26-0211.49.pdiff [1317 B]
+Get:19 http://deb.debian.org/debian testing/main Sources 2019-04-27-0211.29.pdiff [2970 B]
+Get:20 http://deb.debian.org/debian testing/main Sources 2019-04-28-0210.19.pdiff [1841 B]
+Get:21 http://deb.debian.org/debian testing/main Sources 2019-04-28-1410.16.pdiff [483 B]
+Get:21 http://deb.debian.org/debian testing/main Sources 2019-04-28-1410.16.pdiff [483 B]
+Get:22 http://deb.debian.org/debian testing/non-free Sources 2019-04-24-0209.10.pdiff [322 B]
+Get:22 http://deb.debian.org/debian testing/non-free Sources 2019-04-24-0209.10.pdiff [322 B]
+Get:23 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-22-0218.28.pdiff [2715 B]
+Get:24 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-22-1411.12.pdiff [48 B]
+Get:25 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-22-2011.04.pdiff [33 B]
+Get:26 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-0210.26.pdiff [2584 B]
+Get:27 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-0811.36.pdiff [751 B]
+Get:28 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-1410.58.pdiff [7080 B]
+Get:29 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-2009.32.pdiff [1315 B]
+Get:30 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-24-0209.10.pdiff [7257 B]
+Get:31 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-24-1411.08.pdiff [6287 B]
+Get:32 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-25-0211.29.pdiff [8736 B]
+Get:33 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-26-0211.49.pdiff [2677 B]
+Get:34 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-27-0211.29.pdiff [8212 B]
+Get:35 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-28-0210.19.pdiff [2391 B]
+Get:36 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-28-1410.16.pdiff [851 B]
+Get:36 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-28-1410.16.pdiff [851 B]
+Get:37 http://deb.debian.org/debian testing/non-free amd64 Packages 2019-04-24-0209.10.pdiff [216 B]
+Get:37 http://deb.debian.org/debian testing/non-free amd64 Packages 2019-04-24-0209.10.pdiff [216 B]
+Fetched 394 kB in 3s (153 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs git git-man
+  gnupg gnupg-agent iproute2 libaprutil1 libcomerr2 libcups2 libcurl3-gnutls
+  libdconf1 libdrm2 libegl1-mesa libgbm1 libgcc1 libgdk-pixbuf2.0-0
+  libgdk-pixbuf2.0-common libgl1-mesa-glx libglapi-mesa libgpg-error0
+  libgssapi-krb5-2 libgtk-3-0 libk5crypto3 libkrb5-3 libkrb5support0
+  libpango-1.0-0 libpangoft2-1.0-0 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libserf-1-1 libss2 libstdc++6 libsvn1 libtiff5
+  libwayland-egl1-mesa libxml2 login mount openssh-client perl perl-base
+  pinentry-curses procps python python-minimal python2.7 python2.7-minimal
+  subversion util-linux wget x11-utils
+The following packages will be upgraded:
+  bash glibc-source
+2 upgraded, 0 newly installed, 0 to remove and 56 not upgraded.
+Need to get 19.7 MB of archives.
+After this operation, 762 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 bash amd64 5.0-4 [1378 kB]
+Get:2 http://deb.debian.org/debian testing/main amd64 glibc-source all 2.28-8 [18.3 MB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 19.7 MB in 1s (17.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25739 files and directories currently installed.)
+Preparing to unpack .../archives/bash_5.0-4_amd64.deb ...
+Unpacking bash (5.0-4) over (5.0-3) ...
+Setting up bash (5.0-4) ...
+update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25739 files and directories currently installed.)
+Preparing to unpack .../glibc-source_2.28-8_all.deb ...
+Unpacking glibc-source (2.28-8) over (2.24-11+deb9u4) ...
+Setting up glibc-source (2.28-8) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apt-transport-https is already the newest version (1.8.0).
+maven is already the newest version (3.6.0-1).
+vim is already the newest version (2:8.1.0875-2).
+Suggested packages:
+  libtiff-opengl
+The following NEW packages will be installed:
+  libtiff-tools
+0 upgraded, 1 newly installed, 0 to remove and 56 not upgraded.
+Need to get 294 kB of archives.
+After this operation, 754 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libtiff-tools amd64 4.0.10-4 [294 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 294 kB in 0s (2390 kB/s)
+Selecting previously unselected package libtiff-tools.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25695 files and directories currently installed.)
+Preparing to unpack .../libtiff-tools_4.0.10-4_amd64.deb ...
+Unpacking libtiff-tools (4.0.10-4) ...
+Setting up libtiff-tools (4.0.10-4) ...
+Removing intermediate container 9b31556519c6
+ ---> c68a46cee59c
+Step 5/9 : RUN apt-get upgrade -y systemd libc6 curl libtiff5 util-linux python openjdk-8-jdk wget vim
+ ---> Running in 25cea3a4ca47
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libc6 is already the newest version (2.28-8).
+systemd is already the newest version (241-3).
+vim is already the newest version (2:8.1.0875-2).
+openjdk-8-jdk is already the newest version (8u181-b13-2~deb9u1).
+Calculating upgrade...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+The following NEW packages will be installed:
+  curl fdisk libcom-err2 libcurl4 libncursesw6 libpcre2-8-0 libpython2-stdlib
+  libwebp6 python2 python2-minimal
+The following packages have been kept back:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs gnupg
+  gnupg-agent iproute2 libaprutil1 libdconf1 libdrm2 libegl1-mesa libgbm1
+  libgcc1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-glx
+  libglapi-mesa libgpg-error0 libgtk-3-0 libpango-1.0-0 libpangoft2-1.0-0
+  libstdc++6 libsvn1 libwayland-egl1-mesa libxml2 perl perl-base procps
+  subversion x11-utils
+The following packages will be upgraded:
+  git git-man libcomerr2 libcups2 libcurl3-gnutls libgssapi-krb5-2
+  libk5crypto3 libkrb5-3 libkrb5support0 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libserf-1-1 libss2 libtiff5 login mount openssh-client
+  pinentry-curses python python-minimal python2.7 python2.7-minimal util-linux
+  wget
+25 upgraded, 10 newly installed, 0 to remove and 31 not upgraded.
+Need to get 18.4 MB of archives.
+After this operation, 10.9 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libncursesw6 amd64 6.1+20181013-2 [132 kB]
+Get:2 http://deb.debian.org/debian testing/main amd64 fdisk amd64 2.33.1-0.1 [179 kB]
+Get:3 http://deb.debian.org/debian testing/main amd64 login amd64 1:4.5-1.1 [751 kB]
+Get:4 http://deb.debian.org/debian testing/main amd64 util-linux amd64 2.33.1-0.1 [1062 kB]
+Get:5 http://deb.debian.org/debian testing/main amd64 mount amd64 2.33.1-0.1 [174 kB]
+Get:6 http://deb.debian.org/debian testing/main amd64 python2.7 amd64 2.7.16-2 [305 kB]
+Get:7 http://deb.debian.org/debian testing/main amd64 libpython2.7-stdlib amd64 2.7.16-2 [1910 kB]
+Get:8 http://deb.debian.org/debian testing/main amd64 python2.7-minimal amd64 2.7.16-2 [1367 kB]
+Get:9 http://deb.debian.org/debian testing/main amd64 libpython2.7-minimal amd64 2.7.16-2 [395 kB]
+Get:10 http://deb.debian.org/debian testing/main amd64 python2-minimal amd64 2.7.16-1 [41.4 kB]
+Get:11 http://deb.debian.org/debian testing/main amd64 python-minimal amd64 2.7.16-1 [21.0 kB]
+Get:12 http://deb.debian.org/debian testing/main amd64 python amd64 2.7.16-1 [22.8 kB]
+Get:13 http://deb.debian.org/debian testing/main amd64 libpython-stdlib amd64 2.7.16-1 [20.8 kB]
+Get:14 http://deb.debian.org/debian testing/main amd64 libpython2-stdlib amd64 2.7.16-1 [20.8 kB]
+Get:15 http://deb.debian.org/debian testing/main amd64 python2 amd64 2.7.16-1 [41.6 kB]
+Get:16 http://deb.debian.org/debian testing/main amd64 libcom-err2 amd64 1.44.5-1 [68.3 kB]
+Get:17 http://deb.debian.org/debian testing/main amd64 libcomerr2 amd64 1.44.5-1 [64.1 kB]
+Get:18 http://deb.debian.org/debian testing/main amd64 libss2 amd64 1.44.5-1 [72.7 kB]
+Get:19 http://deb.debian.org/debian testing/main amd64 libgssapi-krb5-2 amd64 1.17-2 [158 kB]
+Get:20 http://deb.debian.org/debian testing/main amd64 libkrb5-3 amd64 1.17-2 [368 kB]
+Get:21 http://deb.debian.org/debian testing/main amd64 libk5crypto3 amd64 1.17-2 [121 kB]
+Get:22 http://deb.debian.org/debian testing/main amd64 libkrb5support0 amd64 1.17-2 [65.6 kB]
+Get:23 http://deb.debian.org/debian testing/main amd64 openssh-client amd64 1:7.9p1-10 [782 kB]
+Get:24 http://deb.debian.org/debian testing/main amd64 libpcre2-8-0 amd64 10.32-5 [213 kB]
+Get:25 http://deb.debian.org/debian testing/main amd64 wget amd64 1.20.1-1.1 [902 kB]
+Get:26 http://deb.debian.org/debian testing/main amd64 libcurl4 amd64 7.64.0-2 [331 kB]
+Get:27 http://deb.debian.org/debian testing/main amd64 curl amd64 7.64.0-2 [264 kB]
+Get:28 http://deb.debian.org/debian testing/main amd64 git amd64 1:2.20.1-2 [5621 kB]
+Get:29 http://deb.debian.org/debian testing/main amd64 git-man all 1:2.20.1-2 [1619 kB]
+Get:30 http://deb.debian.org/debian testing/main amd64 libcurl3-gnutls amd64 7.64.0-2 [330 kB]
+Get:31 http://deb.debian.org/debian testing/main amd64 libcups2 amd64 2.2.10-6 [324 kB]
+Get:32 http://deb.debian.org/debian testing/main amd64 libserf-1-1 amd64 1.3.9-7+b10 [53.6 kB]
+Get:33 http://deb.debian.org/debian testing/main amd64 libwebp6 amd64 0.6.1-2 [263 kB]
+Get:34 http://deb.debian.org/debian testing/main amd64 libtiff5 amd64 4.0.10-4 [257 kB]
+Get:35 http://deb.debian.org/debian testing/main amd64 pinentry-curses amd64 1.1.0-2 [64.5 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 18.4 MB in 1s (23.1 MB/s)
+Selecting previously unselected package libncursesw6:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25736 files and directories currently installed.)
+Preparing to unpack .../libncursesw6_6.1+20181013-2_amd64.deb ...
+Unpacking libncursesw6:amd64 (6.1+20181013-2) ...
+Setting up libncursesw6:amd64 (6.1+20181013-2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25745 files and directories currently installed.)
+Preparing to unpack .../mount_2.33.1-0.1_amd64.deb ...
+Unpacking mount (2.33.1-0.1) over (2.29.2-1+deb9u1) ...
+Preparing to unpack .../util-linux_2.33.1-0.1_amd64.deb ...
+Unpacking util-linux (2.33.1-0.1) over (2.29.2-1+deb9u1) ...
+Replacing files in old package login (1:4.4-4.1) ...
+Selecting previously unselected package fdisk.
+Preparing to unpack .../fdisk_2.33.1-0.1_amd64.deb ...
+Unpacking fdisk (2.33.1-0.1) ...
+Setting up fdisk (2.33.1-0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25762 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.5-1.1_amd64.deb ...
+Unpacking login (1:4.5-1.1) over (1:4.4-4.1) ...
+Setting up login (1:4.5-1.1) ...
+Installing new version of config file /etc/securetty ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25750 files and directories currently installed.)
+Preparing to unpack .../0-python2.7_2.7.16-2_amd64.deb ...
+Unpacking python2.7 (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../1-libpython2.7-stdlib_2.7.16-2_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../2-python2.7-minimal_2.7.16-2_amd64.deb ...
+Unpacking python2.7-minimal (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../3-libpython2.7-minimal_2.7.16-2_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.16-2) over (2.7.13-2+deb9u3) ...
+Preparing to unpack .../4-python-minimal_2.7.16-1_amd64.deb ...
+Unpacking python-minimal (2.7.16-1) over (2.7.13-2) ...
+Selecting previously unselected package python2-minimal.
+Preparing to unpack .../5-python2-minimal_2.7.16-1_amd64.deb ...
+Unpacking python2-minimal (2.7.16-1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.16-2) ...
+Setting up python2.7-minimal (2.7.16-2) ...
+Setting up python2-minimal (2.7.16-1) ...
+Setting up python-minimal (2.7.16-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25757 files and directories currently installed.)
+Preparing to unpack .../0-python_2.7.16-1_amd64.deb ...
+Unpacking python (2.7.16-1) over (2.7.13-2) ...
+Preparing to unpack .../1-libpython-stdlib_2.7.16-1_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.16-1) over (2.7.13-2) ...
+Selecting previously unselected package libpython2-stdlib:amd64.
+Preparing to unpack .../2-libpython2-stdlib_2.7.16-1_amd64.deb ...
+Unpacking libpython2-stdlib:amd64 (2.7.16-1) ...
+Selecting previously unselected package python2.
+Preparing to unpack .../3-python2_2.7.16-1_amd64.deb ...
+Unpacking python2 (2.7.16-1) ...
+Preparing to unpack .../4-libcomerr2_1.44.5-1_amd64.deb ...
+Unpacking libcomerr2:amd64 (1.44.5-1) over (1.43.4-2) ...
+Selecting previously unselected package libcom-err2:amd64.
+Preparing to unpack .../5-libcom-err2_1.44.5-1_amd64.deb ...
+Unpacking libcom-err2:amd64 (1.44.5-1) ...
+Setting up libcom-err2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25750 files and directories currently installed.)
+Preparing to unpack .../libss2_1.44.5-1_amd64.deb ...
+Unpacking libss2:amd64 (1.44.5-1) over (1.43.4-2) ...
+Setting up libss2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25750 files and directories currently installed.)
+Preparing to unpack .../00-libgssapi-krb5-2_1.17-2_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../01-libkrb5-3_1.17-2_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../02-libk5crypto3_1.17-2_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../03-libkrb5support0_1.17-2_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.17-2) over (1.15-1+deb9u1) ...
+Preparing to unpack .../04-openssh-client_1%3a7.9p1-10_amd64.deb ...
+Unpacking openssh-client (1:7.9p1-10) over (1:7.4p1-10+deb9u4) ...
+Selecting previously unselected package libpcre2-8-0:amd64.
+Preparing to unpack .../05-libpcre2-8-0_10.32-5_amd64.deb ...
+Unpacking libpcre2-8-0:amd64 (10.32-5) ...
+Preparing to unpack .../06-wget_1.20.1-1.1_amd64.deb ...
+Unpacking wget (1.20.1-1.1) over (1.18-5+deb9u2) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../07-libcurl4_7.64.0-2_amd64.deb ...
+Unpacking libcurl4:amd64 (7.64.0-2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../08-curl_7.64.0-2_amd64.deb ...
+Unpacking curl (7.64.0-2) ...
+Preparing to unpack .../09-git_1%3a2.20.1-2_amd64.deb ...
+Unpacking git (1:2.20.1-2) over (1:2.11.0-3+deb9u4) ...
+Preparing to unpack .../10-git-man_1%3a2.20.1-2_all.deb ...
+Unpacking git-man (1:2.20.1-2) over (1:2.11.0-3+deb9u4) ...
+Preparing to unpack .../11-libcurl3-gnutls_7.64.0-2_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.64.0-2) over (7.52.1-5+deb9u8) ...
+Preparing to unpack .../12-libcups2_2.2.10-6_amd64.deb ...
+Unpacking libcups2:amd64 (2.2.10-6) over (2.2.1-8+deb9u2) ...
+Preparing to unpack .../13-libserf-1-1_1.3.9-7+b10_amd64.deb ...
+Unpacking libserf-1-1:amd64 (1.3.9-7+b10) over (1.3.9-3+deb9u1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../14-libwebp6_0.6.1-2_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2) ...
+Preparing to unpack .../15-libtiff5_4.0.10-4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.10-4) over (4.0.8-2+deb9u4) ...
+Preparing to unpack .../16-pinentry-curses_1.1.0-2_amd64.deb ...
+Unpacking pinentry-curses (1.1.0-2) over (1.0.0-2) ...
+Setting up pinentry-curses (1.1.0-2) ...
+Setting up libkrb5support0:amd64 (1.17-2) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.16-2) ...
+Setting up libwebp6:amd64 (0.6.1-2) ...
+Setting up util-linux (2.33.1-0.1) ...
+update-alternatives: warning: alternative /usr/bin/pg (part of link group pager) doesn't exist; removing from list of alternatives
+Setting up libpcre2-8-0:amd64 (10.32-5) ...
+Setting up libk5crypto3:amd64 (1.17-2) ...
+Setting up mount (2.33.1-0.1) ...
+Setting up libcomerr2:amd64 (1.44.5-1) ...
+Setting up git-man (1:2.20.1-2) ...
+Setting up libkrb5-3:amd64 (1.17-2) ...
+Setting up libtiff5:amd64 (4.0.10-4) ...
+Setting up wget (1.20.1-1.1) ...
+Setting up python2.7 (2.7.16-2) ...
+Setting up libpython2-stdlib:amd64 (2.7.16-1) ...
+Setting up python2 (2.7.16-1) ...
+Setting up libpython-stdlib:amd64 (2.7.16-1) ...
+Setting up libgssapi-krb5-2:amd64 (1.17-2) ...
+Setting up libcups2:amd64 (2.2.10-6) ...
+Setting up libcurl4:amd64 (7.64.0-2) ...
+Setting up curl (7.64.0-2) ...
+Setting up python (2.7.16-1) ...
+Setting up openssh-client (1:7.9p1-10) ...
+Installing new version of config file /etc/ssh/ssh_config ...
+Removing obsolete conffile /etc/ssh/moduli ...
+Setting up libserf-1-1:amd64 (1.3.9-7+b10) ...
+Setting up libcurl3-gnutls:amd64 (7.64.0-2) ...
+Setting up git (1:2.20.1-2) ...
+Processing triggers for libc-bin (2.28-8) ...
+Processing triggers for systemd (241-3) ...
+Processing triggers for mime-support (3.62) ...
+Removing intermediate container 25cea3a4ca47
+ ---> 6bf67b39d9ed
+Step 6/9 : RUN apt-get purge -y && apt-get autoremove -y mercurial
+ ---> Running in 0aa3d0c436a0
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following package was automatically installed and is no longer required:
+  libssl1.0.2
+Use 'apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 31 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package 'mercurial' is not installed, so not removed
+The following packages will be REMOVED:
+  libssl1.0.2
+0 upgraded, 0 newly installed, 1 to remove and 31 not upgraded.
+After this operation, 3642 kB disk space will be freed.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25826 files and directories currently installed.)
+Removing libssl1.0.2:amd64 (1.0.2q-1~deb9u1) ...
+Processing triggers for libc-bin (2.28-8) ...
+Removing intermediate container 0aa3d0c436a0
+ ---> 645fb9f6a017
+Step 7/9 : RUN dpkg --purge libssl1.0.2:amd64
+ ---> Running in 60c247374e45
+(Reading database ... 25805 files and directories currently installed.)
+Purging configuration files for libssl1.0.2:amd64 (1.0.2q-1~deb9u1) ...
+[91mdebconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+[0m[91mdebconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+[0mRemoving intermediate container 60c247374e45
+ ---> 363698789ac7
+Step 8/9 : RUN apt-get dist-upgrade -y
+ ---> Running in d2e060ff5d91
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages were automatically installed and are no longer required:
+  gnupg-agent libcomerr2 libegl-mesa0 libegl1 libegl1-mesa libgbm1 libgdbm3
+  libicu57 libncurses5 libncursesw5 libperl5.24 libprocps6 libtinfo5
+  libwayland-egl1-mesa libwayland-server0 libxcb-xfixes0 perl-modules-5.24
+Use 'apt autoremove' to remove them.
+The following NEW packages will be installed:
+  dbus-user-session e2fsprogs-l10n gcc-8-base gnupg-l10n gnupg-utils gpg
+  gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libcap2-bin
+  libdrm-amdgpu1 libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1
+  libegl-mesa0 libegl1 libext2fs2 libfribidi0 libgdbm-compat4 libgdbm6
+  libgdk-pixbuf2.0-bin libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0
+  libgpg-error-l10n libicu63 libllvm7 libncurses6 libpam-cap libpciaccess0
+  libperl5.28 libprocps7 libsensors-config libsensors5 libutf8proc2
+  libwayland-egl1 libxtables12 perl-modules-5.28
+The following packages will be upgraded:
+  dconf-gsettings-backend dconf-service dirmngr e2fslibs e2fsprogs gnupg
+  gnupg-agent iproute2 libaprutil1 libdconf1 libdrm2 libegl1-mesa libgbm1
+  libgcc1 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgl1-mesa-glx
+  libglapi-mesa libgpg-error0 libgtk-3-0 libpango-1.0-0 libpangoft2-1.0-0
+  libstdc++6 libsvn1 libwayland-egl1-mesa libxml2 perl perl-base procps
+  subversion x11-utils
+31 upgraded, 43 newly installed, 0 to remove and 0 not upgraded.
+Need to get 55.6 MB of archives.
+After this operation, 307 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian testing/main amd64 libext2fs2 amd64 1.44.5-1 [220 kB]
+Get:2 http://deb.debian.org/debian testing/main amd64 e2fslibs amd64 1.44.5-1 [64.1 kB]
+Get:3 http://deb.debian.org/debian testing/main amd64 e2fsprogs amd64 1.44.5-1 [574 kB]
+Get:4 http://deb.debian.org/debian testing/main amd64 perl-modules-5.28 all 5.28.1-6 [2873 kB]
+Get:5 http://deb.debian.org/debian testing/main amd64 libgdbm6 amd64 1.18.1-4 [64.7 kB]
+Get:6 http://deb.debian.org/debian testing/main amd64 libgdbm-compat4 amd64 1.18.1-4 [44.1 kB]
+Get:7 http://deb.debian.org/debian testing/main amd64 libperl5.28 amd64 5.28.1-6 [3883 kB]
+Get:8 http://deb.debian.org/debian testing/main amd64 perl amd64 5.28.1-6 [204 kB]
+Get:9 http://deb.debian.org/debian testing/main amd64 perl-base amd64 5.28.1-6 [1511 kB]
+Get:10 http://deb.debian.org/debian testing/main amd64 gcc-8-base amd64 8.3.0-6 [191 kB]
+Get:11 http://deb.debian.org/debian testing/main amd64 libgcc1 amd64 1:8.3.0-6 [40.6 kB]
+Get:12 http://deb.debian.org/debian testing/main amd64 libgpg-error0 amd64 1.35-1 [71.1 kB]
+Get:13 http://deb.debian.org/debian testing/main amd64 libstdc++6 amd64 8.3.0-6 [395 kB]
+Get:14 http://deb.debian.org/debian testing/main amd64 libxtables12 amd64 1.8.2-4 [80.0 kB]
+Get:15 http://deb.debian.org/debian testing/main amd64 libcap2-bin amd64 1:2.25-2 [28.8 kB]
+Get:16 http://deb.debian.org/debian testing/main amd64 iproute2 amd64 4.20.0-2 [827 kB]
+Get:17 http://deb.debian.org/debian testing/main amd64 libncurses6 amd64 6.1+20181013-2 [102 kB]
+Get:18 http://deb.debian.org/debian testing/main amd64 libprocps7 amd64 2:3.3.15-2 [61.7 kB]
+Get:19 http://deb.debian.org/debian testing/main amd64 procps amd64 2:3.3.15-2 [259 kB]
+Get:20 http://deb.debian.org/debian testing/main amd64 dbus-user-session amd64 1.12.12-1 [92.1 kB]
+Get:21 http://deb.debian.org/debian testing/main amd64 dconf-gsettings-backend amd64 0.30.1-2 [28.9 kB]
+Get:22 http://deb.debian.org/debian testing/main amd64 dconf-service amd64 0.30.1-2 [36.4 kB]
+Get:23 http://deb.debian.org/debian testing/main amd64 libdconf1 amd64 0.30.1-2 [40.7 kB]
+Get:24 http://deb.debian.org/debian testing/main amd64 gnupg-l10n all 2.2.12-1 [1008 kB]
+Get:25 http://deb.debian.org/debian testing/main amd64 dirmngr amd64 2.2.12-1 [711 kB]
+Get:26 http://deb.debian.org/debian testing/main amd64 gnupg all 2.2.12-1 [715 kB]
+Get:27 http://deb.debian.org/debian testing/main amd64 gnupg-agent all 2.2.12-1 [392 kB]
+Get:28 http://deb.debian.org/debian testing/main amd64 gpgconf amd64 2.2.12-1 [509 kB]
+Get:29 http://deb.debian.org/debian testing/main amd64 gpg-agent amd64 2.2.12-1 [617 kB]
+Get:30 http://deb.debian.org/debian testing/main amd64 gnupg-utils amd64 2.2.12-1 [857 kB]
+Get:31 http://deb.debian.org/debian testing/main amd64 gpg amd64 2.2.12-1 [862 kB]
+Get:32 http://deb.debian.org/debian testing/main amd64 gpg-wks-client amd64 2.2.12-1 [484 kB]
+Get:33 http://deb.debian.org/debian testing/main amd64 gpg-wks-server amd64 2.2.12-1 [477 kB]
+Get:34 http://deb.debian.org/debian testing/main amd64 gpgsm amd64 2.2.12-1 [602 kB]
+Get:35 http://deb.debian.org/debian testing/main amd64 e2fsprogs-l10n all 1.44.5-1 [504 kB]
+Get:36 http://deb.debian.org/debian testing/main amd64 libaprutil1 amd64 1.6.1-4 [91.8 kB]
+Get:37 http://deb.debian.org/debian testing/main amd64 libdrm-common all 2.4.97-1 [13.8 kB]
+Get:38 http://deb.debian.org/debian testing/main amd64 libdrm2 amd64 2.4.97-1 [39.7 kB]
+Get:39 http://deb.debian.org/debian testing/main amd64 libdrm-amdgpu1 amd64 2.4.97-1 [27.3 kB]
+Get:40 http://deb.debian.org/debian testing/main amd64 libpciaccess0 amd64 0.14-1 [53.5 kB]
+Get:41 http://deb.debian.org/debian testing/main amd64 libdrm-intel1 amd64 2.4.97-1 [69.8 kB]
+Get:42 http://deb.debian.org/debian testing/main amd64 libdrm-nouveau2 amd64 2.4.97-1 [26.3 kB]
+Get:43 http://deb.debian.org/debian testing/main amd64 libdrm-radeon1 amd64 2.4.97-1 [31.1 kB]
+Get:44 http://deb.debian.org/debian testing/main amd64 libgdk-pixbuf2.0-0 amd64 2.38.1+dfsg-1 [177 kB]
+Get:45 http://deb.debian.org/debian testing/main amd64 libgdk-pixbuf2.0-common all 2.38.1+dfsg-1 [316 kB]
+Get:46 http://deb.debian.org/debian testing/main amd64 libfribidi0 amd64 1.0.5-3.1 [63.5 kB]
+Get:47 http://deb.debian.org/debian testing/main amd64 libpango-1.0-0 amd64 1.42.4-6 [185 kB]
+Get:48 http://deb.debian.org/debian testing/main amd64 libpangoft2-1.0-0 amd64 1.42.4-6 [67.9 kB]
+Get:49 http://deb.debian.org/debian testing/main amd64 libwayland-egl1-mesa amd64 18.3.4-2 [47.1 kB]
+Get:50 http://deb.debian.org/debian testing/main amd64 libwayland-egl1 amd64 1.16.0-1 [8204 B]
+Get:51 http://deb.debian.org/debian testing/main amd64 libicu63 amd64 63.1-6 [8292 kB]
+Get:52 http://deb.debian.org/debian testing/main amd64 libxml2 amd64 2.9.4+dfsg1-7+b3 [687 kB]
+Get:53 http://deb.debian.org/debian testing/main amd64 libgtk-3-0 amd64 3.24.5-1 [2580 kB]
+Get:54 http://deb.debian.org/debian testing/main amd64 libglvnd0 amd64 1.1.0-1 [48.6 kB]
+Get:55 http://deb.debian.org/debian testing/main amd64 libegl1-mesa amd64 18.3.4-2 [47.1 kB]
+Get:56 http://deb.debian.org/debian testing/main amd64 libegl1 amd64 1.1.0-1 [33.6 kB]
+Get:57 http://deb.debian.org/debian testing/main amd64 libgbm1 amd64 18.3.4-2 [67.5 kB]
+Get:58 http://deb.debian.org/debian testing/main amd64 libllvm7 amd64 1:7.0.1-8 [13.0 MB]
+Get:59 http://deb.debian.org/debian testing/main amd64 libsensors-config all 1:3.5.0-3 [31.6 kB]
+Get:60 http://deb.debian.org/debian testing/main amd64 libsensors5 amd64 1:3.5.0-3 [52.6 kB]
+Get:61 http://deb.debian.org/debian testing/main amd64 libgl1-mesa-dri amd64 18.3.4-2 [6681 kB]
+Get:62 http://deb.debian.org/debian testing/main amd64 libglx-mesa0 amd64 18.3.4-2 [180 kB]
+Get:63 http://deb.debian.org/debian testing/main amd64 x11-utils amd64 7.7+4 [202 kB]
+Get:64 http://deb.debian.org/debian testing/main amd64 libgl1-mesa-glx amd64 18.3.4-2 [47.1 kB]
+Get:65 http://deb.debian.org/debian testing/main amd64 libglx0 amd64 1.1.0-1 [30.0 kB]
+Get:66 http://deb.debian.org/debian testing/main amd64 libgl1 amd64 1.1.0-1 [91.1 kB]
+Get:67 http://deb.debian.org/debian testing/main amd64 libglapi-mesa amd64 18.3.4-2 [65.7 kB]
+Get:68 http://deb.debian.org/debian testing/main amd64 libegl-mesa0 amd64 18.3.4-2 [135 kB]
+Get:69 http://deb.debian.org/debian testing/main amd64 libgdk-pixbuf2.0-bin amd64 2.38.1+dfsg-1 [24.1 kB]
+Get:70 http://deb.debian.org/debian testing/main amd64 libgpg-error-l10n all 1.35-1 [97.6 kB]
+Get:71 http://deb.debian.org/debian testing/main amd64 libpam-cap amd64 1:2.25-2 [14.3 kB]
+Get:72 http://deb.debian.org/debian testing/main amd64 subversion amd64 1.10.4-1 [1008 kB]
+Get:73 http://deb.debian.org/debian testing/main amd64 libutf8proc2 amd64 2.2.0-1 [53.3 kB]
+Get:74 http://deb.debian.org/debian testing/main amd64 libsvn1 amd64 1.10.4-1 [1400 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 55.6 MB in 2s (22.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25805 files and directories currently installed.)
+Preparing to unpack .../e2fslibs_1.44.5-1_amd64.deb ...
+Unpacking e2fslibs:amd64 (1.44.5-1) over (1.43.4-2) ...
+Selecting previously unselected package libext2fs2:amd64.
+Preparing to unpack .../libext2fs2_1.44.5-1_amd64.deb ...
+Unpacking libext2fs2:amd64 (1.44.5-1) ...
+Setting up libext2fs2:amd64 (1.44.5-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25808 files and directories currently installed.)
+Preparing to unpack .../e2fsprogs_1.44.5-1_amd64.deb ...
+Unpacking e2fsprogs (1.44.5-1) over (1.43.4-2) ...
+Setting up e2fsprogs (1.44.5-1) ...
+Installing new version of config file /etc/mke2fs.conf ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 25791 files and directories currently installed.)
+Preparing to unpack .../0-perl_5.28.1-6_amd64.deb ...
+Unpacking perl (5.28.1-6) over (5.24.1-3+deb9u5) ...
+Selecting previously unselected package perl-modules-5.28.
+Preparing to unpack .../1-perl-modules-5.28_5.28.1-6_all.deb ...
+Unpacking perl-modules-5.28 (5.28.1-6) ...
+Selecting previously unselected package libgdbm6:amd64.
+Preparing to unpack .../2-libgdbm6_1.18.1-4_amd64.deb ...
+Unpacking libgdbm6:amd64 (1.18.1-4) ...
+Selecting previously unselected package libgdbm-compat4:amd64.
+Preparing to unpack .../3-libgdbm-compat4_1.18.1-4_amd64.deb ...
+Unpacking libgdbm-compat4:amd64 (1.18.1-4) ...
+Selecting previously unselected package libperl5.28:amd64.
+Preparing to unpack .../4-libperl5.28_5.28.1-6_amd64.deb ...
+Unpacking libperl5.28:amd64 (5.28.1-6) ...
+Preparing to unpack .../5-perl-base_5.28.1-6_amd64.deb ...
+Unpacking perl-base (5.28.1-6) over (5.24.1-3+deb9u5) ...
+Setting up perl-base (5.28.1-6) ...
+Selecting previously unselected package gcc-8-base:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27693 files and directories currently installed.)
+Preparing to unpack .../gcc-8-base_8.3.0-6_amd64.deb ...
+Unpacking gcc-8-base:amd64 (8.3.0-6) ...
+Setting up gcc-8-base:amd64 (8.3.0-6) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27699 files and directories currently installed.)
+Preparing to unpack .../libgcc1_1%3a8.3.0-6_amd64.deb ...
+Unpacking libgcc1:amd64 (1:8.3.0-6) over (1:6.3.0-18+deb9u1) ...
+Setting up libgcc1:amd64 (1:8.3.0-6) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27699 files and directories currently installed.)
+Preparing to unpack .../libgpg-error0_1.35-1_amd64.deb ...
+Unpacking libgpg-error0:amd64 (1.35-1) over (1.26-2) ...
+Setting up libgpg-error0:amd64 (1.35-1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27680 files and directories currently installed.)
+Preparing to unpack .../libstdc++6_8.3.0-6_amd64.deb ...
+Unpacking libstdc++6:amd64 (8.3.0-6) over (6.3.0-18+deb9u1) ...
+Setting up libstdc++6:amd64 (8.3.0-6) ...
+Selecting previously unselected package libxtables12:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27680 files and directories currently installed.)
+Preparing to unpack .../00-libxtables12_1.8.2-4_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.2-4) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../01-libcap2-bin_1%3a2.25-2_amd64.deb ...
+Unpacking libcap2-bin (1:2.25-2) ...
+Preparing to unpack .../02-iproute2_4.20.0-2_amd64.deb ...
+Unpacking iproute2 (4.20.0-2) over (4.9.0-1+deb9u1) ...
+Selecting previously unselected package libncurses6:amd64.
+Preparing to unpack .../03-libncurses6_6.1+20181013-2_amd64.deb ...
+Unpacking libncurses6:amd64 (6.1+20181013-2) ...
+Selecting previously unselected package libprocps7:amd64.
+Preparing to unpack .../04-libprocps7_2%3a3.3.15-2_amd64.deb ...
+Unpacking libprocps7:amd64 (2:3.3.15-2) ...
+Preparing to unpack .../05-procps_2%3a3.3.15-2_amd64.deb ...
+Unpacking procps (2:3.3.15-2) over (2:3.3.12-3+deb9u1) ...
+Selecting previously unselected package dbus-user-session.
+Preparing to unpack .../06-dbus-user-session_1.12.12-1_amd64.deb ...
+Unpacking dbus-user-session (1.12.12-1) ...
+Preparing to unpack .../07-dconf-gsettings-backend_0.30.1-2_amd64.deb ...
+Unpacking dconf-gsettings-backend:amd64 (0.30.1-2) over (0.26.0-2+b1) ...
+Preparing to unpack .../08-dconf-service_0.30.1-2_amd64.deb ...
+Unpacking dconf-service (0.30.1-2) over (0.26.0-2+b1) ...
+Preparing to unpack .../09-libdconf1_0.30.1-2_amd64.deb ...
+Unpacking libdconf1:amd64 (0.30.1-2) over (0.26.0-2+b1) ...
+Selecting previously unselected package gnupg-l10n.
+Preparing to unpack .../10-gnupg-l10n_2.2.12-1_all.deb ...
+Unpacking gnupg-l10n (2.2.12-1) ...
+Preparing to unpack .../11-dirmngr_2.2.12-1_amd64.deb ...
+Unpacking dirmngr (2.2.12-1) over (2.1.18-8~deb9u3) ...
+Preparing to unpack .../12-gnupg_2.2.12-1_all.deb ...
+Unpacking gnupg (2.2.12-1) over (2.1.18-8~deb9u3) ...
+Preparing to unpack .../13-gnupg-agent_2.2.12-1_all.deb ...
+Unpacking gnupg-agent (2.2.12-1) over (2.1.18-8~deb9u3) ...
+Selecting previously unselected package gpgconf.
+Preparing to unpack .../14-gpgconf_2.2.12-1_amd64.deb ...
+Unpacking gpgconf (2.2.12-1) ...
+Selecting previously unselected package gpg-agent.
+Preparing to unpack .../15-gpg-agent_2.2.12-1_amd64.deb ...
+Unpacking gpg-agent (2.2.12-1) ...
+Selecting previously unselected package gnupg-utils.
+Preparing to unpack .../16-gnupg-utils_2.2.12-1_amd64.deb ...
+Unpacking gnupg-utils (2.2.12-1) ...
+Selecting previously unselected package gpg.
+Preparing to unpack .../17-gpg_2.2.12-1_amd64.deb ...
+Unpacking gpg (2.2.12-1) ...
+Selecting previously unselected package gpg-wks-client.
+Preparing to unpack .../18-gpg-wks-client_2.2.12-1_amd64.deb ...
+Unpacking gpg-wks-client (2.2.12-1) ...
+Selecting previously unselected package gpg-wks-server.
+Preparing to unpack .../19-gpg-wks-server_2.2.12-1_amd64.deb ...
+Unpacking gpg-wks-server (2.2.12-1) ...
+Selecting previously unselected package gpgsm.
+Preparing to unpack .../20-gpgsm_2.2.12-1_amd64.deb ...
+Unpacking gpgsm (2.2.12-1) ...
+Selecting previously unselected package e2fsprogs-l10n.
+Preparing to unpack .../21-e2fsprogs-l10n_1.44.5-1_all.deb ...
+Unpacking e2fsprogs-l10n (1.44.5-1) ...
+Preparing to unpack .../22-libaprutil1_1.6.1-4_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-4) over (1.5.4-3) ...
+Selecting previously unselected package libdrm-common.
+Preparing to unpack .../23-libdrm-common_2.4.97-1_all.deb ...
+Unpacking libdrm-common (2.4.97-1) ...
+Preparing to unpack .../24-libdrm2_2.4.97-1_amd64.deb ...
+Unpacking libdrm2:amd64 (2.4.97-1) over (2.4.74-1) ...
+Selecting previously unselected package libdrm-amdgpu1:amd64.
+Preparing to unpack .../25-libdrm-amdgpu1_2.4.97-1_amd64.deb ...
+Unpacking libdrm-amdgpu1:amd64 (2.4.97-1) ...
+Selecting previously unselected package libpciaccess0:amd64.
+Preparing to unpack .../26-libpciaccess0_0.14-1_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.14-1) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../27-libdrm-intel1_2.4.97-1_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.97-1) ...
+Selecting previously unselected package libdrm-nouveau2:amd64.
+Preparing to unpack .../28-libdrm-nouveau2_2.4.97-1_amd64.deb ...
+Unpacking libdrm-nouveau2:amd64 (2.4.97-1) ...
+Selecting previously unselected package libdrm-radeon1:amd64.
+Preparing to unpack .../29-libdrm-radeon1_2.4.97-1_amd64.deb ...
+Unpacking libdrm-radeon1:amd64 (2.4.97-1) ...
+Preparing to unpack .../30-libgdk-pixbuf2.0-0_2.38.1+dfsg-1_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-0:amd64 (2.38.1+dfsg-1) over (2.36.5-2+deb9u2) ...
+Preparing to unpack .../31-libgdk-pixbuf2.0-common_2.38.1+dfsg-1_all.deb ...
+Unpacking libgdk-pixbuf2.0-common (2.38.1+dfsg-1) over (2.36.5-2+deb9u2) ...
+Selecting previously unselected package libfribidi0:amd64.
+Preparing to unpack .../32-libfribidi0_1.0.5-3.1_amd64.deb ...
+Unpacking libfribidi0:amd64 (1.0.5-3.1) ...
+Preparing to unpack .../33-libpango-1.0-0_1.42.4-6_amd64.deb ...
+Unpacking libpango-1.0-0:amd64 (1.42.4-6) over (1.40.5-1) ...
+Preparing to unpack .../34-libpangoft2-1.0-0_1.42.4-6_amd64.deb ...
+Unpacking libpangoft2-1.0-0:amd64 (1.42.4-6) over (1.40.5-1) ...
+Preparing to unpack .../35-libwayland-egl1-mesa_18.3.4-2_amd64.deb ...
+Unpacking libwayland-egl1-mesa:amd64 (18.3.4-2) over (13.0.6-1+b2) ...
+Selecting previously unselected package libwayland-egl1:amd64.
+Preparing to unpack .../36-libwayland-egl1_1.16.0-1_amd64.deb ...
+Unpacking libwayland-egl1:amd64 (1.16.0-1) ...
+Selecting previously unselected package libicu63:amd64.
+Preparing to unpack .../37-libicu63_63.1-6_amd64.deb ...
+Unpacking libicu63:amd64 (63.1-6) ...
+Preparing to unpack .../38-libxml2_2.9.4+dfsg1-7+b3_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-7+b3) over (2.9.4+dfsg1-2.2+deb9u2) ...
+Preparing to unpack .../39-libgtk-3-0_3.24.5-1_amd64.deb ...
+Unpacking libgtk-3-0:amd64 (3.24.5-1) over (3.22.11-1) ...
+Selecting previously unselected package libglvnd0:amd64.
+Preparing to unpack .../40-libglvnd0_1.1.0-1_amd64.deb ...
+Unpacking libglvnd0:amd64 (1.1.0-1) ...
+Preparing to unpack .../41-libegl1-mesa_18.3.4-2_amd64.deb ...
+Unpacking libegl1-mesa:amd64 (18.3.4-2) over (13.0.6-1+b2) ...
+Selecting previously unselected package libegl1:amd64.
+Preparing to unpack .../42-libegl1_1.1.0-1_amd64.deb ...
+Unpacking libegl1:amd64 (1.1.0-1) ...
+Preparing to unpack .../43-libgbm1_18.3.4-2_amd64.deb ...
+Unpacking libgbm1:amd64 (18.3.4-2) over (13.0.6-1+b2) ...
+Selecting previously unselected package libllvm7:amd64.
+Preparing to unpack .../44-libllvm7_1%3a7.0.1-8_amd64.deb ...
+Unpacking libllvm7:amd64 (1:7.0.1-8) ...
+Selecting previously unselected package libsensors-config.
+Preparing to unpack .../45-libsensors-config_1%3a3.5.0-3_all.deb ...
+Unpacking libsensors-config (1:3.5.0-3) ...
+Selecting previously unselected package libsensors5:amd64.
+Preparing to unpack .../46-libsensors5_1%3a3.5.0-3_amd64.deb ...
+Unpacking libsensors5:amd64 (1:3.5.0-3) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../47-libgl1-mesa-dri_18.3.4-2_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (18.3.4-2) ...
+Selecting previously unselected package libglx-mesa0:amd64.
+Preparing to unpack .../48-libglx-mesa0_18.3.4-2_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (18.3.4-2) ...
+Preparing to unpack .../49-x11-utils_7.7+4_amd64.deb ...
+Unpacking x11-utils (7.7+4) over (7.7+3+b1) ...
+Preparing to unpack .../50-libgl1-mesa-glx_18.3.4-2_amd64.deb ...
+Unpacking libgl1-mesa-glx:amd64 (18.3.4-2) over (13.0.6-1+b2) ...
+Selecting previously unselected package libglx0:amd64.
+Preparing to unpack .../51-libglx0_1.1.0-1_amd64.deb ...
+Unpacking libglx0:amd64 (1.1.0-1) ...
+Selecting previously unselected package libgl1:amd64.
+Preparing to unpack .../52-libgl1_1.1.0-1_amd64.deb ...
+Unpacking libgl1:amd64 (1.1.0-1) ...
+Preparing to unpack .../53-libglapi-mesa_18.3.4-2_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (18.3.4-2) over (13.0.6-1+b2) ...
+Selecting previously unselected package libegl-mesa0:amd64.
+Preparing to unpack .../54-libegl-mesa0_18.3.4-2_amd64.deb ...
+Unpacking libegl-mesa0:amd64 (18.3.4-2) ...
+Selecting previously unselected package libgdk-pixbuf2.0-bin.
+Preparing to unpack .../55-libgdk-pixbuf2.0-bin_2.38.1+dfsg-1_amd64.deb ...
+Unpacking libgdk-pixbuf2.0-bin (2.38.1+dfsg-1) ...
+Selecting previously unselected package libgpg-error-l10n.
+Preparing to unpack .../56-libgpg-error-l10n_1.35-1_all.deb ...
+Unpacking libgpg-error-l10n (1.35-1) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../57-libpam-cap_1%3a2.25-2_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.25-2) ...
+Preparing to unpack .../58-subversion_1.10.4-1_amd64.deb ...
+Unpacking subversion (1.10.4-1) over (1.9.5-1+deb9u3) ...
+Selecting previously unselected package libutf8proc2:amd64.
+Preparing to unpack .../59-libutf8proc2_2.2.0-1_amd64.deb ...
+Unpacking libutf8proc2:amd64 (2.2.0-1) ...
+Preparing to unpack .../60-libsvn1_1.10.4-1_amd64.deb ...
+Unpacking libsvn1:amd64 (1.10.4-1) over (1.9.5-1+deb9u3) ...
+Setting up perl-modules-5.28 (5.28.1-6) ...
+Setting up libpciaccess0:amd64 (0.14-1) ...
+Setting up e2fslibs:amd64 (1.44.5-1) ...
+Setting up e2fsprogs-l10n (1.44.5-1) ...
+Setting up libglvnd0:amd64 (1.1.0-1) ...
+Setting up libprocps7:amd64 (2:3.3.15-2) ...
+Setting up libutf8proc2:amd64 (2.2.0-1) ...
+Setting up libgdk-pixbuf2.0-common (2.38.1+dfsg-1) ...
+Setting up libsensors-config (1:3.5.0-3) ...
+Setting up libicu63:amd64 (63.1-6) ...
+Setting up libcap2-bin (1:2.25-2) ...
+Setting up libdconf1:amd64 (0.30.1-2) ...
+Setting up dbus-user-session (1.12.12-1) ...
+Setting up gnupg-l10n (2.2.12-1) ...
+Setting up libgdk-pixbuf2.0-0:amd64 (2.38.1+dfsg-1) ...
+Setting up libncurses6:amd64 (6.1+20181013-2) ...
+Setting up libfribidi0:amd64 (1.0.5-3.1) ...
+Setting up libsensors5:amd64 (1:3.5.0-3) ...
+Setting up libxtables12:amd64 (1.8.2-4) ...
+Setting up libglapi-mesa:amd64 (18.3.4-2) ...
+Setting up libgdk-pixbuf2.0-bin (2.38.1+dfsg-1) ...
+Setting up procps (2:3.3.15-2) ...
+Installing new version of config file /etc/init.d/procps ...
+Installing new version of config file /etc/sysctl.conf ...
+Setting up gpgconf (2.2.12-1) ...
+Setting up libllvm7:amd64 (1:7.0.1-8) ...
+Setting up libwayland-egl1:amd64 (1.16.0-1) ...
+Setting up libgpg-error-l10n (1.35-1) ...
+Setting up libdrm-common (2.4.97-1) ...
+Setting up libpam-cap:amd64 (1:2.25-2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up libxml2:amd64 (2.9.4+dfsg1-7+b3) ...
+Setting up gpg (2.2.12-1) ...
+Setting up libgdbm6:amd64 (1.18.1-4) ...
+Setting up gnupg-utils (2.2.12-1) ...
+Setting up libaprutil1:amd64 (1.6.1-4) ...
+Setting up gpg-agent (2.2.12-1) ...
+Setting up iproute2 (4.20.0-2) ...
+Installing new version of config file /etc/iproute2/ematch_map ...
+Installing new version of config file /etc/iproute2/nl_protos ...
+Installing new version of config file /etc/iproute2/rt_protos ...
+Installing new version of config file /etc/iproute2/rt_tables.d/README ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+Setting up gpgsm (2.2.12-1) ...
+Setting up libpango-1.0-0:amd64 (1.42.4-6) ...
+Setting up dconf-service (0.30.1-2) ...
+Setting up dirmngr (2.2.12-1) ...
+Setting up gnupg-agent (2.2.12-1) ...
+Setting up libgdbm-compat4:amd64 (1.18.1-4) ...
+Setting up libperl5.28:amd64 (5.28.1-6) ...
+Setting up gpg-wks-server (2.2.12-1) ...
+Setting up libdrm2:amd64 (2.4.97-1) ...
+Setting up libpangoft2-1.0-0:amd64 (1.42.4-6) ...
+Setting up libsvn1:amd64 (1.10.4-1) ...
+Setting up libdrm-amdgpu1:amd64 (2.4.97-1) ...
+Setting up libdrm-nouveau2:amd64 (2.4.97-1) ...
+Setting up gpg-wks-client (2.2.12-1) ...
+Setting up dconf-gsettings-backend:amd64 (0.30.1-2) ...
+Setting up libgbm1:amd64 (18.3.4-2) ...
+Setting up libdrm-radeon1:amd64 (2.4.97-1) ...
+Setting up libgtk-3-0:amd64 (3.24.5-1) ...
+Setting up libdrm-intel1:amd64 (2.4.97-1) ...
+Setting up libgl1-mesa-dri:amd64 (18.3.4-2) ...
+Setting up subversion (1.10.4-1) ...
+Installing new version of config file /etc/subversion/servers ...
+Setting up perl (5.28.1-6) ...
+update-alternatives: warning: alternative /usr/bin/prename (part of link group rename) doesn't exist; removing from list of alternatives
+update-alternatives: warning: /etc/alternatives/rename is dangling; it will be updated with best choice
+Removing obsolete conffile /etc/perl/sitecustomize.pl ...
+Setting up libegl-mesa0:amd64 (18.3.4-2) ...
+Setting up libegl1:amd64 (1.1.0-1) ...
+Setting up gnupg (2.2.12-1) ...
+Setting up libwayland-egl1-mesa:amd64 (18.3.4-2) ...
+Setting up libglx-mesa0:amd64 (18.3.4-2) ...
+Setting up libglx0:amd64 (1.1.0-1) ...
+Setting up libegl1-mesa:amd64 (18.3.4-2) ...
+Setting up libgl1:amd64 (1.1.0-1) ...
+Setting up libgl1-mesa-glx:amd64 (18.3.4-2) ...
+Setting up x11-utils (7.7+4) ...
+Installing new version of config file /etc/X11/app-defaults/Editres ...
+Processing triggers for libc-bin (2.28-8) ...
+Processing triggers for systemd (241-3) ...
+Processing triggers for libglib2.0-0:amd64 (2.58.3-1) ...
+Removing intermediate container d2e060ff5d91
+ ---> a73c1af19ccb
+Step 9/9 : USER jenkins
+ ---> Running in 7c22440bbac0
+Removing intermediate container 7c22440bbac0
+ ---> 655dfb6e23db
+Successfully built 655dfb6e23db
+Successfully tagged msahib/jenkins-build-master:0.0.196_2019-04-28
++ date +%Y-%m-%d
++ docker push msahib/jenkins-build-master:0.0.196_2019-04-28
+The push refers to repository [docker.io/msahib/jenkins-build-master]
+89079e05100e: Preparing
+20124b32c318: Preparing
+411ac0390d47: Preparing
+d4fdfca2cd20: Preparing
+fae42ed478cc: Preparing
+080c50ad2f3d: Preparing
+0ec9429ae0e3: Preparing
+2f22906229c5: Preparing
+ccc58c514174: Preparing
+9a041b271004: Preparing
+46996bca756d: Preparing
+5e10f9baeb9c: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+080c50ad2f3d: Waiting
+0ec9429ae0e3: Waiting
+2f22906229c5: Waiting
+ccc58c514174: Waiting
+9a041b271004: Waiting
+46996bca756d: Waiting
+5e10f9baeb9c: Waiting
+6ed8afd8a8ca: Waiting
+461ceb88bd16: Waiting
+2a22f8361923: Waiting
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+411ac0390d47: Pushed
+20124b32c318: Pushed
+0ec9429ae0e3: Layer already exists
+2f22906229c5: Layer already exists
+080c50ad2f3d: Pushed
+ccc58c514174: Layer already exists
+46996bca756d: Layer already exists
+9a041b271004: Layer already exists
+5e10f9baeb9c: Layer already exists
+6ed8afd8a8ca: Layer already exists
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+b0f30a2d33ef: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+55e659db8c71: Layer already exists
+8abacd22f0b4: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+3d920cbc2719: Layer already exists
+50c47c5a165d: Layer already exists
+08b1513fa90e: Layer already exists
+38af37073821: Layer already exists
+a7702ebc484e: Layer already exists
+7b1186903462: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+c581f4ede92d: Layer already exists
+d4fdfca2cd20: Pushed
+fae42ed478cc: Pushed
+89079e05100e: Pushed
+0.0.196_2019-04-28: digest: sha256:2a4836417f41ed53d0976664daeb756834eba3fb7d84b108d7850ef3e16fe537 size: 7028
++ date +%Y-%m-%d
++ date +%Y-%m-%d
++ docker tag msahib/jenkins-build-master:0.0.196_2019-04-28 10.1.7.250/library/jenkins-build-master:0.0.196_2019-04-28
++ date +%Y-%m-%d
++ docker push 10.1.7.250/library/jenkins-build-master:0.0.196_2019-04-28
+The push refers to repository [10.1.7.250/library/jenkins-build-master]
+89079e05100e: Preparing
+20124b32c318: Preparing
+411ac0390d47: Preparing
+d4fdfca2cd20: Preparing
+fae42ed478cc: Preparing
+080c50ad2f3d: Preparing
+0ec9429ae0e3: Preparing
+2f22906229c5: Preparing
+ccc58c514174: Preparing
+9a041b271004: Preparing
+46996bca756d: Preparing
+5e10f9baeb9c: Preparing
+6ed8afd8a8ca: Preparing
+461ceb88bd16: Preparing
+2a22f8361923: Preparing
+b0f30a2d33ef: Preparing
+e8fec055e629: Preparing
+cf43ed0cb510: Preparing
+55e659db8c71: Preparing
+8abacd22f0b4: Preparing
+7dcd115d799b: Preparing
+b88313f31a01: Preparing
+3d920cbc2719: Preparing
+50c47c5a165d: Preparing
+08b1513fa90e: Preparing
+38af37073821: Preparing
+a7702ebc484e: Preparing
+7b1186903462: Preparing
+d2217ead3a1c: Preparing
+b53b57a50746: Preparing
+d2518892581f: Preparing
+c581f4ede92d: Preparing
+080c50ad2f3d: Waiting
+0ec9429ae0e3: Waiting
+2f22906229c5: Waiting
+ccc58c514174: Waiting
+9a041b271004: Waiting
+46996bca756d: Waiting
+5e10f9baeb9c: Waiting
+6ed8afd8a8ca: Waiting
+461ceb88bd16: Waiting
+2a22f8361923: Waiting
+b0f30a2d33ef: Waiting
+e8fec055e629: Waiting
+cf43ed0cb510: Waiting
+55e659db8c71: Waiting
+8abacd22f0b4: Waiting
+7dcd115d799b: Waiting
+b88313f31a01: Waiting
+3d920cbc2719: Waiting
+50c47c5a165d: Waiting
+08b1513fa90e: Waiting
+38af37073821: Waiting
+a7702ebc484e: Waiting
+7b1186903462: Waiting
+d2217ead3a1c: Waiting
+b53b57a50746: Waiting
+d2518892581f: Waiting
+c581f4ede92d: Waiting
+411ac0390d47: Pushed
+20124b32c318: Pushed
+0ec9429ae0e3: Layer already exists
+2f22906229c5: Layer already exists
+ccc58c514174: Layer already exists
+080c50ad2f3d: Pushed
+9a041b271004: Layer already exists
+46996bca756d: Layer already exists
+5e10f9baeb9c: Layer already exists
+6ed8afd8a8ca: Layer already exists
+461ceb88bd16: Layer already exists
+2a22f8361923: Layer already exists
+b0f30a2d33ef: Layer already exists
+e8fec055e629: Layer already exists
+cf43ed0cb510: Layer already exists
+55e659db8c71: Layer already exists
+8abacd22f0b4: Layer already exists
+7dcd115d799b: Layer already exists
+b88313f31a01: Layer already exists
+3d920cbc2719: Layer already exists
+50c47c5a165d: Layer already exists
+08b1513fa90e: Layer already exists
+38af37073821: Layer already exists
+a7702ebc484e: Layer already exists
+7b1186903462: Layer already exists
+d2217ead3a1c: Layer already exists
+b53b57a50746: Layer already exists
+d2518892581f: Layer already exists
+fae42ed478cc: Pushed
+c581f4ede92d: Layer already exists
+d4fdfca2cd20: Pushed
+89079e05100e: Pushed
+0.0.196_2019-04-28: digest: sha256:2a4836417f41ed53d0976664daeb756834eba3fb7d84b108d7850ef3e16fe537 size: 7028
++ date +%Y-%m-%d
++ docker rmi 10.1.7.250/library/jenkins-build-master:0.0.196_2019-04-28
+Untagged: 10.1.7.250/library/jenkins-build-master:0.0.196_2019-04-28
+Untagged: 10.1.7.250/library/jenkins-build-master@sha256:2a4836417f41ed53d0976664daeb756834eba3fb7d84b108d7850ef3e16fe537
++ date +%Y-%m-%d
++ docker rmi msahib/jenkins-build-master:0.0.196_2019-04-28
+Untagged: msahib/jenkins-build-master:0.0.196_2019-04-28
+Untagged: msahib/jenkins-build-master@sha256:2a4836417f41ed53d0976664daeb756834eba3fb7d84b108d7850ef3e16fe537
+Deleted: sha256:655dfb6e23dba00674485c369de5ff76cde6983bab57a86ba066275606c0e808
+Deleted: sha256:a73c1af19ccb87ea4114731ebdb9f8b6f2ab90e6b0b3526ae14e1d1b059c4405
+Deleted: sha256:177852d5244ab6f9e027d5b49e8e6964bb41e6fd9fe52b73e53e3ceb14bd2af0
+Deleted: sha256:363698789ac761b7c70e085fca53ccfa6d432c4857b1f4d50fd395bcdc5feca1
+Deleted: sha256:8b2f7de4217648a21003e3d95362c8fe24505b7889cf1c0219fc5b49e4a1bf64
+Deleted: sha256:645fb9f6a017d1ec9dcc8c23d6a9ab361646125e39f1a3f7e5ac0240bf192f2e
+Deleted: sha256:cb329597deb22aa21c6c77dacd08227d9495797662bf19651c8c27e1f72805a1
+Deleted: sha256:6bf67b39d9edfac17459c32680e35ec3930ba463713d182a9cf1aa6d9c4d806a
+Deleted: sha256:b6681a77a34b11ea6b5f35a7c45b0540022c1c70ae47b15bb470e38d47e14dc2
+Deleted: sha256:c68a46cee59c8400b6aabc06eebd3b4f37622682752a9f3bd10e771f8d54e64d
+Deleted: sha256:be79ce055b812768512dbee727dece939748a233b9bd2e9424cbd7ce75582b6d
+Deleted: sha256:439baf288ca7a9a4e644f110feffa48940bd759a81a9dd113ceddd9a1318d56e
+Deleted: sha256:2d1ee0c311da47de93049cc62c9f382c76a4eb47408eb6363e5298ed18ee6d24
++ docker images
+REPOSITORY                    TAG                  IMAGE ID            CREATED             SIZE
+<none>                        <none>               5a9c8fe38c17        7 minutes ago       1.12GB
+<none>                        <none>               fd5c733b5848        25 minutes ago      1.12GB
+msahib/jenkins-build-master   0.0.169_2019-04-21   f96ee4c6b285        6 days ago          1.12GB
+msahib/jenkins-docker-slave   v2-4                 354c97fee366        2 months ago        1.02GB
+Finished: SUCCESS

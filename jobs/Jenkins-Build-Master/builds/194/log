@@ -1,0 +1,252 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4D+YoJOo2zYLIkpdgQibt/SpW6fs99kIlyqCOyBdx+iiAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/eT83ILSktQifa/UvOzMvGJdl/zk7NQi3eCcxLJUACPk30jTAAAA[0mJenkins-Docker-Slave (Docker) in workspace /home/jenkins/agent/workspace/Jenkins-Build-Master
+[Jenkins-Build-Master] $ /bin/sh -xe /tmp/jenkins9016689513760494251.sh
++ ls
+Dockerfile
+Jenkinsfile
+README.md
+glibc-source_2.24-11+deb9u4_all.deb
+maven-settings
+sources.list
++ docker info
+Containers: 1
+ Running: 1
+ Paused: 0
+ Stopped: 0
+Images: 1
+Server Version: 18.09.1
+Storage Driver: overlay2
+ Backing Filesystem: xfs
+ Supports d_type: true
+ Native Overlay Diff: true
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge host macvlan null overlay
+ Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Init Binary: docker-init
+containerd version: 9754871865f7fe2f4e74d43e2fc7ccd237edcbce
+runc version: 96ec2177ae841256168fcf76954f7177af9446eb
+init version: fec3683
+Security Options:
+ seccomp
+  Profile: default
+Kernel Version: 3.10.0-957.1.3.el7.x86_64
+Operating System: CentOS Linux 7 (Core)
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 1.795GiB
+Name: docker-slave
+ID: IXWY:NY4L:SHYG:ITKW:EJ7M:DFAX:3UHP:UEI5:ICWM:3EKK:2XZN:DLGJ
+Docker Root Dir: /var/lib/docker
+Debug Mode (client): false
+Debug Mode (server): false
+Username: msahib
+Registry: https://index.docker.io/v1/
+Labels:
+Experimental: false
+Insecure Registries:
+ 10.1.7.250
+ 127.0.0.0/8
+Live Restore Enabled: false
+Product License: Community Engine
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
++ date +%Y-%m-%d
++ docker build -t msahib/jenkins-build-master:0.0.194_2019-04-28 .
+Sending build context to Docker daemon  15.45MB
+Step 1/9 : FROM msahib/jenkins-build-master:0.0.169_2019-04-21
+0.0.169_2019-04-21: Pulling from msahib/jenkins-build-master
+cd8eada9c7bb: Pulling fs layer
+c2677faec825: Pulling fs layer
+fcce419a96b1: Pulling fs layer
+045b51e26e75: Pulling fs layer
+88e50f3a5916: Pulling fs layer
+a7c546cdc7ce: Pulling fs layer
+73b0460146c0: Pulling fs layer
+428095c4a908: Pulling fs layer
+cc5684680ef3: Pulling fs layer
+9350ffa784e6: Pulling fs layer
+9e37662b8ec6: Pulling fs layer
+7e1a5f5ffe25: Pulling fs layer
+e402da9ada5c: Pulling fs layer
+b2aa6e6d8c08: Pulling fs layer
+12d8fc5f7748: Pulling fs layer
+8de71cd815da: Pulling fs layer
+1bcaf2c915b7: Pulling fs layer
+5f0bf8c77560: Pulling fs layer
+283cd3aba869: Pulling fs layer
+b0ce8ab5a5a7: Pulling fs layer
+bb984da40b60: Pulling fs layer
+f7a8a0010fe0: Pulling fs layer
+862e91d26ccf: Pulling fs layer
+c6716ccb1eb2: Pulling fs layer
+d87542a54d8c: Pulling fs layer
+79b16e8a0381: Pulling fs layer
+045b51e26e75: Waiting
+88e50f3a5916: Waiting
+a7c546cdc7ce: Waiting
+73b0460146c0: Waiting
+428095c4a908: Waiting
+cc5684680ef3: Waiting
+9350ffa784e6: Waiting
+9e37662b8ec6: Waiting
+7e1a5f5ffe25: Waiting
+e402da9ada5c: Waiting
+b2aa6e6d8c08: Waiting
+12d8fc5f7748: Waiting
+8de71cd815da: Waiting
+1bcaf2c915b7: Waiting
+5f0bf8c77560: Waiting
+283cd3aba869: Waiting
+b0ce8ab5a5a7: Waiting
+bb984da40b60: Waiting
+f7a8a0010fe0: Waiting
+862e91d26ccf: Waiting
+c6716ccb1eb2: Waiting
+d87542a54d8c: Waiting
+79b16e8a0381: Waiting
+fcce419a96b1: Verifying Checksum
+fcce419a96b1: Download complete
+c2677faec825: Verifying Checksum
+c2677faec825: Download complete
+88e50f3a5916: Verifying Checksum
+88e50f3a5916: Download complete
+cd8eada9c7bb: Verifying Checksum
+cd8eada9c7bb: Download complete
+73b0460146c0: Verifying Checksum
+73b0460146c0: Download complete
+a7c546cdc7ce: Verifying Checksum
+a7c546cdc7ce: Download complete
+cc5684680ef3: Verifying Checksum
+cc5684680ef3: Download complete
+9350ffa784e6: Verifying Checksum
+9350ffa784e6: Download complete
+045b51e26e75: Verifying Checksum
+045b51e26e75: Download complete
+9e37662b8ec6: Verifying Checksum
+9e37662b8ec6: Download complete
+7e1a5f5ffe25: Verifying Checksum
+7e1a5f5ffe25: Download complete
+e402da9ada5c: Verifying Checksum
+e402da9ada5c: Download complete
+12d8fc5f7748: Verifying Checksum
+12d8fc5f7748: Download complete
+8de71cd815da: Verifying Checksum
+8de71cd815da: Download complete
+1bcaf2c915b7: Verifying Checksum
+1bcaf2c915b7: Download complete
+5f0bf8c77560: Verifying Checksum
+5f0bf8c77560: Download complete
+cd8eada9c7bb: Pull complete
+283cd3aba869: Verifying Checksum
+283cd3aba869: Download complete
+b0ce8ab5a5a7: Verifying Checksum
+b0ce8ab5a5a7: Download complete
+c2677faec825: Pull complete
+fcce419a96b1: Pull complete
+428095c4a908: Verifying Checksum
+428095c4a908: Download complete
+bb984da40b60: Verifying Checksum
+bb984da40b60: Download complete
+045b51e26e75: Pull complete
+88e50f3a5916: Pull complete
+a7c546cdc7ce: Pull complete
+73b0460146c0: Pull complete
+f7a8a0010fe0: Verifying Checksum
+f7a8a0010fe0: Download complete
+b2aa6e6d8c08: Verifying Checksum
+b2aa6e6d8c08: Download complete
+c6716ccb1eb2: Verifying Checksum
+c6716ccb1eb2: Download complete
+862e91d26ccf: Verifying Checksum
+862e91d26ccf: Download complete
+d87542a54d8c: Verifying Checksum
+d87542a54d8c: Download complete
+79b16e8a0381: Verifying Checksum
+79b16e8a0381: Download complete
+428095c4a908: Pull complete
+cc5684680ef3: Pull complete
+9350ffa784e6: Pull complete
+9e37662b8ec6: Pull complete
+7e1a5f5ffe25: Pull complete
+e402da9ada5c: Pull complete
+b2aa6e6d8c08: Pull complete
+12d8fc5f7748: Pull complete
+8de71cd815da: Pull complete
+1bcaf2c915b7: Pull complete
+5f0bf8c77560: Pull complete
+283cd3aba869: Pull complete
+b0ce8ab5a5a7: Pull complete
+bb984da40b60: Pull complete
+f7a8a0010fe0: Pull complete
+862e91d26ccf: Pull complete
+c6716ccb1eb2: Pull complete
+d87542a54d8c: Pull complete
+79b16e8a0381: Pull complete
+Digest: sha256:ec143ec859be22a128942d967b688dae6d3c70ba789d641a179dd27f31df0a1a
+Status: Downloaded newer image for msahib/jenkins-build-master:0.0.169_2019-04-21
+ ---> f96ee4c6b285
+Step 2/9 : USER root
+ ---> Running in 038d604886be
+Removing intermediate container 038d604886be
+ ---> 4144b10bdb91
+Step 3/9 : COPY sources.list /etc/apt/sources.list
+ ---> fd5c733b5848
+Step 4/9 : RUN apt-get update && apt-get upgrade -y && apt-get install -y maven apt-transport-https vim libtiff-tools
+ ---> Running in e94c436c465f
+Get:1 http://deb.debian.org/debian testing InRelease [163 kB]
+Get:2 http://deb.debian.org/debian testing-updates InRelease [46.8 kB]
+Get:3 http://deb.debian.org/debian-security testing/updates InRelease [39.1 kB]
+Get:4 http://deb.debian.org/debian-security stable/updates InRelease [94.3 kB]
+Get:5 http://deb.debian.org/debian testing/non-free Sources.diff/Index [27.8 kB]
+Get:6 http://deb.debian.org/debian testing/main Sources.diff/Index [27.9 kB]
+Get:7 http://deb.debian.org/debian testing/non-free amd64 Packages.diff/Index [27.8 kB]
+Get:8 http://deb.debian.org/debian testing/main amd64 Packages.diff/Index [27.9 kB]
+Get:9 http://deb.debian.org/debian testing/non-free Sources 2019-04-24-0209.10.pdiff [322 B]
+Get:9 http://deb.debian.org/debian testing/non-free Sources 2019-04-24-0209.10.pdiff [322 B]
+Get:10 http://deb.debian.org/debian testing/main Sources 2019-04-21-2012.09.pdiff [46 B]
+Get:11 http://deb.debian.org/debian testing/main Sources 2019-04-22-0218.28.pdiff [2268 B]
+Get:12 http://deb.debian.org/debian testing/main Sources 2019-04-22-1411.12.pdiff [47 B]
+Get:13 http://deb.debian.org/debian testing/main Sources 2019-04-22-2011.04.pdiff [33 B]
+Get:14 http://deb.debian.org/debian testing/main Sources 2019-04-23-0210.26.pdiff [1920 B]
+Get:15 http://deb.debian.org/debian testing/main Sources 2019-04-23-0811.36.pdiff [230 B]
+Get:16 http://deb.debian.org/debian testing/main Sources 2019-04-23-1410.58.pdiff [2201 B]
+Get:17 http://deb.debian.org/debian testing/main Sources 2019-04-23-2009.32.pdiff [622 B]
+Get:18 http://deb.debian.org/debian testing/main Sources 2019-04-24-0209.10.pdiff [2076 B]
+Get:19 http://deb.debian.org/debian testing/main Sources 2019-04-24-1411.08.pdiff [1974 B]
+Get:20 http://deb.debian.org/debian testing/main Sources 2019-04-25-0211.29.pdiff [3490 B]
+Get:21 http://deb.debian.org/debian testing/main Sources 2019-04-26-0211.49.pdiff [1317 B]
+Get:22 http://deb.debian.org/debian testing/main Sources 2019-04-27-0211.29.pdiff [2970 B]
+Get:23 http://deb.debian.org/debian testing/main Sources 2019-04-28-0210.19.pdiff [1841 B]
+Get:24 http://deb.debian.org/debian testing/main Sources 2019-04-28-1410.16.pdiff [483 B]
+Get:24 http://deb.debian.org/debian testing/main Sources 2019-04-28-1410.16.pdiff [483 B]
+Get:25 http://deb.debian.org/debian testing/non-free amd64 Packages 2019-04-24-0209.10.pdiff [216 B]
+Get:25 http://deb.debian.org/debian testing/non-free amd64 Packages 2019-04-24-0209.10.pdiff [216 B]
+Get:26 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-22-0218.28.pdiff [2715 B]
+Get:27 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-22-1411.12.pdiff [48 B]
+Get:28 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-22-2011.04.pdiff [33 B]
+Get:29 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-0210.26.pdiff [2584 B]
+Get:30 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-0811.36.pdiff [751 B]
+Get:31 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-1410.58.pdiff [7080 B]
+Get:32 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-23-2009.32.pdiff [1315 B]
+Get:33 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-24-0209.10.pdiff [7257 B]
+Get:34 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-24-1411.08.pdiff [6287 B]
+Get:35 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-25-0211.29.pdiff [8736 B]
+Get:36 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-26-0211.49.pdiff [2677 B]
+Get:37 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-27-0211.29.pdiff [8212 B]
+Get:38 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-28-0210.19.pdiff [2391 B]
+Get:39 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-28-1410.16.pdiff [851 B]
+Get:39 http://deb.debian.org/debian testing/main amd64 Packages 2019-04-28-1410.16.pdiff [851 B]
+Reading package lists...
+[91mE: Release file for http://deb.debian.org/debian-security/dists/testing/updates/InRelease is not valid yet (invalid for another 47min 46s). Updates for this repository will not be applied.
+E: Release file for http://deb.debian.org/debian-security/dists/stable/updates/InRelease is not valid yet (invalid for another 47min 46s). Updates for this repository will not be applied.
+[0mThe command '/bin/sh -c apt-get update && apt-get upgrade -y && apt-get install -y maven apt-transport-https vim libtiff-tools' returned a non-zero code: 100
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
