@@ -1,0 +1,24 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.26.1">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/workspace/maven-example/maven-example/multi3/target/surefire-reports/TEST-artifactory.test.AppTest.xml</file>
+      <name>artifactory.test.AppTest</name>
+      <duration>0.0</duration>
+      <time>0</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.0</duration>
+          <className>artifactory.test.AppTest</className>
+          <testName>testApp</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.0</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
