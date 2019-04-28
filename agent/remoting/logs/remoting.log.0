@@ -1,19 +1,19 @@
-Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:56 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Locating server among [http://10.1.2.249:8080, http://swm2.dev.init:8080]
-Apr 25, 2019 11:04:19 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+Apr 28, 2019 5:01:57 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
 INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
-Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:57 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Agent discovery successful
   Agent address: 10.1.2.249
   Agent port:    50000
   Identity:      48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
-Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:57 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Handshaking
-Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:57 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Connecting to 10.1.2.249:50000
-Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:57 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Trying protocol: JNLP4-connect
-Apr 25, 2019 11:04:19 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:57 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Remote identity confirmed: 48:bb:7f:7b:fb:be:1a:25:83:49:07:f2:33:3d:9b:ec
-Apr 25, 2019 11:04:21 AM hudson.remoting.jnlp.Main$CuiListener status
+Apr 28, 2019 5:01:58 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Connected
