@@ -10,23 +10,23 @@
   <usages>
     <entry>
       <string>maven-example/org.jfrog.test:multi3</string>
-      <ranges>14-15</ranges>
-    </entry>
-    <entry>
-      <string>maven-example/org.jfrog.test:multi</string>
-      <ranges>14-15</ranges>
+      <ranges>14-16</ranges>
     </entry>
     <entry>
       <string>maven-example/org.jfrog.test:multi2</string>
-      <ranges>14-15</ranges>
+      <ranges>14-16</ranges>
     </entry>
     <entry>
-      <string>maven-example/org.jfrog.test:multi1</string>
-      <ranges>14-15</ranges>
+      <string>maven-example/org.jfrog.test:multi</string>
+      <ranges>14-16</ranges>
     </entry>
     <entry>
       <string>maven-example</string>
-      <ranges>14-15</ranges>
+      <ranges>14-16</ranges>
+    </entry>
+    <entry>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>14-16</ranges>
     </entry>
   </usages>
   <facets/>

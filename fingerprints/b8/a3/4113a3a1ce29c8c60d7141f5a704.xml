@@ -6,15 +6,15 @@
   <usages>
     <entry>
       <string>maven-example/org.jfrog.test:multi3</string>
-      <ranges>9-11,14-15</ranges>
-    </entry>
-    <entry>
-      <string>maven-example</string>
-      <ranges>3-6,9-15</ranges>
+      <ranges>9-11,14-16</ranges>
     </entry>
     <entry>
       <string>maven-example/org.jfrog.test:multi1</string>
-      <ranges>3-6,9-15</ranges>
+      <ranges>3-6,9-16</ranges>
+    </entry>
+    <entry>
+      <string>maven-example</string>
+      <ranges>3-6,9-16</ranges>
     </entry>
   </usages>
   <facets/>

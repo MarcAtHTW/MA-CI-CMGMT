@@ -5,12 +5,12 @@
   <fileName>org.testng:testng-5.9-jdk15.jar</fileName>
   <usages>
     <entry>
-      <string>maven-example</string>
-      <ranges>3-6,9-15</ranges>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>3-6,9-16</ranges>
     </entry>
     <entry>
-      <string>maven-example/org.jfrog.test:multi1</string>
-      <ranges>3-6,9-15</ranges>
+      <string>maven-example</string>
+      <ranges>3-6,9-16</ranges>
     </entry>
   </usages>
   <facets/>
