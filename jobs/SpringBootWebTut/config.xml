@@ -42,19 +42,7 @@
       <injectBuildVariables>false</injectBuildVariables>
     </hudson.tasks.Maven>
   </builders>
-  <publishers>
-    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
-      <adapters>
-        <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-          <credentialsId>d25a6d5f-6103-4328-a857-cb2b322fd175</credentialsId>
-          <url>http://swm.dev.init:8082</url>
-        </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
-      </adapters>
-      <contextPath></contextPath>
-      <war>**/*.war</war>
-      <onFailure>false</onFailure>
-    </hudson.plugins.deploy.DeployPublisher>
-  </publishers>
+  <publishers/>
   <buildWrappers>
     <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.37">
       <deleteDirs>false</deleteDirs>
@@ -62,15 +50,35 @@
       <externalDelete></externalDelete>
       <disableDeferredWipeout>false</disableDeferredWipeout>
     </hudson.plugins.ws__cleanup.PreBuildCleanup>
-    <org.jfrog.hudson.generic.ArtifactoryGenericConfigurator plugin="artifactory@3.1.0">
+    <org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator plugin="artifactory@3.1.0">
       <deployerDetails>
-        <artifactoryName>SWM-Artifactory</artifactoryName>
-        <artifactoryUrl>http://swm.dev.init:8081/artifactory</artifactoryUrl>
+        <artifactoryName>Lab42-Artifactory</artifactoryName>
+        <artifactoryUrl>http://10.1.8.250:8081/artifactory</artifactoryUrl>
+        <deployReleaseRepository>
+          <keyFromText>Jenkins-integration</keyFromText>
+          <keyFromSelect>Jenkins-integration</keyFromSelect>
+          <dynamicMode>false</dynamicMode>
+        </deployReleaseRepository>
+        <deploySnapshotRepository>
+          <keyFromText></keyFromText>
+          <keyFromSelect>Jenkins-snapshot</keyFromSelect>
+          <dynamicMode>false</dynamicMode>
+        </deploySnapshotRepository>
         <stagingPlugin/>
       </deployerDetails>
       <resolverDetails>
-        <artifactoryName>SWM-Artifactory</artifactoryName>
-        <artifactoryUrl>http://swm.dev.init:8081/artifactory</artifactoryUrl>
+        <artifactoryName>Lab42-Artifactory</artifactoryName>
+        <artifactoryUrl>http://10.1.8.250:8081/artifactory</artifactoryUrl>
+        <resolveSnapshotRepository>
+          <keyFromText></keyFromText>
+          <keyFromSelect>libs-snapshot</keyFromSelect>
+          <dynamicMode>false</dynamicMode>
+        </resolveSnapshotRepository>
+        <resolveReleaseRepository>
+          <keyFromText></keyFromText>
+          <keyFromSelect>libs-release</keyFromSelect>
+          <dynamicMode>false</dynamicMode>
+        </resolveReleaseRepository>
         <stagingPlugin/>
       </resolverDetails>
       <deployerCredentialsConfig>
@@ -91,28 +99,28 @@
         <overridingCredentials>false</overridingCredentials>
         <ignoreCredentialPluginDisabled>false</ignoreCredentialPluginDisabled>
       </resolverCredentialsConfig>
-      <useSpecs>true</useSpecs>
-      <uploadSpec>
-        <spec></spec>
-      </uploadSpec>
-      <downloadSpec>
-        <spec></spec>
-      </downloadSpec>
-      <deployPattern></deployPattern>
-      <resolvePattern></resolvePattern>
-      <deploymentProperties></deploymentProperties>
-      <deployBuildInfo>true</deployBuildInfo>
+      <deployArtifacts>true</deployArtifacts>
+      <artifactDeploymentPatterns>
+        <includePatterns></includePatterns>
+        <excludePatterns></excludePatterns>
+      </artifactDeploymentPatterns>
       <includeEnvVars>false</includeEnvVars>
+      <deployBuildInfo>true</deployBuildInfo>
+      <discardOldBuilds>false</discardOldBuilds>
+      <discardBuildArtifacts>true</discardBuildArtifacts>
+      <asyncBuildRetention>false</asyncBuildRetention>
+      <deploymentProperties></deploymentProperties>
+      <enableIssueTrackerIntegration>false</enableIssueTrackerIntegration>
+      <filterExcludedArtifactsFromBuild>false</filterExcludedArtifactsFromBuild>
+      <enableResolveArtifacts>true</enableResolveArtifacts>
       <envVarsPatterns>
         <includePatterns></includePatterns>
         <excludePatterns>*password*,*secret*,*key*</excludePatterns>
       </envVarsPatterns>
-      <discardOldBuilds>false</discardOldBuilds>
-      <discardBuildArtifacts>true</discardBuildArtifacts>
-      <asyncBuildRetention>false</asyncBuildRetention>
-      <multiConfProject>false</multiConfProject>
+      <aggregateBuildIssues>false</aggregateBuildIssues>
+      <recordAllDependencies>false</recordAllDependencies>
       <customBuildName></customBuildName>
       <overrideBuildName>false</overrideBuildName>
-    </org.jfrog.hudson.generic.ArtifactoryGenericConfigurator>
+    </org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator>
   </buildWrappers>
 </project>

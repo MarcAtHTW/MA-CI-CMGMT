@@ -1,0 +1,698 @@
+commit 9ed3b4c413cf00d19609976d5b6d1faa78209d08
+tree dc826aecc6e3f5a9080eb825d81659956aa4aaa1
+parent 3c4d6af62e4d2c667958ac3b1c90dc965b4d9cb5
+author Eldad Assis <eldada@jfrog.com> 2019-03-26 09:19:47 +0200
+committer Eldad Assis <eldada@jfrog.com> 2019-03-26 09:19:47 +0200
+
+    Update location of Artifactory for Kubernetes and fix charts URLs
+
+
+
+:100644 100644 59f88d7d1fe391bc3fbb6bc56c268edb8e832a87 70ab7f80d4393553112cbe2fc5c2e2789b0c1c72 M	kubernetes-example/README.md
+commit 3c4d6af62e4d2c667958ac3b1c90dc965b4d9cb5
+tree 0343c4bfd2b45838f8ebf4ff31874ac2ba82c89e
+parent 502dec2544dc5a294d89e289a6486d8743a311ba
+author Robi Nino <robin@jfrog.com> 2019-03-07 19:04:45 +0200
+committer GitHub <noreply@github.com> 2019-03-07 19:04:45 +0200
+
+    update artifactory-maven-plugin version
+
+
+
+:100644 100644 550c59d034d1bd2f28ea4028aa840bbf356c11bb 192873af215ce16a54887a613f7750b4eac282d3 M	artifactory-maven-plugin-example/pom.xml
+commit 502dec2544dc5a294d89e289a6486d8743a311ba
+tree fc259805a86b67a596ae3ec7f3b737675af7548c
+parent 73fbd52dd5d6d16db145700fb0fe72cd42b30975
+author Robi Nino <robin@jfrog.com> 2019-02-19 15:46:04 +0200
+committer GitHub <noreply@github.com> 2019-02-19 15:46:04 +0200
+
+    Adding Set/Delete Props examples
+
+
+
+:100644 100644 084c4dfa18706a32dfc7dc97ab3c185870550c1a 969b63a546028172719654b86a99a72a3e19da7b M	jenkins-examples/pipeline-examples/declarative-examples/README.md
+:100755 100755 ab5865cdb108f98772e2c93b9a078f75ded96f95 735b15a0bd8e0f89d268f68dd404fe719a6e0f0e M	jenkins-examples/pipeline-examples/declarative-examples/props-example/Jenkinsfile
+:100755 100755 50c7ce4ca666538e316b7647e187cba05d6fad8a 347625f465b272466f6c33a470a117d9bc5b1287 M	jenkins-examples/pipeline-examples/declarative-examples/props-single-file-example/Jenkinsfile
+:000000 100644 0000000000000000000000000000000000000000 ecdee535c932ce46fc9bfad780de36042c555765 A	jenkins-examples/pipeline-examples/resources/delete-props.json
+:000000 100644 0000000000000000000000000000000000000000 7882f613d23def4d03471430118c38617434f8f5 A	jenkins-examples/pipeline-examples/resources/set-props.json
+:100644 100644 e65ad051abff2be30b1c7535d17da6ee3dafa9e8 ac36ca780cff3aa034a9939494e849ee339dd4fe M	jenkins-examples/pipeline-examples/scripted-examples/README.md
+:100755 100755 76d4c137ffb0042cecf1bc9bad715b7da0e0777f b39fb998e93208d301a35f6d8aec53ae5e42f6f0 M	jenkins-examples/pipeline-examples/scripted-examples/props-example/Jenkinsfile
+:100755 100755 f82434444e282d6c6eb6d2e1d416790f0e81ae9a f1eabf0fd101bc1f2ab43657460318046b407bcd M	jenkins-examples/pipeline-examples/scripted-examples/props-single-file-example/Jenkinsfile
+commit 1330a12917cc61c952a7ead9149ad8fc522ba191
+tree a7c3a2b758f8b7d93933538db1116dc52931de58
+parent baa0f8c2b3d7b57791fba626c93f5075f6a46e36
+author Robi Nino <robin@jfrog.com> 2019-02-19 15:09:18 +0200
+committer GitHub <noreply@github.com> 2019-02-19 15:09:18 +0200
+
+    Minor fixes
+
+    * Fixed stages in promotion example.
+    * Fixed description in exclude-patterns-download-example
+    * Fixed sha1value in bash-example
+
+:100644 100644 2f761a1fd63e67cccf2032b4b6bbcf77d25b3a86 58112fd85df9d172b4fc4a2e375296293cd9ee4e M	jenkins-examples/pipeline-examples/scripted-examples/exclude-patterns-download-example/Jenkinsfile
+:100755 100755 f9f7af41fdf8204dcbf834da58ea4fea8e395b84 ade666bcd2157c80685a9624cddbb8d1e792ebc6 M	jenkins-examples/pipeline-examples/scripted-examples/promotion-example/Jenkinsfile
+commit 3ff092f65b000f505e0b59a8dc5ab435922d90c2
+tree d2062b10e7d0c2eb72c47fac09edaa4b2f32fcd0
+parent 77148794468d9aa4c1c1a902b873d03a9c09ede0
+author Yahav Itzhak <yahavi@users.noreply.github.com> 2019-02-10 16:11:14 +0200
+committer GitHub <noreply@github.com> 2019-02-10 16:11:14 +0200
+
+    Fix Jenkins Maven and Gradle container examples (#162)
+
+
+
+:100644 100644 540f5556d6600ca5ae587ebced07d87f0a3833c1 c00c158f8d67776faef99eefe3d4e600be28e401 M	jenkins-examples/pipeline-examples/scripted-examples/gradle-container-example/JenkinsFile
+:100644 100644 e7c9ec0ebbb3ae4c525cc98b75386b1f4ac65760 145aa11d9832c11d4d60b694906a7330b101359f M	maven-example/pom.xml
+commit 24a993f24bfffbb3da7da9ea3fa4bcc1921577d1
+tree 255fb9bb3d22c741deaa03595185eecbfcbc07dc
+parent 733e090ebe8adf2b70c63dcc3bc2670df0ba43aa
+author Eyal Ben Moshe <eyalbenmoshe@jfrog.com> 2019-01-31 16:10:40 +0200
+committer GitHub <noreply@github.com> 2019-01-31 16:10:40 +0200
+
+    Fixed typo in golang-example README.
+
+
+
+:100644 100644 83ff3ce031bd6ad287dcfc132868c6204e9e887f a3616ba48fe3f56f8b0fef3d8c3ea3fe65008238 M	golang-example/README.md
+commit 3cdd9a3906a7b0c53f2995852323b03c26099dab
+tree 57b74086a75de0e05f84460c4bfcb319aed02292
+parent 67bf31bad1fca27577ec0c880a90bd08c959ef8c
+author Semih Kekül <semihkekul@users.noreply.github.com> 2019-01-10 15:57:57 +0300
+committer GitHub <noreply@github.com> 2019-01-10 15:57:57 +0300
+
+    sha1Value does not match the server calculated
+
+    sha1Value does not match the server calculated one because md5Value is
+    used for it
+
+:100755 100755 16fa730b758387d2313258f4030749a13b588186 61cc0fd468e12776218e2beef21ce2dcab865c31 M	bash-example/deploy-file.sh
+commit d2f18dd838e6d1aa089ef8ad8d6a8895a7ef83b6
+tree e2dbf1ed248bf6d56e0f30d74bebd2eb7e9bfa01
+parent a66a0ede54539ecb66a335df4c03c4c939d67cf0
+author Hrishikesh Date <hrishikesh.date@veritas.com> 2018-11-14 10:19:42 +0000
+committer Hrishikesh Date <hrishikesh.date@veritas.com> 2018-11-14 10:19:42 +0000
+
+    Fix typo Use sha1Value to get first 40 chars of sha1sum
+
+
+
+:100755 100755 16fa730b758387d2313258f4030749a13b588186 61cc0fd468e12776218e2beef21ce2dcab865c31 M	bash-example/deploy-file.sh
+commit fb83b55288b16bd510ecdd57ce96a60384ef1553
+tree d4e7518ed51faf2658ad172df927f419a56fda5d
+parent 32d61084e9d849168d8bd88b8988722ebd3a9da9
+author vsilverman <vsilverman@gmail.com> 2018-01-28 12:55:04 -0800
+committer GitHub <noreply@github.com> 2018-01-28 12:55:04 -0800
+
+    Create art-build-deploy.sh
+
+    adding initial deployment script, in its current version it's using
+    maven settings file
+
+:000000 100644 0000000000000000000000000000000000000000 95a2047c5eeb927db8fb53e592d99cd7ba0f4aac A	artifactory-maven-plugin-example/art-build-deploy.sh
+commit 44c7336f68a456c28cc764b0424ae8589eed8b30
+tree dc376cb8a88f9ce7364afda9ff8aa0cb051503f4
+parent 84e1e99940878b0393d48ff0ec7e2a07d6ef3e73
+author shanil <shanil@192.168.0.102> 2016-11-13 14:09:07 +0200
+committer shanil <shanil@192.168.0.102> 2016-11-13 14:09:07 +0200
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 18e7aa146f7ba89a8bc781335167246cce794384 7ebb838160d35016f460fae79e2245ab58cc8965 M	maven-example/multi1/pom.xml
+:100644 100644 ad300c730d30595ce0b75c21eca7e34feddbd471 8c2652698c27dc335f9d922eb91d23bb4dfcec7b M	maven-example/multi2/pom.xml
+:100644 100644 107e40b9885f01a04db3b51a9f2cb4dc6db10fb9 8ae78a7dfc72c67efd20838dd7765fcd5cad5465 M	maven-example/multi3/pom.xml
+:100644 100644 676841c5f18037a9c6398aa31ed8b3e6e310a11e 8eef1bf1b536ead8bd0c9f23b448849ce993af81 M	maven-example/pom.xml
+commit 84e1e99940878b0393d48ff0ec7e2a07d6ef3e73
+tree 555735a07408cda6426f42a15da5140ddcdbdb6e
+parent f0d662417e612e294b3566e754226726ad477898
+author shanil <shanil@192.168.0.102> 2016-11-13 12:40:52 +0200
+committer shanil <shanil@192.168.0.102> 2016-11-13 12:40:52 +0200
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 19c02f538ea0f234259a2d693b270b1210f1dede 18e7aa146f7ba89a8bc781335167246cce794384 M	maven-example/multi1/pom.xml
+:100644 100644 061ad971be30c573571f84ddb3a30af53e2a100e ad300c730d30595ce0b75c21eca7e34feddbd471 M	maven-example/multi2/pom.xml
+:100644 100644 9a7246129f2c52317ce6cc1e1369a248c7526c6c 107e40b9885f01a04db3b51a9f2cb4dc6db10fb9 M	maven-example/multi3/pom.xml
+:100644 100644 ad5c28378c8778f09f6a5dc7248c85b4a12e20bc 676841c5f18037a9c6398aa31ed8b3e6e310a11e M	maven-example/pom.xml
+commit f0d662417e612e294b3566e754226726ad477898
+tree 7b5ac9e6ceb0e6d0185d00e0f1f98c988c20acd7
+parent d0e0444a53a18841eb650f0f12f61e9d86344500
+author Jenkins <jenkins@shanil-mac.local> 2016-09-28 13:47:55 +0100
+committer Jenkins <jenkins@shanil-mac.local> 2016-09-28 13:47:55 +0100
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 9274100e9783a388e85878da0d91860af16ecdca 19c02f538ea0f234259a2d693b270b1210f1dede M	maven-example/multi1/pom.xml
+:100644 100644 aabfc48740b18fb2f52de61783f50fd3bbc82713 061ad971be30c573571f84ddb3a30af53e2a100e M	maven-example/multi2/pom.xml
+:100644 100644 a4438efded11058fe5aacdfad4245c7ad0fd255b 9a7246129f2c52317ce6cc1e1369a248c7526c6c M	maven-example/multi3/pom.xml
+:100644 100644 789965804c1dda5227583300ac3d280817b820e7 ad5c28378c8778f09f6a5dc7248c85b4a12e20bc M	maven-example/pom.xml
+commit d0e0444a53a18841eb650f0f12f61e9d86344500
+tree c98ff7bda39e9af923f6e675397116c3a736ffd6
+parent 273d5ac26314736cfd8b240f23e686a0a5193e32
+author Jenkins <jenkins@danielk-mac.jfrog.local> 2016-09-25 12:48:13 +0300
+committer Jenkins <jenkins@danielk-mac.jfrog.local> 2016-09-25 12:48:13 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 f2066b01e18bffd19081b9b0afbebc12e85774e8 9274100e9783a388e85878da0d91860af16ecdca M	maven-example/multi1/pom.xml
+:100644 100644 be47a4c27f15743444ac5d6d8e0a766a09ddee31 aabfc48740b18fb2f52de61783f50fd3bbc82713 M	maven-example/multi2/pom.xml
+:100644 100644 1302858b43c33c1c3a792d743186500cf5b9d92b a4438efded11058fe5aacdfad4245c7ad0fd255b M	maven-example/multi3/pom.xml
+:100644 100644 9a7600b135fc3d661ac2164f294b2de91b17e414 789965804c1dda5227583300ac3d280817b820e7 M	maven-example/pom.xml
+commit 273d5ac26314736cfd8b240f23e686a0a5193e32
+tree 83ceaa80b1bb9a9f2f5aafce6fd2b7a8a30e7646
+parent 16669fdbbc02e8d1ad9b97a18079a7767f1e7f28
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:40:46 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:40:46 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 d4445b4925003cdfd121b89ff4267c9b543fb6c1 9a7600b135fc3d661ac2164f294b2de91b17e414 M	maven-example/pom.xml
+commit 16669fdbbc02e8d1ad9b97a18079a7767f1e7f28
+tree ff648b99fdb7aa71a6e28017d120e13b7dc46c54
+parent 2635b76609f5981a5de4ff0577f17a51fbf7aad9
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:40:35 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:40:35 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 2c0a12ef9cafa27d62ca7d7611c9253cf29326ac 1302858b43c33c1c3a792d743186500cf5b9d92b M	maven-example/multi3/pom.xml
+commit 2635b76609f5981a5de4ff0577f17a51fbf7aad9
+tree 9224cbeda5e0a752602d91a2b54c242cb98f3026
+parent 96b869a1f0b6489c95c8fd44fe7a0fd090600194
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:40:19 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:40:19 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 f6f816af041994942f2c81a268f15bdd88dff315 be47a4c27f15743444ac5d6d8e0a766a09ddee31 M	maven-example/multi2/pom.xml
+commit 96b869a1f0b6489c95c8fd44fe7a0fd090600194
+tree 3e917cef6ed4285cf0fc41c37eea8124048ac019
+parent 0ee96880c448473a765e694d6dff38db6f8db79a
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:40:10 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:40:10 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 964a843e7bc1e27cd11e098618166e4841b2086c f6f816af041994942f2c81a268f15bdd88dff315 M	maven-example/multi2/pom.xml
+commit 0ee96880c448473a765e694d6dff38db6f8db79a
+tree 5819d33c36fee5718ec0d98f4d61a477f4cb7755
+parent 856b0fa7b1e2b24a0a3ae8521bcb67d6b1e96ed5
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:39:51 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:39:51 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 6657282d04dbe9b426fb667763a90d3164cfd4cc f2066b01e18bffd19081b9b0afbebc12e85774e8 M	maven-example/multi1/pom.xml
+commit 856b0fa7b1e2b24a0a3ae8521bcb67d6b1e96ed5
+tree 1c43e520a4461e84097801b1528eeeab4a779971
+parent 032b005bcf64d74326c788ad9ab0397187c3059e
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:38:13 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:38:13 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 bac10d978ad41d2e7c2e652f7f5297067c35f74f 2c0a12ef9cafa27d62ca7d7611c9253cf29326ac M	maven-example/multi3/pom.xml
+commit 032b005bcf64d74326c788ad9ab0397187c3059e
+tree a3352d4801e044f9e7e0e618c1f3faef20cf5b53
+parent 40e2155cbdecef6503b08cbd097861d599afd6cc
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:37:59 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:37:59 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 5174c71fc2b97b7dbe4ee8df59df715348fce62f 964a843e7bc1e27cd11e098618166e4841b2086c M	maven-example/multi2/pom.xml
+commit 40e2155cbdecef6503b08cbd097861d599afd6cc
+tree f0bcf39c9c9702713423d727d2b45e9879abfbcc
+parent 3665bcabc0045d6466d57d0a0968c17318bfb69e
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:37:42 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:37:42 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 5f8da0a70530e131c6d12fcc4fca73a74c1668df 6657282d04dbe9b426fb667763a90d3164cfd4cc M	maven-example/multi1/pom.xml
+commit 3665bcabc0045d6466d57d0a0968c17318bfb69e
+tree 9c8be447aa6b414f1b3d7535828668432c365a5e
+parent 1ff31530e49a3bae2cbb2248c468ef15a2f31cd4
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:37:23 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:37:23 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 806eba69f65d5811f499e898537f471940392b26 d4445b4925003cdfd121b89ff4267c9b543fb6c1 M	maven-example/pom.xml
+commit 1ff31530e49a3bae2cbb2248c468ef15a2f31cd4
+tree 194dfa83b8fbc0d7f51efd14200b839bdc6d36d8
+parent e6b9b15a90da523c44c9409794a519781014c483
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:30:04 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:30:04 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 b110cd6cd98f45faf69b52031e463f8de583e8d6 806eba69f65d5811f499e898537f471940392b26 M	maven-example/pom.xml
+commit e6b9b15a90da523c44c9409794a519781014c483
+tree c1b61f21c1978f396fa5afddf236d0d2844b8bcf
+parent 43b93709b1a4c01e9b56520b1c71a2f7086446b0
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:29:49 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:29:49 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 34688a7ea3071fc9289c602c5c9e893e553ee4c2 bac10d978ad41d2e7c2e652f7f5297067c35f74f M	maven-example/multi3/pom.xml
+commit 43b93709b1a4c01e9b56520b1c71a2f7086446b0
+tree 74a723c3517010678ac22650bc9eb02ebb47341e
+parent 94ecb63808f1620add44d4122a27e31900d3e1a8
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:29:29 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:29:29 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 8963cad1521497ec4cb2d40a2a9e7eca4c947dd3 5174c71fc2b97b7dbe4ee8df59df715348fce62f M	maven-example/multi2/pom.xml
+commit 94ecb63808f1620add44d4122a27e31900d3e1a8
+tree c71c435436e22c21a2dc1fb6dada509176c7c337
+parent d6c5928c22fa09f1cacc81f81ab8ecaf4f2951ec
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:29:12 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:29:12 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 c8440d51380d7e461bcce330db508f81948db690 8963cad1521497ec4cb2d40a2a9e7eca4c947dd3 M	maven-example/multi2/pom.xml
+commit d6c5928c22fa09f1cacc81f81ab8ecaf4f2951ec
+tree 6adb959b02f4172d1b357eb488f6c8ed7c6c2e55
+parent a596f223d3209506d108c2ab17237fe924a82fea
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:28:59 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:28:59 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 256d1ebbb9625ff75f20053d863c25f1f9228edd 5f8da0a70530e131c6d12fcc4fca73a74c1668df M	maven-example/multi1/pom.xml
+commit a596f223d3209506d108c2ab17237fe924a82fea
+tree 0c955dffd0807fefbec1b672820cfc3664cb9547
+parent 425970c6b324c4d694dc9e4ff6c1a9fc4981ce68
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:27:22 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:27:22 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 75bfaadff1e307c6f1394e5c7cd81a7841908f7e 34688a7ea3071fc9289c602c5c9e893e553ee4c2 M	maven-example/multi3/pom.xml
+commit 425970c6b324c4d694dc9e4ff6c1a9fc4981ce68
+tree 65d355820037e3be0596505cac6a67fc47c48d87
+parent b64e450f77af0fedcf489ec587a473a1b9341b1d
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:27:08 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:27:08 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 8963cad1521497ec4cb2d40a2a9e7eca4c947dd3 c8440d51380d7e461bcce330db508f81948db690 M	maven-example/multi2/pom.xml
+commit b64e450f77af0fedcf489ec587a473a1b9341b1d
+tree 473874ba44821d6b80d5243d2ab311b648d6e0e6
+parent 4d00725614baa8edad1ceb25ef6177f18bf97cd0
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:26:54 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:26:54 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 2506ebe62a6f7802815e56fbca217ffda61b2a01 256d1ebbb9625ff75f20053d863c25f1f9228edd M	maven-example/multi1/pom.xml
+commit 4d00725614baa8edad1ceb25ef6177f18bf97cd0
+tree a1e0da35e7cc250f5f85f1f7804ce0dfe6c0dcc2
+parent 4006a24ef6fc5b0526c21414fbdcab621ca03020
+author Shani Levy <shanil@jfrog.com> 2016-07-12 15:26:40 +0300
+committer GitHub <noreply@github.com> 2016-07-12 15:26:40 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 bd675fcb78637f8a4f15f5bb65cc91b6a9c23c2b b110cd6cd98f45faf69b52031e463f8de583e8d6 M	maven-example/pom.xml
+commit 4006a24ef6fc5b0526c21414fbdcab621ca03020
+tree 850555e88cedbb65bc232a1676c91dbbec600e5c
+parent 8407f03400c81f6b1bd5e753c0cd86b3e516803b
+author Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-30 18:16:32 +0300
+committer Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-30 18:16:32 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 26419691e4fc16e389bfc42ac3340f7d715247e1 2506ebe62a6f7802815e56fbca217ffda61b2a01 M	maven-example/multi1/pom.xml
+:100644 100644 d7ac2b708a184f49eaa24839bec8f01ec5aa124f 8963cad1521497ec4cb2d40a2a9e7eca4c947dd3 M	maven-example/multi2/pom.xml
+:100644 100644 e9a110e54cb8a06d9132fdfb840f51e087078f48 75bfaadff1e307c6f1394e5c7cd81a7841908f7e M	maven-example/multi3/pom.xml
+:100644 100644 10cc0e5cdf268350f7280ed9888c0f9cd5ccdeff bd675fcb78637f8a4f15f5bb65cc91b6a9c23c2b M	maven-example/pom.xml
+commit 8407f03400c81f6b1bd5e753c0cd86b3e516803b
+tree 9b28e9e534380a6fdf8fc7206baf350aae3ba228
+parent 16891aa55cb80016b52c3921cc40267da45bb8b5
+author Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-29 15:15:25 +0300
+committer Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-29 15:15:25 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 f533f39a13d4590fb6f12a1d81fbc83195d508b9 26419691e4fc16e389bfc42ac3340f7d715247e1 M	maven-example/multi1/pom.xml
+:100644 100644 21bd5a4383b260678bdf86e7962becb21c5c11c0 d7ac2b708a184f49eaa24839bec8f01ec5aa124f M	maven-example/multi2/pom.xml
+:100644 100644 e696cb0e21d6498ce59ce440a5f0f0868a90fd48 e9a110e54cb8a06d9132fdfb840f51e087078f48 M	maven-example/multi3/pom.xml
+:100644 100644 7d6d3f919709a41302dd2fd5c2993b7ed540b08f 10cc0e5cdf268350f7280ed9888c0f9cd5ccdeff M	maven-example/pom.xml
+commit 16891aa55cb80016b52c3921cc40267da45bb8b5
+tree bf6b617a6d9c1e36b9e7ccffdcdeb7940ade9514
+parent c6f44aa8e66e8db287214c18d4df85ad87b99cc5
+author Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-29 11:44:17 +0300
+committer Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-29 11:44:17 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 677ac160131a8e76b7c6fc2a7e024ed648b6f058 f533f39a13d4590fb6f12a1d81fbc83195d508b9 M	maven-example/multi1/pom.xml
+:100644 100644 26fea421cad0d79ea5df86ce82fac0c179ea47d9 21bd5a4383b260678bdf86e7962becb21c5c11c0 M	maven-example/multi2/pom.xml
+:100644 100644 d2d6b5d63f1ed469528d80cadbc183ab18ebf714 e696cb0e21d6498ce59ce440a5f0f0868a90fd48 M	maven-example/multi3/pom.xml
+:100644 100644 8bce79ba216cfe0863135e1aa4bfb3277fd839dc 7d6d3f919709a41302dd2fd5c2993b7ed540b08f M	maven-example/pom.xml
+commit c6f44aa8e66e8db287214c18d4df85ad87b99cc5
+tree fe198c2121a3c7a4dd67ee95cd081b2b0103b0ae
+parent 9875d3c607653158920aa4fe141d3d7f6eaf1e85
+author Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-29 11:41:54 +0300
+committer Jenkins <jenkins@shanil-mac.jfrog.local> 2016-06-29 11:41:54 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 049e199117f9bd39bb41a3d33aae813173eb38be 677ac160131a8e76b7c6fc2a7e024ed648b6f058 M	maven-example/multi1/pom.xml
+:100644 100644 b700acd09c2116b7ce7e44b26d43397b09ce67de 26fea421cad0d79ea5df86ce82fac0c179ea47d9 M	maven-example/multi2/pom.xml
+:100644 100644 ab4d494e680cfd414230abbaf61142e9f11a3f77 d2d6b5d63f1ed469528d80cadbc183ab18ebf714 M	maven-example/multi3/pom.xml
+:100644 100644 59b38188aec75e6fc90091a4766ed3190ad6226b 8bce79ba216cfe0863135e1aa4bfb3277fd839dc M	maven-example/pom.xml
+commit 9875d3c607653158920aa4fe141d3d7f6eaf1e85
+tree 78a9d957faf8ef7b01d8cc571b2a3253d815382c
+parent 36e600e8ffc59f28c7f86d3b61214aa207ff47cc
+author Shani Levy <shanil@jfrog.com> 2016-06-20 15:22:50 +0300
+committer GitHub <noreply@github.com> 2016-06-20 15:22:50 +0300
+
+    Update pom.xml
+
+
+
+:100644 100644 4c652b6d80ee5ff477af010ee777992fe0e1b2f1 59b38188aec75e6fc90091a4766ed3190ad6226b M	maven-example/pom.xml
+commit 36e600e8ffc59f28c7f86d3b61214aa207ff47cc
+tree aa27ac89fe76f0f24ddf1396154f59bf9323fee7
+parent 84881429bb6e47ed79eb49ec9d81dc6b72854424
+author root <shanil@jfrog.com> 2016-03-07 16:44:36 +0200
+committer root <shanil@jfrog.com> 2016-03-07 16:44:36 +0200
+
+    add npm example
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 3a6a2492ab03411ca9392083686f4e7f2dd630d6 A	npm-example/README.md
+:000000 100644 0000000000000000000000000000000000000000 858d2c9c9007ba763cd12d486cd350ad8f737b4d A	npm-example/helloworld.js
+:000000 100644 0000000000000000000000000000000000000000 8342126a60cfd40fbe49f81c2bb8875787ddada8 A	npm-example/package.json
+commit 84881429bb6e47ed79eb49ec9d81dc6b72854424
+tree 6ef37bd150e5654c49e8c9d1d98c457bee8dca0f
+parent 2c477da5b792b72680a617b8f71a9c40e53d5ed5
+author root <shanil@jfrog.com> 2016-02-24 16:06:52 +0200
+committer root <shanil@jfrog.com> 2016-02-24 16:06:52 +0200
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 c127953b487313eec760eb4f62c0c22fced1eace 049e199117f9bd39bb41a3d33aae813173eb38be M	maven-example/multi1/pom.xml
+:100644 100644 cf08a4e63ac2e99b47ffaaf9d80e4c67822ddad1 b700acd09c2116b7ce7e44b26d43397b09ce67de M	maven-example/multi2/pom.xml
+:100644 100644 d63bcebce83fe67b56a405e1d69b7eb203eb610f ab4d494e680cfd414230abbaf61142e9f11a3f77 M	maven-example/multi3/pom.xml
+:100644 100644 51916f30a87a5d9b881be4a17d97b1caaa7e8f19 4c652b6d80ee5ff477af010ee777992fe0e1b2f1 M	maven-example/pom.xml
+commit 2c477da5b792b72680a617b8f71a9c40e53d5ed5
+tree cba39ac42dd407fa8f4b1197510e8539dde3d650
+parent fb260728c0c0f8f51a6fb76af158f3263bc10d61
+author root <shanil@jfrog.com> 2016-02-22 19:29:25 +0200
+committer root <shanil@jfrog.com> 2016-02-22 19:29:25 +0200
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 4cbd988e2c26f524a595ec1071584bc840d301b2 c127953b487313eec760eb4f62c0c22fced1eace M	maven-example/multi1/pom.xml
+:100644 100644 f9435081fae44ecc947f7fcbe8ce2d1d5dbfd32f cf08a4e63ac2e99b47ffaaf9d80e4c67822ddad1 M	maven-example/multi2/pom.xml
+:100644 100644 77690bbb00d5df8834f97a20b1cb78dd066b8acb d63bcebce83fe67b56a405e1d69b7eb203eb610f M	maven-example/multi3/pom.xml
+:100644 100644 8d1ef6051595466f335170a33b3c1862d72dff82 51916f30a87a5d9b881be4a17d97b1caaa7e8f19 M	maven-example/pom.xml
+commit fb260728c0c0f8f51a6fb76af158f3263bc10d61
+tree b654bff13ebf1a35b3ca797b65b3269271b49c1a
+parent 445ffdb3e73084f694f44d5eb19d95fdfbb36b7c
+author shanilevy <shanil@jfrog.com> 2015-11-18 19:52:21 +0200
+committer shanilevy <shanil@jfrog.com> 2015-11-18 19:52:21 +0200
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 f7bdc270e3bd974081257089e5009c33f603ab46 4cbd988e2c26f524a595ec1071584bc840d301b2 M	maven-example/multi1/pom.xml
+:100644 100644 e96e4b5caddbc2df47ab9c7d467e9c9280fbe552 f9435081fae44ecc947f7fcbe8ce2d1d5dbfd32f M	maven-example/multi2/pom.xml
+:100644 100644 c16653acbe09728a49d2847b36ade93e3ac3a4c8 77690bbb00d5df8834f97a20b1cb78dd066b8acb M	maven-example/multi3/pom.xml
+:100644 100644 3ab6c6ec34a8ad29957ad820d95009c01233dfb3 8d1ef6051595466f335170a33b3c1862d72dff82 M	maven-example/pom.xml
+commit 445ffdb3e73084f694f44d5eb19d95fdfbb36b7c
+tree 068cdcec7bff826561fa163f3f16f67100a096e9
+parent 587211285008e5b6cb6b7e33543a0c0141cb2600
+author shanilevy <shanil@jfrog.com> 2015-11-18 11:54:14 +0200
+committer shanilevy <shanil@jfrog.com> 2015-11-18 11:54:14 +0200
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 cc751d3391a726b6348b082fa8d59cde46df4380 f7bdc270e3bd974081257089e5009c33f603ab46 M	maven-example/multi1/pom.xml
+:100644 100644 b06e0204380c8db8712b7ab26ef69b2774055b5a e96e4b5caddbc2df47ab9c7d467e9c9280fbe552 M	maven-example/multi2/pom.xml
+:100644 100644 8397c298fd6e6eb66dc55fbdd2dd2dcb68ba2486 c16653acbe09728a49d2847b36ade93e3ac3a4c8 M	maven-example/multi3/pom.xml
+:100644 100644 c05dcfb248aaabf0e365fd1ad68a3125fc92a31c 3ab6c6ec34a8ad29957ad820d95009c01233dfb3 M	maven-example/pom.xml
+commit 587211285008e5b6cb6b7e33543a0c0141cb2600
+tree 22c8d2e9bdd7517d16c2b69bbdd4aade6c5c9299
+parent 34830c6276b6e79858f2b1db573db09ccc9388c8
+author shanilevy <shanil@jfrog.com> 2015-10-13 12:39:18 +0300
+committer shanilevy <shanil@jfrog.com> 2015-10-13 12:39:18 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 fd61bc71ace40d35dbb0b9a3a69ece9f17839de9 cc751d3391a726b6348b082fa8d59cde46df4380 M	maven-example/multi1/pom.xml
+:100644 100644 ecee82552e84edc7ee1804c7ce5b65765a98d905 b06e0204380c8db8712b7ab26ef69b2774055b5a M	maven-example/multi2/pom.xml
+:100644 100644 903b480161631b7b6356cba62867c12c2c998e38 8397c298fd6e6eb66dc55fbdd2dd2dcb68ba2486 M	maven-example/multi3/pom.xml
+:100644 100644 fc70a875896c2745f7b8a3c8fe4745444472f63e c05dcfb248aaabf0e365fd1ad68a3125fc92a31c M	maven-example/pom.xml
+commit 34830c6276b6e79858f2b1db573db09ccc9388c8
+tree c9331f3aec944db7e10bf1785cdfbab1bcda0f28
+parent 77ecfd25549e3e80ae8729105c9cf085a631393d
+author shanilevy <shanil@jfrog.com> 2015-10-06 10:06:42 +0300
+committer shanilevy <shanil@jfrog.com> 2015-10-06 10:06:42 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 f7c546cd6af27b53349a0e55e65c109bff11022e fd61bc71ace40d35dbb0b9a3a69ece9f17839de9 M	maven-example/multi1/pom.xml
+:100644 100644 a3acdc4ca269545d20a57519b53f1462e226d35f ecee82552e84edc7ee1804c7ce5b65765a98d905 M	maven-example/multi2/pom.xml
+:100644 100644 8821b397e81af32a5fc5ea3608a84729d133798c 903b480161631b7b6356cba62867c12c2c998e38 M	maven-example/multi3/pom.xml
+:100644 100644 0c549f0d135132f274fbbe1137baf9b35146f902 fc70a875896c2745f7b8a3c8fe4745444472f63e M	maven-example/pom.xml
+commit 77ecfd25549e3e80ae8729105c9cf085a631393d
+tree 2d147c60546499279634d37b6fe59159c1b6e413
+parent 0edcd66786966ca8e85ddfce92b82f5a2a5ded8f
+author shanilevy <shanil@jfrog.com> 2015-10-05 21:34:55 +0300
+committer shanilevy <shanil@jfrog.com> 2015-10-05 21:34:55 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 070e81e027374a81120e0ddbd40ff0bb512586e7 f7c546cd6af27b53349a0e55e65c109bff11022e M	maven-example/multi1/pom.xml
+:100644 100644 53b29a0587825727ee9a3f3a7e4e55b66d15a137 a3acdc4ca269545d20a57519b53f1462e226d35f M	maven-example/multi2/pom.xml
+:100644 100644 b041f6f6b50c4d6477bf610b48d2964e88577d6a 8821b397e81af32a5fc5ea3608a84729d133798c M	maven-example/multi3/pom.xml
+:100644 100644 52804d4350392f68f7398e2732c6a03e5c97c869 0c549f0d135132f274fbbe1137baf9b35146f902 M	maven-example/pom.xml
+commit 0edcd66786966ca8e85ddfce92b82f5a2a5ded8f
+tree f9ee2961345368e90fc5c7174c527645b22fc1d2
+parent 4592e66d29dbb1bda00bb26223c0d22ab259576f
+author shanilevy <shanil@jfrog.com> 2015-10-01 17:19:16 +0300
+committer shanilevy <shanil@jfrog.com> 2015-10-01 17:19:16 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 9ec4c2888598e43e2615b04aab69722ad87eaa2d 070e81e027374a81120e0ddbd40ff0bb512586e7 M	maven-example/multi1/pom.xml
+:100644 100644 3f01c93f2139fb557eee8a3137d1313796fd7ab5 53b29a0587825727ee9a3f3a7e4e55b66d15a137 M	maven-example/multi2/pom.xml
+:100644 100644 90249f79090d914f02e660aad019f44c88217999 b041f6f6b50c4d6477bf610b48d2964e88577d6a M	maven-example/multi3/pom.xml
+:100644 100644 ee5409db471c4c42314e5a16f5691ab0478d23b6 52804d4350392f68f7398e2732c6a03e5c97c869 M	maven-example/pom.xml
+commit 4592e66d29dbb1bda00bb26223c0d22ab259576f
+tree cc260aa40e0f1c904e091182366b8e50cfab2e8c
+parent 4d445b97c97e46214080aec531fa0dd11bd921da
+author shanilevy <shanil@jfrog.com> 2015-10-01 16:55:32 +0300
+committer shanilevy <shanil@jfrog.com> 2015-10-01 16:55:32 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 b1172a8934f45155ffc13283887930258717f2c7 9ec4c2888598e43e2615b04aab69722ad87eaa2d M	maven-example/multi1/pom.xml
+:100644 100644 4127974dccda8b9067926a3af1268f458f0e04e7 3f01c93f2139fb557eee8a3137d1313796fd7ab5 M	maven-example/multi2/pom.xml
+:100644 100644 7ea0e64eaa87e16217027b4d15edf89d88bf2a8a 90249f79090d914f02e660aad019f44c88217999 M	maven-example/multi3/pom.xml
+:100644 100644 9d8c8fa45c1c4d7c8acb7ff5674fe724e3a39eec ee5409db471c4c42314e5a16f5691ab0478d23b6 M	maven-example/pom.xml
+commit 4d445b97c97e46214080aec531fa0dd11bd921da
+tree ed07f03b629b7d74a56589debc0cc2cabcbe70e9
+parent 99edffc08473cc5773e39a38617a12546e2de06a
+author shanilevy <shanil@jfrog.com> 2015-09-30 15:04:18 +0300
+committer shanilevy <shanil@jfrog.com> 2015-09-30 15:04:18 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 cd94c27174d1b757aa09a06a3b22496b69793435 b1172a8934f45155ffc13283887930258717f2c7 M	maven-example/multi1/pom.xml
+:100644 100644 f2bd16d0c9b95e2b605c7305bbb955ec8cd48e79 4127974dccda8b9067926a3af1268f458f0e04e7 M	maven-example/multi2/pom.xml
+:100644 100644 994b7bc769252ead740c3d772137c023d03ba884 7ea0e64eaa87e16217027b4d15edf89d88bf2a8a M	maven-example/multi3/pom.xml
+:100644 100644 a89f6a90d272437b402fa4b7580cb07d26be8157 9d8c8fa45c1c4d7c8acb7ff5674fe724e3a39eec M	maven-example/pom.xml
+commit 99edffc08473cc5773e39a38617a12546e2de06a
+tree fe2f0d70045c8c65837d8a2e9c16363aa1f59189
+parent dd4b90ae90fefcaea253f5e8f4ecb3c82f2deec9
+author shanilevy <shanil@jfrog.com> 2015-08-24 10:01:00 +0300
+committer shanilevy <shanil@jfrog.com> 2015-08-24 10:01:00 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 a0a2fcb5e59c562d482f71bf7d2e7c1fea1fb467 cd94c27174d1b757aa09a06a3b22496b69793435 M	maven-example/multi1/pom.xml
+:100644 100644 13946b5b1574091967a94376c754507ed3b4ddb0 f2bd16d0c9b95e2b605c7305bbb955ec8cd48e79 M	maven-example/multi2/pom.xml
+:100644 100644 f9ae9539dbcf45476bd4f1f722f3f0a898851239 994b7bc769252ead740c3d772137c023d03ba884 M	maven-example/multi3/pom.xml
+:100644 100644 39031f30746000f614b5bd1432cf51ffa2fc6462 a89f6a90d272437b402fa4b7580cb07d26be8157 M	maven-example/pom.xml
+commit dd4b90ae90fefcaea253f5e8f4ecb3c82f2deec9
+tree 1f796a6faecf51ad8b789eb49d8b40afcfd4c4c1
+parent 7dcf8735a41b0c84f2ae1d8a2c9b04d8c3623d11
+author shanilevy <shanil@jfrog.com> 2015-08-18 12:11:29 +0300
+committer shanilevy <shanil@jfrog.com> 2015-08-18 12:11:29 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 527955990c26641123c54cd27ca8b434cb673639 a0a2fcb5e59c562d482f71bf7d2e7c1fea1fb467 M	maven-example/multi1/pom.xml
+:100644 100644 30c8520eebce99a73ed0f1e6cb0dbaf09d0c96ad 13946b5b1574091967a94376c754507ed3b4ddb0 M	maven-example/multi2/pom.xml
+:100644 100644 593cf257585e80c6a87a110d77e6fd5418610879 f9ae9539dbcf45476bd4f1f722f3f0a898851239 M	maven-example/multi3/pom.xml
+:100644 100644 e8d501b2ca4b0e23a0339cee1b62d31f4dda09a4 39031f30746000f614b5bd1432cf51ffa2fc6462 M	maven-example/pom.xml
+commit 7dcf8735a41b0c84f2ae1d8a2c9b04d8c3623d11
+tree b15f6e8a9609fc14c484b703c44a46340937e65f
+parent 009531da0f592365af97187d16659a098990c1c3
+author shanilevy <shanil@jfrog.com> 2015-08-03 13:15:58 +0300
+committer shanilevy <shanil@jfrog.com> 2015-08-03 13:15:58 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 68a747a453f249346ff64e9da7fade5e6fa1ed44 527955990c26641123c54cd27ca8b434cb673639 M	maven-example/multi1/pom.xml
+:100644 100644 61f286ac30c74174cd06b289b106a99b251eba3f 30c8520eebce99a73ed0f1e6cb0dbaf09d0c96ad M	maven-example/multi2/pom.xml
+:100644 100644 b710099fb8b620eadf704d851e06a8531b9cbde3 593cf257585e80c6a87a110d77e6fd5418610879 M	maven-example/multi3/pom.xml
+:100644 100644 f75189786ff31138dd2b74c0349880e682ceda40 e8d501b2ca4b0e23a0339cee1b62d31f4dda09a4 M	maven-example/pom.xml
+commit 009531da0f592365af97187d16659a098990c1c3
+tree d029b831c236f5b4dad27085c026b53bbeaba133
+parent e14f6bcc2d7ed70e61a5eaadbedb1dde9f0b710f
+author shanilevy <shanil@jfrog.com> 2015-08-03 13:09:09 +0300
+committer shanilevy <shanil@jfrog.com> 2015-08-03 13:09:09 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 1d4b05e05ebb6cb21ebd112ebe47e926b9b0ae7d 68a747a453f249346ff64e9da7fade5e6fa1ed44 M	maven-example/multi1/pom.xml
+:100644 100644 498948f5fae93d75b1dda8ed6807aa80fa20d9c9 61f286ac30c74174cd06b289b106a99b251eba3f M	maven-example/multi2/pom.xml
+:100644 100644 817e652c023b7c8ae3adeff40f7c940384a5f597 b710099fb8b620eadf704d851e06a8531b9cbde3 M	maven-example/multi3/pom.xml
+:100644 100644 14ef0f5639d2d86caae13a0045cb47d2d1e1e5df f75189786ff31138dd2b74c0349880e682ceda40 M	maven-example/pom.xml
+commit e14f6bcc2d7ed70e61a5eaadbedb1dde9f0b710f
+tree 8c387c443ba52a4e1e4a5dde13bd32da1b9f0333
+parent daeb6db95ea3d6b946758fb649f65e6a9b23b936
+author shanilevy <shanil@jfrog.com> 2015-07-20 22:40:07 +0300
+committer shanilevy <shanil@jfrog.com> 2015-07-20 22:40:07 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 08e96a2839314855edecfe85c7be76f3cfbaec0a 1d4b05e05ebb6cb21ebd112ebe47e926b9b0ae7d M	maven-example/multi1/pom.xml
+:100644 100644 ee19777670beb5b467fb784e672c41ba59b0eeb8 498948f5fae93d75b1dda8ed6807aa80fa20d9c9 M	maven-example/multi2/pom.xml
+:100644 100644 5634efb95cf3f5816608c544e4696908f593ff1b 817e652c023b7c8ae3adeff40f7c940384a5f597 M	maven-example/multi3/pom.xml
+:100644 100644 b1436fde40815f16da0879650b5db6bdfc50d8cd 14ef0f5639d2d86caae13a0045cb47d2d1e1e5df M	maven-example/pom.xml
+commit daeb6db95ea3d6b946758fb649f65e6a9b23b936
+tree 86b4148b217ebe4de0a494dbe2c8ac2091ccaf8e
+parent 3c1b805a914ebbd799b1be50a8d7d8516886a884
+author shanilevy <shanil@jfrog.com> 2015-07-20 20:52:04 +0300
+committer shanilevy <shanil@jfrog.com> 2015-07-20 20:52:04 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 c81080e47aa55cf839768a0b7da23eea6b6f590e 08e96a2839314855edecfe85c7be76f3cfbaec0a M	maven-example/multi1/pom.xml
+:100644 100644 60ee91f045884444968b4daea3adde6c64d02505 ee19777670beb5b467fb784e672c41ba59b0eeb8 M	maven-example/multi2/pom.xml
+:100644 100644 f398d040d2c730e5b104fdcd230dba0a20da55cc 5634efb95cf3f5816608c544e4696908f593ff1b M	maven-example/multi3/pom.xml
+:100644 100644 95c1241052838dc0a21c05e556bf4739b02773e3 b1436fde40815f16da0879650b5db6bdfc50d8cd M	maven-example/pom.xml
+commit 3c1b805a914ebbd799b1be50a8d7d8516886a884
+tree 603fde74a3a62656be41266bf99e41e690a22f71
+parent 7512db417d67b47d8de729b442fad3ac9515940b
+author shanilevy <shanil@jfrog.com> 2015-07-20 20:39:05 +0300
+committer shanilevy <shanil@jfrog.com> 2015-07-20 20:39:05 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 e64e9c2242132d4bb1844241f045c3f286529717 c81080e47aa55cf839768a0b7da23eea6b6f590e M	maven-example/multi1/pom.xml
+:100644 100644 e29f1edaa05e1857ac8ee19c315975159ce0574a 60ee91f045884444968b4daea3adde6c64d02505 M	maven-example/multi2/pom.xml
+:100644 100644 bfe189bcafc7d16f711923641faffc7dcf40efee f398d040d2c730e5b104fdcd230dba0a20da55cc M	maven-example/multi3/pom.xml
+:100644 100644 e7c9ec0ebbb3ae4c525cc98b75386b1f4ac65760 95c1241052838dc0a21c05e556bf4739b02773e3 M	maven-example/pom.xml
+commit 7512db417d67b47d8de729b442fad3ac9515940b
+tree 462f8e0dd5d6243de7302ebe9894a106721d668d
+parent b77e68d527ee04d32b72375ba13b158a554983a4
+author shanilevy <shanil@jfrog.com> 2015-06-10 15:24:05 +0300
+committer shanilevy <shanil@jfrog.com> 2015-06-10 15:24:05 +0300
+
+    [artifactory-release] Next development version
+
+
+
+:100644 100644 d370d843a5256e69dc29c0c991ca7cb0b2cc823e e64e9c2242132d4bb1844241f045c3f286529717 M	maven-example/multi1/pom.xml
+:100644 100644 b47a9891aa974dca9bd2d123011654a924c8da01 e29f1edaa05e1857ac8ee19c315975159ce0574a M	maven-example/multi2/pom.xml
+:100644 100644 114a92d7bc4b28e4e63f420a1013104423f4662a bfe189bcafc7d16f711923641faffc7dcf40efee M	maven-example/multi3/pom.xml
+:100644 100644 ed3f2b99b27e8d160d41831f46032592c7107f76 e7c9ec0ebbb3ae4c525cc98b75386b1f4ac65760 M	maven-example/pom.xml

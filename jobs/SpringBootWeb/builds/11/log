@@ -1,0 +1,65 @@
+Started by user [8mha:////4BQswPOumestw6svOxmZUMGN4NrS2nNo9YhdJaQ99WPVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/SpringBootWeb
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MarcAtHTW/SpringBootWeb.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/SpringBootWeb.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress https://github.com/MarcAtHTW/SpringBootWeb.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0962d919cf57b1650dd08a6c6d9f1d8d237558b2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0962d919cf57b1650dd08a6c6d9f1d8d237558b2
+Commit message: "Create README.md"
+ > git rev-list --no-walk 0962d919cf57b1650dd08a6c6d9f1d8d237558b2 # timeout=10
+Jenkins Artifactory Plugin version: 3.1.0
+[SpringBootWeb] $ /usr/share/maven/bin/mvn -f pom.xml clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------< [0;36morg.springframework.boot:spring-boot-web-thymeleaf[0;1m >---------[m
+[[1;34mINFO[m] [1mBuilding Spring Boot Web Example 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.6.1:clean[m [1m(default-clean)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/SpringBootWeb/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /var/jenkins_home/workspace/SpringBootWeb/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/SpringBootWeb/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.18.1:test[m [1m(default-test)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:2.6:war[m [1m(default-war)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [spring-boot-web-thymeleaf] in [/var/jenkins_home/workspace/SpringBootWeb/target/spring-boot-web-thymeleaf-1.0]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Webapp assembled in [121 msecs]
+[[1;34mINFO[m] Building war: /var/jenkins_home/workspace/SpringBootWeb/target/spring-boot-web-thymeleaf-1.0.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspring-boot-maven-plugin:1.4.2.RELEASE:repackage[m [1m(default)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.5.2:install[m [1m(default-install)[m @ [36mspring-boot-web-thymeleaf[0;1m ---[m
+[[1;34mINFO[m] Installing /var/jenkins_home/workspace/SpringBootWeb/target/spring-boot-web-thymeleaf-1.0.war to /var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-web-thymeleaf/1.0/spring-boot-web-thymeleaf-1.0.war
+[[1;34mINFO[m] Installing /var/jenkins_home/workspace/SpringBootWeb/pom.xml to /var/jenkins_home/.m2/repository/org/springframework/boot/spring-boot-web-thymeleaf/1.0/spring-boot-web-thymeleaf-1.0.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  6.496 s
+[[1;34mINFO[m] Finished at: 2019-04-27T13:51:07Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Deploying build info to: http://10.1.8.250:8081/artifactory/api/build
+Finished: SUCCESS

@@ -64,22 +64,24 @@
     <org.jfrog.hudson.ArtifactoryRedeployPublisher plugin="artifactory@3.1.0">
       <evenIfUnstable>false</evenIfUnstable>
       <deployerDetails>
-        <artifactoryName>SWM-Artifactory</artifactoryName>
-        <artifactoryUrl>http://swm.dev.init:8081/artifactory</artifactoryUrl>
+        <artifactoryName>Lab42-Artifactory</artifactoryName>
+        <artifactoryUrl>http://10.1.8.250:8081/artifactory</artifactoryUrl>
         <deployReleaseRepository>
           <keyFromText></keyFromText>
-          <keyFromSelect>Jenkins-integration</keyFromSelect>
+          <keyFromSelect>libs-release-local</keyFromSelect>
           <dynamicMode>false</dynamicMode>
         </deployReleaseRepository>
         <deploySnapshotRepository>
           <keyFromText></keyFromText>
-          <keyFromSelect>Jenkins-snapshot</keyFromSelect>
+          <keyFromSelect>libs-snapshot-local</keyFromSelect>
           <dynamicMode>false</dynamicMode>
         </deploySnapshotRepository>
         <stagingPlugin>
           <pluginName>None</pluginName>
+          <paramMap/>
         </stagingPlugin>
         <userPluginKey>None</userPluginKey>
+        <userPluginParams></userPluginParams>
       </deployerDetails>
       <deployArtifacts>true</deployArtifacts>
       <artifactDeploymentPatterns>
@@ -130,8 +132,8 @@
     </org.jfrog.hudson.release.maven.MavenReleaseWrapper>
     <org.jfrog.hudson.maven3.ArtifactoryMaven3NativeConfigurator plugin="artifactory@3.1.0">
       <resolverDetails>
-        <artifactoryName>SWM-Artifactory</artifactoryName>
-        <artifactoryUrl>http://swm.dev.init:8081/artifactory</artifactoryUrl>
+        <artifactoryName>Lab42-Artifactory</artifactoryName>
+        <artifactoryUrl>http://10.1.8.250:8081/artifactory</artifactoryUrl>
         <resolveSnapshotRepository>
           <keyFromText></keyFromText>
           <keyFromSelect>libs-snapshot</keyFromSelect>
@@ -158,9 +160,9 @@
   <prebuilders/>
   <postbuilders/>
   <runPostStepsIfResult>
-    <name>FAILURE</name>
-    <ordinal>2</ordinal>
-    <color>RED</color>
+    <name>SUCCESS</name>
+    <ordinal>0</ordinal>
+    <color>BLUE</color>
     <completeBuild>true</completeBuild>
   </runPostStepsIfResult>
 </maven2-moduleset>

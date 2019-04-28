@@ -10,11 +10,11 @@
   <usages>
     <entry>
       <string>maven-example/org.jfrog.test:multi2</string>
-      <ranges>9-11</ranges>
+      <ranges>9-11,14</ranges>
     </entry>
     <entry>
       <string>maven-example</string>
-      <ranges>9-11</ranges>
+      <ranges>9-11,14</ranges>
     </entry>
   </usages>
   <facets/>

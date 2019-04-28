@@ -1,0 +1,46 @@
+Started by user [8mha:////4BQswPOumestw6svOxmZUMGN4NrS2nNo9YhdJaQ99WPVAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZu/dLi1CL9xJTczDwACG0V4sAAAAA=[0mAdministrator
+Building in workspace /var/jenkins_home/workspace/SpringBootWebTut
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/MarcAtHTW/SpringBootWebTut.git
+ > git init /var/jenkins_home/workspace/SpringBootWebTut # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/SpringBootWebTut.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress https://github.com/MarcAtHTW/SpringBootWebTut.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/MarcAtHTW/SpringBootWebTut.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/MarcAtHTW/SpringBootWebTut.git # timeout=10
+Fetching upstream changes from https://github.com/MarcAtHTW/SpringBootWebTut.git
+ > git fetch --tags --force --progress https://github.com/MarcAtHTW/SpringBootWebTut.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 07b6f5569333728dcd2a3cb50a3b556a3b872068 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 07b6f5569333728dcd2a3cb50a3b556a3b872068
+Commit message: "Added next test"
+ > git rev-list --no-walk 07b6f5569333728dcd2a3cb50a3b556a3b872068 # timeout=10
+ERROR: Build step failed with exception
+java.lang.IllegalStateException: Input for resolve repositories cannot be empty.
+	at org.jfrog.hudson.util.ExtractorUtils.replaceRepositoryInputForValues(ExtractorUtils.java:235)
+	at org.jfrog.hudson.util.ExtractorUtils.setResolverInfo(ExtractorUtils.java:217)
+	at org.jfrog.hudson.util.ExtractorUtils.getArtifactoryClientConfiguration(ExtractorUtils.java:169)
+	at org.jfrog.hudson.util.ExtractorUtils.addBuilderInfoArguments(ExtractorUtils.java:143)
+	at org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator$1.buildEnvVars(ArtifactoryMaven3Configurator.java:395)
+Caused: java.lang.RuntimeException
+	at org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator$1.buildEnvVars(ArtifactoryMaven3Configurator.java:397)
+	at hudson.model.AbstractBuild.getEnvironment(AbstractBuild.java:881)
+	at hudson.tasks.Maven.perform(Maven.java:293)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Invoke top-level Maven targets' changed build result to FAILURE
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE
