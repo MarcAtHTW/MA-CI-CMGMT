@@ -16,3 +16,9 @@ docker ps
 exit
 docker ps
 exit
+date
+exit
+date
+ls -la /etc/localtime 
+ln -fs /etc/localtime /usr/share/zoneinfo/Europe/Berlin 
+exit
