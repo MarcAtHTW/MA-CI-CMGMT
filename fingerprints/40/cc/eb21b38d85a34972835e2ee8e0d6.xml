@@ -9,12 +9,12 @@
   <fileName>org.jfrog.test:multi1:pom.xml</fileName>
   <usages>
     <entry>
-      <string>maven-example</string>
-      <ranges>3-6,9-17</ranges>
+      <string>maven-example/org.jfrog.test:multi1</string>
+      <ranges>3-6,9-18</ranges>
     </entry>
     <entry>
-      <string>maven-example/org.jfrog.test:multi1</string>
-      <ranges>3-6,9-17</ranges>
+      <string>maven-example</string>
+      <ranges>3-6,9-18</ranges>
     </entry>
   </usages>
   <facets/>

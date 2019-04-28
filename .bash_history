@@ -18,3 +18,5 @@ apt-get show python
 apt-cache show python
 apt-get upgrade python
 exit
+ip a
+exit
