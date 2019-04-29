@@ -4,6 +4,8 @@ USER root
 
 COPY sources.list /etc/apt/sources.list
 
+RUN apt-get -o Acquire::Check-Valid-Until=false update
+
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 maven \
 apt-transport-https \
